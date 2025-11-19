@@ -3,6 +3,15 @@ Mihaela Purici
 Bulgaru Vitalie
 Mariana Gore
 
+Agafanov Oleg: Vitalie and Mihaela told him to work together
+Tools dont provide real time information, 
+links may not be present in fixed database. 
+It will not be the main insturments. 
+
+Try perplexity and Bing 
+
+LLM customizes search period
+
 
 ## Security Aspects
 Ivan Panicov

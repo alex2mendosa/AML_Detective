@@ -1,0 +1,70 @@
+[
+
+
+  {
+    "expert_instructions": "
+
+You are creating exactly {max_journalists} AI journalist personas to analyze 
+the SAME financial-crime topic from DIFFERENT, NON-OVERLAPPING angles for banking risk assessment.
+
+Topic under investigation: {crime_topic}
+Goal: Create persona of journalist which has solid experience in writing articles which occuses company over involement in  {crime_topic}.
+
+OUTPUT FORMAT (MANDATORY)
+- Return ONLY a valid HydePerspectives object with exactly {max_journalists} journalists.
+- Each journalist has exactly these fields:
+  - expertise (short phrase)
+  - perspective (2-3 sentences)
+  - style (6-10 adjectives/descriptors, comma-separated)
+- No extra commentary, headings, or prose.
+
+For each journalist:
+- expertise: Their specific risk assessment specialization
+- perspective: From what perspective they asses the impact of crime over diffenret economical or social aspects
+- style: Their analytical approach to uncovering risks relevant to banking partnerships
+
+UNIQUENESS REQUIREMENTS (MANDATORY)
+- Pairwise distinct expertise (not just synonyms; avoid generic labels like “risk analyst”).
+- Pairwise distinct perspectives (each must emphasize different indicators/decision criteria).
+- style must contain 3–6 tokens; at least TWO tokens must be unique to that persona (not used by any other persona).
+- Before returning, self-check all pairs. If any two personas substantially overlap in expertise keywords OR share >50% of style tokens OR rephrase the same perspective, REVISE and re-check.
+
+COVERAGE & DIVERSITY (GUIDANCE, THEN ENFORCE UNIQUENESS)
+- Distribute personas across different risk axes. Draw from (but are not limited to):
+  • Regulatory/Enforcement (sanctions, consent orders, investigations)
+  • Financial/Forensic flows (counterparties, anomalies)
+  • Operational/Governance/TPRM (controls, third parties, processes)
+  • Reputational/Media/Stakeholders (controversy persistence, sentiment)
+  • KYC/AML/BO/PEP/Sanctions screening (beneficial ownership transparency)
+  • Data privacy/consumer protection
+  
+- If {max_journalists} ≥ 5, ensure at least one persona implicitly covers each of these example 
+  archetypes (use them as inspiration; do NOT output role names, reflect them via fields only):
+  1) Regulatory Compliance Analyst — statutory/enforcement exposure
+  2) Financial Due Diligence Investigator — flows/counterparties/anomalies
+  3) Operational Risk Assessor — governance/controls/third-party risk
+  4) Reputational Risk Evaluator — media patterns/controversy persistence
+  5) KYC/AML Specialist — KYC gaps/BO transparency/PEP & sanctions
+- If {max_journalists} < 5, prioritize coverage in this order: KYC/AML → Regulatory → Financial.
+
+FIELD WRITING RULES
+- expertise: one crisp, specific phrase tied to the angle (no generic titles).
+- perspective: 1–2 sentences listing the key indicators/thresholds/heuristics used to decide on partnership risk (e.g., weights unresolved consent orders more than remedial plans”).
+- style: 3–6 concise descriptors shaping tone/approach (e.g., forensic, evidence-driven, regulation-centric, conservative). Ensure ≥2 tokens unique to this persona.
+
+Return ONLY the HydePerspectives object with exactly {max_journalists} journalists."
+,
+    "metadata": {
+      "placeholder_1": "",
+      "placeholder_2": ""
+    }
+  },
+  {
+    "page_content": "Ce obiectiv fundamental are Banca Națională a Moldovei conform Legii nr. 548-XIII din 1995?",
+    "metadata": {
+      "placeholder_1": "",
+      "placeholder_2": ""
+    }
+  }
+
+]

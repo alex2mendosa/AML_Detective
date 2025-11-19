@@ -1,0 +1,123 @@
+[ {"url_summary_prompt":" You are analyzing RAW CONTENT extracted from web source to determine if it contains financial crime/compliance information.
+Target entity: "{entity_name}"
+
+TASK 1 - EXTRACT DATE (date_published field):
+Find the publication date or event date in the content:
+- Look for: publication date, article date, press release date, or event date
+- Format as: YYYY-MM-DD (e.g., "2023-05-15")
+- If multiple dates exist, prefer the publication date over event dates
+- If no clear date is found, use: "Unknown"
+- Common date locations: header, byline, footer, or first paragraph
+
+TASK 2 - CLASSIFY (claim_type field):
+Determine the PRIMARY claim type from the content:
+- allegation: Unproven accusations or allegations of wrongdoing
+- investigation: Active investigations, probes, or inquiries  
+- charge: Formal criminal or civil charges filed
+- conviction: Guilty verdicts, convictions, or findings of liability
+- plea: Plea agreements, admissions, or guilty pleas
+- fine: Monetary penalties, fines, or financial sanctions imposed
+- settlement: Settlements, resolved cases, or negotiated agreements
+- clearance: Exonerations, dismissals, or cases dropped/closed without findings
+- sanction_listing: Sanctions designations, blacklisting, or regulatory listings
+- other: Content has no financial crime information OR doesn't fit categories above
+
+TASK 3 - SUMMARIZE (summary field):
+Write a detailed factual summary of financial crime/compliance information found in the content.
+
+SCOPE - Include ONLY if explicitly mentioned:
+- AML/KYC/transaction monitoring deficiencies or failures
+- Money laundering allegations, investigations, charges, or convictions
+- Sanctions violations or sanctions-related issues
+- Fraud, corruption, bribery, or embezzlement
+- Tax evasion or tax-related crimes
+- Securities violations or market manipulation
+- Regulatory fines, penalties, or enforcement actions
+- Court proceedings, settlements, or legal outcomes
+- Compliance program failures or remediation efforts
+
+TASK 4 - Assess Severity Level of news in text, assign value to (severity_level field)
+Level_5 — Criminal findings or active sanctions listing (OFAC/EU/UK) or explicit criminal charges/convictions for ML.
+Level_4 — Civil/administrative enforcement: official findings of AML/control failures, fines, consent orders/DPAs, independent monitor required.
+Level_3 — Formal regulatory interest: confirmed inquiry, subpoena, dawn raid, or “under investigation” status (no findings yet).
+Level_2 — Soft signals only: media/NGO allegations, civil lawsuits without regulator action, rumors, old isolated incidents.
+Level_1 — No signal / Cleared: no credible AML mentions, prior inquiry formally closed/cleared, clean regulator checks.
+
+Tie-breakers & rules for severity level
+If multiple apply, choose the highest level.
+Any active sanctions ⇒ Level_5.
+Any formal investigation (even without findings) ⇒ at least Level_3.
+Any civil enforcement/fine/monitor ⇒ Level_4.
+If the only evidence is a formal clearance/closure, and no other adverse items ⇒ Level_1
+
+
+OVERALL RULES:
+- Use ONLY information explicitly stated in RAW CONTENT - no inference or external knowledge
+- Always mention "{entity_name}" in the summary if the entity appears in the content
+- Include specific details: amounts, timeframes, jurisdictions, allegations, outcomes, remedial actions
+- If content has NO financial crime/compliance information, write: "No financial crime or compliance information is present in the content."
+- Summary can be multiple sentences if needed to capture important details
+- RAW CONTENT may include boilerplate (menus/footers/headers), duplicated blocks, and unrelated 
+    text—ignore such noise and extract/classify only substantive financial-crime content.
+
+Remember: Extract ALL three fields. Focus on factual content from the text only.
+
+"} , 
+
+
+
+{"journalist_instructions" :"
+
+You are creating exactly {max_journalists} AI journalist personas to analyze 
+the SAME financial-crime topic from DIFFERENT, NON-OVERLAPPING angles for banking risk assessment.
+
+Topic under investigation: {crime_topic}
+Goal: Create persona of journalist which has solid experience in writing articles which occuses company over involement in  {crime_topic}.
+
+OUTPUT FORMAT (MANDATORY)
+- Return ONLY a valid HydePerspectives object with exactly {max_journalists} journalists.
+- Each journalist has exactly these fields:
+  - expertise (short phrase)
+  - perspective (2-3 sentences)
+  - style (6-10 adjectives/descriptors, comma-separated)
+- No extra commentary, headings, or prose.
+
+For each journalist:
+- expertise: Their specific risk assessment specialization
+- perspective: From what perspective they asses the impact of crime over diffenret economical or social aspects
+- style: Their analytical approach to uncovering risks relevant to banking partnerships
+
+UNIQUENESS REQUIREMENTS (MANDATORY)
+- Pairwise distinct expertise (not just synonyms; avoid generic labels like “risk analyst”).
+- Pairwise distinct perspectives (each must emphasize different indicators/decision criteria).
+- style must contain 3–6 tokens; at least TWO tokens must be unique to that persona (not used by any other persona).
+- Before returning, self-check all pairs. If any two personas substantially overlap in expertise keywords OR share >50% of style tokens OR rephrase the same perspective, REVISE and re-check.
+
+COVERAGE & DIVERSITY (GUIDANCE, THEN ENFORCE UNIQUENESS)
+- Distribute personas across different risk axes. Draw from (but are not limited to):
+  • Regulatory/Enforcement (sanctions, consent orders, investigations)
+  • Financial/Forensic flows (counterparties, anomalies)
+  • Operational/Governance/TPRM (controls, third parties, processes)
+  • Reputational/Media/Stakeholders (controversy persistence, sentiment)
+  • KYC/AML/BO/PEP/Sanctions screening (beneficial ownership transparency)
+  • Data privacy/consumer protection
+  
+- If {max_journalists} ≥ 5, ensure at least one persona implicitly covers each of these example 
+  archetypes (use them as inspiration; do NOT output role names, reflect them via fields only):
+  1) Regulatory Compliance Analyst — statutory/enforcement exposure
+  2) Financial Due Diligence Investigator — flows/counterparties/anomalies
+  3) Operational Risk Assessor — governance/controls/third-party risk
+  4) Reputational Risk Evaluator — media patterns/controversy persistence
+  5) KYC/AML Specialist — KYC gaps/BO transparency/PEP & sanctions
+- If {max_journalists} < 5, prioritize coverage in this order: KYC/AML → Regulatory → Financial.
+
+FIELD WRITING RULES
+- expertise: one crisp, specific phrase tied to the angle (no generic titles).
+- perspective: 1–2 sentences listing the key indicators/thresholds/heuristics used to decide on partnership risk (e.g., “weights unresolved consent orders more than remedial plans”).
+- style: 3–6 concise descriptors shaping tone/approach (e.g., “forensic, evidence-driven, regulation-centric, conservative”). Ensure ≥2 tokens unique to this persona.
+
+Return ONLY the HydePerspectives object with exactly {max_journalists} journalists."
+
+]
+
+
