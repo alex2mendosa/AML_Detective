@@ -1,0 +1,46 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	scenario_selection_node(scenario_selection_node)
+	search_payload_generate_node(search_payload_generate_node)
+	tool_execute_search_node(tool_execute_search_node)
+	extract_content_node(extract_content_node)
+	generate_custom_payload_execute_node(generate_custom_payload_execute_node)
+	filter_key_terms_node(filter_key_terms_node)
+	filter_semantic_similarity_node(filter_semantic_similarity_node)
+	generate_url_summary_node(generate_url_summary_node)
+	generate_risk_assessment_node(generate_risk_assessment_node)
+	extract_evidence_claims_node(extract_evidence_claims_node)
+	url_verification_node(url_verification_node)
+	reflect_evidence_quality_node(reflect_evidence_quality_node)
+	call_subgraph(call_subgraph)
+	buffer_node_hyde_generation(buffer_node_hyde_generation)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> scenario_selection_node;
+	buffer_node_hyde_generation -. &nbsp;continue&nbsp; .-> call_subgraph;
+	buffer_node_hyde_generation -. &nbsp;skip_hyde_generation&nbsp; .-> filter_semantic_similarity_node;
+	call_subgraph --> filter_semantic_similarity_node;
+	extract_content_node --> filter_key_terms_node;
+	extract_evidence_claims_node --> url_verification_node;
+	filter_key_terms_node --> buffer_node_hyde_generation;
+	filter_semantic_similarity_node --> generate_url_summary_node;
+	generate_custom_payload_execute_node --> extract_content_node;
+	generate_url_summary_node --> extract_evidence_claims_node;
+	reflect_evidence_quality_node -.-> generate_risk_assessment_node;
+	reflect_evidence_quality_node -.-> scenario_selection_node;
+	scenario_selection_node -. &nbsp;END&nbsp; .-> __end__;
+	scenario_selection_node -.-> generate_custom_payload_execute_node;
+	scenario_selection_node -.-> generate_risk_assessment_node;
+	scenario_selection_node -.-> search_payload_generate_node;
+	search_payload_generate_node --> tool_execute_search_node;
+	tool_execute_search_node --> extract_content_node;
+	url_verification_node -. &nbsp;consolidate_evidence&nbsp; .-> extract_evidence_claims_node;
+	url_verification_node -. &nbsp;continue&nbsp; .-> reflect_evidence_quality_node;
+	generate_risk_assessment_node --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

@@ -1,0 +1,56 @@
+digraph component_map {
+  rankdir=TB;
+  newrank=true;
+  label="Annex 1 — Component map";
+  labelloc="t";
+  fontsize=18;
+  fontname="Helvetica";
+  graph [fontname="Helvetica", ranksep=0.45, nodesep=0.7, pad=0.3];
+  node  [shape=box, style="rounded,filled", fillcolor="white", fontname="Helvetica",
+         fontsize=12, width=2.4, height=0.6];
+  edge  [color="#444444", arrowsize=0.7, penwidth=1.1];
+
+  subgraph cluster_bank {
+    label="Inside the Bank"; fontsize=14; style="rounded"; color="#333333"; penwidth=1.4; margin=18;
+    dwh [label="Oracle data warehouse", shape=cylinder];
+    p1  [label="Screening pipeline", fillcolor="#e6eef8"];
+    lib [label="Shared library\n(prompts, reference data,\nsynthetic articles)", shape=folder];
+    s1  [label="Screening result store", shape=folder];
+    p2  [label="Research agent", fillcolor="#e6eef8"];
+    s2  [label="Final record store", shape=folder];
+    db  [label="Bank database", shape=cylinder];
+  }
+
+  subgraph cluster_ext {
+    label="Third-party services"; fontsize=14; style="rounded,dashed"; color="#333333"; penwidth=1.4; margin=18;
+    os   [label="OpenSanctions API", fillcolor="#f3f3f3"];
+    oai  [label="OpenAI\n(language and embedding models)", fillcolor="#f3f3f3"];
+    serp [label="SerpAPI\n(Google search)", fillcolor="#f3f3f3"];
+    tav  [label="Tavily\n(web search, page extraction)", fillcolor="#f3f3f3"];
+  }
+
+  { rank=same; p1; os; }
+  { rank=same; lib; s1; oai; }
+  { rank=same; p2; serp; }
+  { rank=same; s2; tav; }
+
+  // left-to-right order within the middle rank
+  lib -> s1 [style=invis];
+  s1 -> oai [style=invis];
+
+  // Bank flow
+  dwh -> p1;
+  p1 -> s1;
+  s1 -> p2;
+  p2 -> s2;
+  s2 -> db;
+  lib -> p1 [style=dashed];
+  lib -> p2 [style=dashed];
+
+  // Calls to third parties
+  p1 -> os;
+  p1 -> oai;
+  p2 -> oai;
+  p2 -> serp;
+  p2 -> tav;
+}
