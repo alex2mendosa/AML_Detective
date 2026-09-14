@@ -1,0 +1,18 @@
+# osint_agent: pinned versions, tested locally on Python 3.10 (2026-09-14)
+# install: pip install -r requirements.txt
+
+pandas==2.2.3
+python-dotenv==1.1.1
+SQLAlchemy==2.0.43
+oracledb==3.4.2                  # not installed locally (DWH not reachable): if the server already has a working version, keep that one
+openai==1.109.1
+langchain-openai==0.3.33
+langchain-core==0.3.76
+langchain-text-splitters==0.3.11
+langgraph==0.6.8
+pydantic==2.11.9
+tavily-python==0.7.23            # keep pinned: api_base_url / client.session (gateway) are not in the Tavily docs, only in the SDK code
+google-search-results==2.4.2     # SerpAPI client (imported as serpapi); do NOT also install the "serpapi" package (same module name)
+requests==2.32.5
+scikit-learn==1.6.1
+numpy==2.2.4

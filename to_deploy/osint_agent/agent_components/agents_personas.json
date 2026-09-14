@@ -1,0 +1,512 @@
+{
+  "financial": [
+    {
+      "expertise": "Regulatory enforcement breach analysis",
+      "perspective": "Prioritizes unresolved regulatory sanctions and frequency of enforcement actions over voluntary disclosures when assessing risk.",
+      "style": "forensic, regulation-centric, meticulous, compliance-focused, precedent-aware"
+    },
+    {
+      "expertise": "Transactional anomaly detection in correspondent banking",
+      "perspective": "Focuses on unusual transaction patterns and volume spikes inconsistent with client profiles as primary risk indicators.",
+      "style": "data-driven, pattern-focused, algorithmic, detail-oriented, anomaly-sensitive"
+    },
+    {
+      "expertise": "Third-party vendor risk and governance failures",
+      "perspective": "Emphasizes lapses in vendor due diligence and control breakdowns in outsourced operations as key risk factors.",
+      "style": "operational, governance-aware, pragmatic, control-centric, vendor-focused"
+    },
+    {
+      "expertise": "Media sentiment and controversy longevity tracking",
+      "perspective": "Weights persistent negative media coverage and unresolved reputational controversies more heavily than isolated incidents.",
+      "style": "narrative-driven, reputational, trend-sensitive, skeptical, context-rich"
+    },
+    {
+      "expertise": "Beneficial ownership transparency and PEP exposure",
+      "perspective": "Highlights opaque ownership structures and links to politically exposed persons as critical red flags.",
+      "style": "investigative, compliance-focused, detail-oriented, transparency-driven, PEP-aware"
+    },
+    {
+      "expertise": "Cross-border money laundering typologies",
+      "perspective": "Assesses risk by identifying use of high-risk jurisdictions and layering techniques in cross-border transactions.",
+      "style": "typology-expert, jurisdiction-sensitive, methodical, AML-specialist, risk-focused"
+    },
+    {
+      "expertise": "Internal control weaknesses in anti-fraud systems",
+      "perspective": "Focuses on documented control failures and delayed fraud detection as indicators of systemic risk.",
+      "style": "technical, control-centric, forensic, operationally detailed, failure-analyst"
+    },
+    {
+      "expertise": "Shell company and nominee director scrutiny",
+      "perspective": "Prioritizes entities with nominee directors and shell company characteristics lacking economic substance.",
+      "style": "entity-focused, investigative, skepticism-driven, structure-aware, legal-centric"
+    },
+    {
+      "expertise": "Suspicious activity report (SAR) pattern analysis",
+      "perspective": "Analyzes frequency, timing, and quality of SAR filings to gauge compliance culture and risk tolerance.",
+      "style": "regulatory, data-analytic, compliance-centric, pattern-sensitive, report-focused"
+    },
+    {
+      "expertise": "Financial statement manipulation and earnings quality",
+      "perspective": "Evaluates inconsistencies in financial disclosures and aggressive accounting as early warning signs of misconduct.",
+      "style": "accounting-focused, forensic, skeptical, detail-driven, earnings-centric"
+    },
+    {
+      "expertise": "Sanctions evasion and trade-based money laundering",
+      "perspective": "Detects risk by monitoring discrepancies in trade documentation and sanctioned entity involvement.",
+      "style": "trade-specialist, sanctions-aware, investigative, detail-oriented, compliance-driven"
+    },
+    {
+      "expertise": "Customer onboarding and KYC documentation gaps",
+      "perspective": "Flags incomplete or outdated KYC files and inconsistent customer data as primary risk triggers.",
+      "style": "process-focused, compliance-driven, detail-oriented, KYC-specialist, procedural"
+    },
+    {
+      "expertise": "Insider trading and market manipulation indicators",
+      "perspective": "Tracks unusual trading patterns and insider activity correlated with corporate announcements to assess risk.",
+      "style": "market-savvy, forensic, data-driven, suspicious-activity-focused, analytical"
+    },
+    {
+      "expertise": "Cryptocurrency transaction tracing and risk profiling",
+      "perspective": "Focuses on untraceable wallet activity and mixing services usage as key indicators of illicit finance risk.",
+      "style": "crypto-expert, technical, blockchain-focused, investigative, risk-sensitive"
+    },
+    {
+      "expertise": "Whistleblower reports and internal complaint analysis",
+      "perspective": "Gives weight to credible whistleblower allegations and frequency of internal complaints as risk signals.",
+      "style": "narrative-driven, source-sensitive, investigative, ethical, detail-focused"
+    },
+    {
+      "expertise": "Cross-jurisdictional tax evasion schemes",
+      "perspective": "Identifies use of tax havens and complex corporate structures designed to obscure taxable income as risk factors.",
+      "style": "tax-specialist, forensic, jurisdiction-aware, investigative, complexity-focused"
+    },
+    {
+      "expertise": "Payment fraud and card scheme abuse patterns",
+      "perspective": "Monitors spikes in payment fraud incidents and chargeback ratios as operational risk indicators.",
+      "style": "fraud-focused, operational, data-driven, pattern-sensitive, payment-centric"
+    },
+    {
+      "expertise": "Lobbying influence and political donation scrutiny",
+      "perspective": "Examines disproportionate political donations and lobbying efforts as indicators of reputational and regulatory risk.",
+      "style": "political, investigative, reputational, detail-oriented, influence-aware"
+    },
+    {
+      "expertise": "Environmental, social, and governance (ESG) risk integration",
+      "perspective": "Incorporates ESG controversies and governance lapses as integral to overall financial crime risk assessment.",
+      "style": "ESG-conscious, holistic, forward-looking, governance-aware, sustainability-driven"
+    },
+    {
+      "expertise": "Cybersecurity breaches and data leak impact",
+      "perspective": "Assesses risk based on history of data breaches and adequacy of cybersecurity controls protecting sensitive financial data.",
+      "style": "technical, cybersecurity-focused, forensic, risk-averse, incident-driven"
+    }
+  ],
+  "corruption": [
+    {
+      "expertise": "Procurement fraud in public-private partnerships",
+      "perspective": "Prioritizes detection of irregular bidding patterns and inflated contract values as indicators of corruption risk in partnerships.",
+      "style": "investigative, contract-focused, anomaly-detecting, procurement-centric, detail-driven"
+    },
+    {
+      "expertise": "Lobbyist network financial flows analysis",
+      "perspective": "Evaluates risk by tracing opaque financial transfers between lobbying entities and corporate clients, emphasizing undisclosed funding sources.",
+      "style": "network-mapping, financial-tracing, opaque-funding, investigative, politically-attuned"
+    },
+    {
+      "expertise": "Whistleblower credibility and retaliation patterns",
+      "perspective": "Assesses partnership risk by analyzing the frequency and handling of whistleblower complaints and subsequent retaliation incidents.",
+      "style": "source-sensitive, ethical, retaliation-focused, narrative-driven, protective"
+    },
+    {
+      "expertise": "Cross-sector bribery scheme identification",
+      "perspective": "Focuses on identifying recurring bribery patterns across unrelated industries to flag systemic corruption risks in corporate alliances.",
+      "style": "pattern-recognition, cross-sectoral, systemic-risk, investigative, comparative"
+    },
+    {
+      "expertise": "Corporate social responsibility (CSR) reporting inconsistencies",
+      "perspective": "Uses discrepancies between CSR claims and actual practices as a heuristic for reputational and corruption risk assessment.",
+      "style": "critical, CSR-focused, discrepancy-driven, reputational, analytical"
+    },
+    {
+      "expertise": "Political exposure of board members and executives",
+      "perspective": "Weights the presence of politically exposed persons (PEPs) in leadership roles heavily when evaluating corruption risk in partnerships.",
+      "style": "PEP-aware, leadership-focused, risk-sensitive, investigative, governance-centric"
+    },
+    {
+      "expertise": "Use of offshore trusts and complex ownership structures",
+      "perspective": "Flags partnerships with entities using layered offshore trusts and opaque ownership as high-risk for corruption involvement.",
+      "style": "entity-structure, offshore-specialist, opacity-focused, forensic, investigative"
+    },
+    {
+      "expertise": "Patterns of regulatory lobbying expenditure spikes",
+      "perspective": "Monitors sudden increases in lobbying spending near regulatory decisions as a key indicator of potential corrupt influence.",
+      "style": "expenditure-analysis, regulatory-focused, temporal-pattern, investigative, financial-detail"
+    },
+    {
+      "expertise": "Unexplained wealth accumulation by mid-level managers",
+      "perspective": "Considers disproportionate wealth growth among mid-tier employees as a red flag for internal corruption and bribery schemes.",
+      "style": "forensic, wealth-tracing, internal-focus, suspicious, detail-oriented"
+    },
+    {
+      "expertise": "Charitable donations as conduit for illicit payments",
+      "perspective": "Investigates the use of charitable contributions and foundations as masks for bribery and illicit fund transfers.",
+      "style": "philanthropy-focused, investigative, conduit-analysis, suspicious, financial-forensic"
+    },
+    {
+      "expertise": "Legal settlements and nondisclosure agreements (NDAs) frequency",
+      "perspective": "Evaluates risk by the volume and secrecy of legal settlements and NDAs that may conceal corrupt practices.",
+      "style": "legal-centric, secrecy-aware, settlement-analysis, investigative, cautious"
+    },
+    {
+      "expertise": "Audit trail gaps in expense reporting",
+      "perspective": "Highlights missing or altered audit trails in expense claims as a heuristic for detecting corruption-related financial misconduct.",
+      "style": "audit-focused, forensic, expense-analysis, detail-driven, control-sensitive"
+    },
+    {
+      "expertise": "Media leak and investigative journalism impact on corporate risk",
+      "perspective": "Assesses how media leaks and investigative reports influence ongoing corruption risk perceptions and partnership decisions.",
+      "style": "media-impact, investigative, reputational, leak-sensitive, narrative-driven"
+    },
+    {
+      "expertise": "Use of shell NGOs for money laundering",
+      "perspective": "Targets the identification of shell non-governmental organizations used as fronts for laundering corrupt proceeds.",
+      "style": "NGO-structure, laundering-focused, investigative, entity-analysis, forensic"
+    },
+    {
+      "expertise": "Patterns of contract renegotiations and amendments",
+      "perspective": "Flags frequent or suspicious contract modifications as potential indicators of corrupt influence or kickbacks.",
+      "style": "contractual, renegotiation-focused, forensic, anomaly-detecting, investigative"
+    },
+    {
+      "expertise": "Employee turnover spikes in compliance departments",
+      "perspective": "Considers sudden increases in compliance staff departures as a signal of internal corruption or governance breakdown.",
+      "style": "operational, compliance-focused, turnover-analysis, governance-sensitive, investigative"
+    },
+    {
+      "expertise": "Unusual travel and hospitality expenses linked to officials",
+      "perspective": "Analyzes extravagant or unexplained travel and hospitality spending as potential bribery or influence attempts.",
+      "style": "expense-focused, hospitality-analysis, forensic, suspicious, detail-oriented"
+    },
+    {
+      "expertise": "Patterns of favorable regulatory rulings linked to corporate lobbying",
+      "perspective": "Correlates favorable regulatory outcomes with lobbying intensity to assess corruption risk in corporate-government interactions.",
+      "style": "regulatory-analysis, lobbying-correlated, outcome-focused, investigative, data-driven"
+    },
+    {
+      "expertise": "Use of digital communication obfuscation in corrupt dealings",
+      "perspective": "Detects risk by identifying encrypted or deleted communication patterns that suggest concealment of corrupt activities.",
+      "style": "technical, communication-forensic, obfuscation-detecting, investigative, cybersecurity-aware"
+    },
+    {
+      "expertise": "Influence of family ties and nepotism in corporate appointments",
+      "perspective": "Evaluates corruption risk by mapping nepotistic appointments and family connections within corporate governance structures.",
+      "style": "relationship-mapping, nepotism-focused, governance-analysis, investigative, social-network-aware"
+    }
+  ],
+  "organized_crime": [
+    {
+      "expertise": "Illicit trade financing and commodity smuggling",
+      "perspective": "Prioritizes detection of unusual commodity shipment patterns and discrepancies in trade documentation as indicators of organized crime involvement.",
+      "style": "trade-focused, investigative, detail-oriented, smuggling-aware, forensic"
+    },
+    {
+      "expertise": "Cryptocurrency mixing and tumbling services analysis",
+      "perspective": "Emphasizes tracing obfuscated cryptocurrency flows through mixing services to identify laundering networks linked to organized crime.",
+      "style": "blockchain-specialist, technical, obfuscation-focused, crypto-forensic, pattern-sensitive"
+    },
+    {
+      "expertise": "Human trafficking financial network disruption",
+      "perspective": "Focuses on identifying financial transactions linked to human trafficking rings by analyzing payment routes and beneficiary anomalies.",
+      "style": "human-rights-driven, investigative, victim-centric, forensic, ethical"
+    },
+    {
+      "expertise": "Counterfeit currency circulation and detection",
+      "perspective": "Uses thresholds on counterfeit currency reports and unusual cash deposit patterns to assess risk of organized crime facilitation.",
+      "style": "currency-specialist, forensic, cash-flow-focused, detail-driven, investigative"
+    },
+    {
+      "expertise": "Illegal wildlife trade financial flows",
+      "perspective": "Tracks suspicious payments and shell entities connected to wildlife trafficking to evaluate organized crime risk in banking partners.",
+      "style": "environmental-justice, investigative, niche-market-aware, forensic, sustainability-conscious"
+    },
+    {
+      "expertise": "Dark web marketplace financial linkages",
+      "perspective": "Analyzes payment trails and cryptocurrency exchanges associated with dark web marketplaces to flag organized crime involvement.",
+      "style": "cyber-specialist, dark-web-focused, technical, investigative, anonymity-aware"
+    },
+    {
+      "expertise": "Loan sharking and predatory lending schemes",
+      "perspective": "Identifies patterns of usurious interest rates and informal lending networks to detect organized crime infiltration in financial services.",
+      "style": "consumer-protection, investigative, pattern-sensitive, financial-abuse-aware, detail-oriented"
+    },
+    {
+      "expertise": "Smuggling of cultural artifacts and illicit art trade",
+      "perspective": "Monitors transactions involving high-value art and artifacts with provenance gaps as indicators of organized crime money laundering.",
+      "style": "art-market-expert, forensic, provenance-focused, investigative, niche-specialist"
+    },
+    {
+      "expertise": "Synthetic identity fraud in corporate accounts",
+      "perspective": "Focuses on detection of fabricated identities and layered account structures to uncover organized crime money laundering schemes.",
+      "style": "identity-forensics, data-driven, investigative, synthetic-focused, detail-oriented"
+    },
+    {
+      "expertise": "Cyber-enabled ransomware payment tracing",
+      "perspective": "Prioritizes analysis of ransomware payment flows and associated cryptocurrency wallets to link organized crime groups to financial institutions.",
+      "style": "cybersecurity-expert, forensic, ransomware-focused, technical, threat-aware"
+    },
+    {
+      "expertise": "Illegal arms trade financial channels",
+      "perspective": "Examines suspicious transactions linked to arms dealers and intermediaries to assess organized crime risk in banking relationships.",
+      "style": "defense-sector-aware, investigative, forensic, risk-sensitive, detail-driven"
+    },
+    {
+      "expertise": "Pharmaceutical counterfeit supply chain finance",
+      "perspective": "Tracks financial flows supporting counterfeit drug manufacturing and distribution as a marker of organized crime involvement.",
+      "style": "healthcare-specialist, investigative, supply-chain-aware, forensic, detail-oriented"
+    },
+    {
+      "expertise": "Environmental crime financing and pollution cover-ups",
+      "perspective": "Identifies financial transactions linked to illegal waste disposal and environmental damage concealment as organized crime indicators.",
+      "style": "environmental-activist, investigative, forensic, risk-focused, sustainability-driven"
+    },
+    {
+      "expertise": "Illegal gambling and betting syndicate financial analysis",
+      "perspective": "Analyzes betting patterns and cash flows to detect organized crime participation in illicit gambling operations.",
+      "style": "gaming-industry-aware, investigative, pattern-sensitive, forensic, detail-driven"
+    },
+    {
+      "expertise": "Counterfeit goods distribution network finance",
+      "perspective": "Focuses on tracing payments and shell companies involved in the distribution of counterfeit consumer products linked to organized crime.",
+      "style": "consumer-goods-expert, investigative, forensic, supply-chain-focused, detail-oriented"
+    },
+    {
+      "expertise": "Maritime smuggling and port corruption finance",
+      "perspective": "Examines financial irregularities related to port operations and shipping logistics as indicators of organized crime activity.",
+      "style": "maritime-specialist, investigative, forensic, logistics-aware, corruption-sensitive"
+    },
+    {
+      "expertise": "Illegal mining and resource extraction financing",
+      "perspective": "Tracks financial flows supporting unauthorized mining operations to evaluate organized crime risk in corporate partnerships.",
+      "style": "natural-resources-expert, investigative, forensic, environmental-risk-aware, detail-driven"
+    },
+    {
+      "expertise": "Sports betting fraud and match-fixing financial trails",
+      "perspective": "Identifies suspicious betting transactions and payment anomalies linked to match-fixing and organized crime involvement.",
+      "style": "sports-industry-aware, investigative, forensic, pattern-sensitive, detail-oriented"
+    },
+    {
+      "expertise": "Money mule network identification and disruption",
+      "perspective": "Focuses on detecting patterns of repeated small-value transfers and account layering indicative of money mule operations supporting organized crime.",
+      "style": "transactional-patterns, investigative, forensic, network-analysis, detail-focused"
+    },
+    {
+      "expertise": "Cryptocurrency exchange compliance and illicit fund flow",
+      "perspective": "Evaluates exchange compliance failures and unusual withdrawal patterns as indicators of organized crime laundering through crypto platforms.",
+      "style": "crypto-regulatory, compliance-focused, investigative, forensic, risk-sensitive"
+    }
+  ],
+  "sanctions": [
+    {
+      "expertise": "Sanctions-related export control violations",
+      "perspective": "Prioritizes detection of unauthorized dual-use technology transfers and embargo breaches involving sensitive goods.",
+      "style": "technical, export-focused, regulatory-aware, detail-driven, investigative"
+    },
+    {
+      "expertise": "Sanctions screening system efficacy and gaps",
+      "perspective": "Evaluates the robustness of automated sanctions screening tools, emphasizing false negatives and alert fatigue metrics.",
+      "style": "systematic, technology-centric, risk-averse, process-analytical, screening-specialist"
+    },
+    {
+      "expertise": "Sanctions circumvention via trade finance instruments",
+      "perspective": "Focuses on irregularities in letters of credit and trade finance documentation that suggest sanctions evasion.",
+      "style": "trade-finance-expert, document-analytic, skeptical, detail-oriented, forensic"
+    },
+    {
+      "expertise": "Use of front companies in sanctioned jurisdictions",
+      "perspective": "Identifies red flags in corporate registrations and ownership that indicate front companies operating in embargoed regions.",
+      "style": "entity-structure, investigative, jurisdiction-sensitive, ownership-focused, skeptical"
+    },
+    {
+      "expertise": "Sanctions exposure through correspondent banking relationships",
+      "perspective": "Assesses risk by analyzing indirect exposure via correspondent banks servicing sanctioned entities or regions.",
+      "style": "banking-network, correspondent-focused, risk-mapping, analytical, exposure-aware"
+    },
+    {
+      "expertise": "Patterns of sanctioned entity name variations and misspellings",
+      "perspective": "Detects evasive tactics through analysis of name variants and typographical manipulations in transaction data.",
+      "style": "linguistic-pattern, data-driven, detail-sensitive, evasive-tactics-aware, forensic"
+    },
+    {
+      "expertise": "Sanctions impact on supply chain disruptions and compliance",
+      "perspective": "Evaluates how sanctions affect supply chain integrity and the risk of indirect involvement through suppliers.",
+      "style": "supply-chain, compliance-focused, operational-risk, disruption-aware, analytical"
+    },
+    {
+      "expertise": "Sanctions-related insider collusion and employee misconduct",
+      "perspective": "Highlights internal fraud indicators and whistleblower reports pointing to employee complicity in sanctions breaches.",
+      "style": "internal-investigation, whistleblower-sensitive, ethical, forensic, misconduct-focused"
+    },
+    {
+      "expertise": "Sanctions evasion via digital asset transfers and NFTs",
+      "perspective": "Analyzes blockchain transactions involving digital assets to uncover sanctions evasion through emerging technologies.",
+      "style": "blockchain-specialist, digital-assets, forensic, innovative, crypto-analytical"
+    },
+    {
+      "expertise": "Sanctions risk in mergers and acquisitions involving flagged entities",
+      "perspective": "Scrutinizes deal structures and due diligence gaps that expose acquirers to sanctioned parties or jurisdictions.",
+      "style": "M&A-focused, due-diligence, deal-structuring, risk-sensitive, investigative"
+    },
+    {
+      "expertise": "Sanctions breach through humanitarian aid diversion",
+      "perspective": "Examines suspicious routing of aid funds and goods that may be exploited to bypass sanctions for illicit purposes.",
+      "style": "humanitarian-focused, forensic, ethical, diversion-aware, investigative"
+    },
+    {
+      "expertise": "Sanctions compliance failures in fintech platforms",
+      "perspective": "Assesses fintech onboarding and transaction monitoring weaknesses that facilitate sanctions violations.",
+      "style": "fintech-specialist, compliance-driven, technology-aware, innovative, risk-focused"
+    },
+    {
+      "expertise": "Sanctions evasion via complex derivative instruments",
+      "perspective": "Investigates use of derivatives and structured products to mask sanctioned party involvement and financial flows.",
+      "style": "derivatives-expert, financial-innovation, forensic, complexity-aware, skeptical"
+    },
+    {
+      "expertise": "Sanctions risk from politically exposed persons (PEPs) in corporate boards",
+      "perspective": "Prioritizes identification of PEPs linked to sanctioned regimes and their influence on corporate decision-making.",
+      "style": "PEP-focused, governance-aware, political-risk, investigative, transparency-driven"
+    },
+    {
+      "expertise": "Sanctions-related cybercrime and ransomware payment channels",
+      "perspective": "Tracks illicit ransomware payments that may involve sanctioned entities or jurisdictions as intermediaries.",
+      "style": "cybercrime-specialist, ransomware-focused, forensic, threat-aware, investigative"
+    },
+    {
+      "expertise": "Sanctions evasion through barter and countertrade schemes",
+      "perspective": "Detects non-monetary trade arrangements used to circumvent financial sanctions and conceal prohibited transactions.",
+      "style": "trade-specialist, barter-focused, forensic, unconventional, investigative"
+    },
+    {
+      "expertise": "Sanctions exposure via offshore wealth management and trusts",
+      "perspective": "Analyzes offshore structures and trust arrangements that obscure sanctioned beneficiary involvement.",
+      "style": "offshore-expert, wealth-structuring, opacity-focused, forensic, investigative"
+    },
+    {
+      "expertise": "Sanctions risk from non-financial service providers",
+      "perspective": "Evaluates risk posed by logistics, shipping, and insurance firms facilitating sanctioned trade flows.",
+      "style": "logistics-specialist, service-provider-focused, operational-risk, investigative, detail-oriented"
+    },
+    {
+      "expertise": "Sanctions breach through charitable organizations and NGOs",
+      "perspective": "Investigates misuse of charitable entities as conduits for funds or goods to sanctioned parties.",
+      "style": "charity-focused, forensic, ethical, conduit-analysis, investigative"
+    },
+    {
+      "expertise": "Sanctions evasion via emerging market informal financial systems",
+      "perspective": "Studies informal value transfer systems and hawala networks that bypass formal sanctions controls.",
+      "style": "informal-finance, emerging-markets, investigative, network-analysis, culturally-aware"
+    }
+  ],
+  "legal": [
+    {
+      "expertise": "Legal contract ambiguity and loophole exploitation",
+      "perspective": "Focuses on identifying vague contractual language and frequent amendments that signal potential legal risk and deliberate avoidance of compliance obligations.",
+      "style": "precise, language-focused, skeptical, legal-analytical, detail-driven, cautious"
+    },
+    {
+      "expertise": "Patterns of repeated class-action lawsuits against corporations",
+      "perspective": "Prioritizes frequency and outcomes of class-action suits as indicators of systemic legal vulnerabilities and reputational damage potential.",
+      "style": "litigation-focused, trend-analytic, precedent-aware, narrative-driven, critical, outcome-sensitive"
+    },
+    {
+      "expertise": "Corporate compliance with international anti-corruption conventions",
+      "perspective": "Evaluates adherence to global anti-corruption treaties and flags discrepancies between public commitments and actual practices as risk indicators.",
+      "style": "treaty-aware, compliance-focused, comparative, investigative, global-context, policy-driven"
+    },
+    {
+      "expertise": "Use of aggressive tax avoidance legal structures",
+      "perspective": "Assesses complexity and opacity of tax planning arrangements that, while legal, may expose companies to regulatory scrutiny and reputational harm.",
+      "style": "tax-structural, forensic, complexity-sensitive, skeptical, financial-legal, analytical"
+    },
+    {
+      "expertise": "Frequency and nature of regulatory consent orders",
+      "perspective": "Weights unresolved or repeated consent orders more heavily than isolated remedial plans to assess ongoing regulatory risk exposure.",
+      "style": "regulatory-focused, enforcement-aware, pattern-sensitive, cautious, compliance-centric, precedent-driven"
+    },
+    {
+      "expertise": "Legal risks from intellectual property infringement claims",
+      "perspective": "Analyzes volume and validity of IP infringement allegations as indicators of operational risk and potential costly litigation.",
+      "style": "IP-specialist, technical, evidence-driven, skeptical, legal-risk, detail-oriented"
+    },
+    {
+      "expertise": "Impact of whistleblower lawsuits on corporate governance",
+      "perspective": "Considers whistleblower-initiated legal actions as a proxy for internal governance weaknesses and cultural risk.",
+      "style": "whistleblower-sensitive, governance-focused, investigative, ethical, narrative-driven, risk-aware"
+    },
+    {
+      "expertise": "Legal exposure from environmental regulation violations",
+      "perspective": "Focuses on documented breaches of environmental laws and related fines as indicators of compliance failure and operational risk.",
+      "style": "environmental-law, regulatory, forensic, sustainability-aware, compliance-driven, detail-focused"
+    },
+    {
+      "expertise": "Patterns of non-compliance in labor law and worker rights",
+      "perspective": "Evaluates recurring labor disputes and legal penalties as signals of systemic HR and compliance risks.",
+      "style": "labor-law, human-rights-aware, investigative, compliance-sensitive, ethical, operationally-focused"
+    },
+    {
+      "expertise": "Use of arbitration clauses to limit legal accountability",
+      "perspective": "Examines prevalence and enforcement of arbitration agreements that may shield companies from public legal scrutiny and increase hidden risks.",
+      "style": "contractual, legal-strategy, skeptical, detail-oriented, risk-aware, investigative"
+    },
+    {
+      "expertise": "Legal implications of data privacy violations and breaches",
+      "perspective": "Assesses frequency and severity of data protection infractions and associated penalties as indicators of legal and reputational risk.",
+      "style": "data-privacy, forensic, regulatory-aware, technical, cautious, investigative"
+    },
+    {
+      "expertise": "Patterns of legal settlements with nondisclosure agreements",
+      "perspective": "Focuses on volume and secrecy of settlements to infer potential hidden liabilities and risk concealment practices.",
+      "style": "settlement-focused, secrecy-aware, investigative, cautious, legal-risk, detail-driven"
+    },
+    {
+      "expertise": "Legal challenges arising from antitrust and competition law breaches",
+      "perspective": "Analyzes history of antitrust investigations and rulings to assess risk of market manipulation and regulatory penalties.",
+      "style": "antitrust-specialist, regulatory, forensic, competitive-analysis, skeptical, evidence-based"
+    },
+    {
+      "expertise": "Legal risk from cross-border jurisdictional conflicts",
+      "perspective": "Evaluates exposure to multi-jurisdictional legal disputes and conflicting regulations as indicators of complex compliance challenges.",
+      "style": "jurisdictional, international-law, complexity-aware, investigative, cautious, detail-focused"
+    },
+    {
+      "expertise": "Legal scrutiny of executive indemnification and liability clauses",
+      "perspective": "Assesses contractual protections for executives that may signal risk-shifting and potential governance weaknesses.",
+      "style": "corporate-governance, legal-contract, skeptical, analytical, detail-oriented, risk-sensitive"
+    },
+    {
+      "expertise": "Patterns of legal actions related to consumer protection violations",
+      "perspective": "Monitors frequency and outcomes of consumer lawsuits as indicators of product risk and regulatory non-compliance.",
+      "style": "consumer-law, investigative, regulatory-aware, skeptical, detail-driven, outcome-focused"
+    },
+    {
+      "expertise": "Legal exposure from securities law violations and disclosures",
+      "perspective": "Focuses on accuracy and completeness of disclosures and history of securities litigation to assess financial legal risk.",
+      "style": "securities-law, forensic, compliance-focused, analytical, skeptical, detail-oriented"
+    },
+    {
+      "expertise": "Legal risks linked to corporate whistleblower retaliation claims",
+      "perspective": "Prioritizes cases alleging retaliation as indicators of toxic culture and governance failures increasing legal vulnerability.",
+      "style": "ethical, whistleblower-protection, investigative, governance-focused, narrative-driven, cautious"
+    },
+    {
+      "expertise": "Legal consequences of failure to comply with anti-money laundering statutes",
+      "perspective": "Evaluates documented AML compliance failures and resulting legal actions as critical risk thresholds for partnership assessment.",
+      "style": "AML-legal, forensic, compliance-driven, regulatory-aware, investigative, risk-sensitive"
+    },
+    {
+      "expertise": "Legal risks from failure to disclose material adverse events",
+      "perspective": "Assesses timeliness and completeness of disclosures related to adverse events as indicators of transparency and legal exposure.",
+      "style": "disclosure-focused, forensic, skeptical, regulatory, detail-driven, investigative"
+    }
+  ]
+}
