@@ -53,6 +53,17 @@
  #     IDNO column), no OPENSANC_DATA. A same-day rerun replaces rows (DB user needs DELETE rights).
  #   - preflight_check_api_keys removed.
  #
+ # QUESTIONS FOR DEVOPS (please answer before the first run)
+ #   1. Tavily through APISIX: what is the base URL? The code adds /search and /extract to it.
+ #      Are both routes set up under that one base URL?
+ #   2. OpenAI through APISIX: is /embeddings routed too, not only /chat/completions?
+ #      Models used: gpt-4.1, gpt-4.1-mini, text-embedding-3-large.
+ #   3. Is the key sent in the "apikey" header on the Tavily route as well as on OpenAI? Is that key
+ #      the APISIX consumer key (the gateway adds the real vendor key) or the vendor key itself?
+ #   4. SerpAPI does NOT go through the gateway. Can the Airflow worker reach https://serpapi.com directly?
+ #   5. Task duration: about 15 min per company. What execution_timeout does the DAG task have,
+ #      and is it enough for the daily number of companies?
+ #
  # HOW THIS .py IS PRODUCED (the notebook 4_11_3_research_assistant.ipynb is the source)
  #   jupyter nbconvert --to script 4_11_3_research_assistant.ipynb --output step_2_osint_agent_aml_summary
  #   then in the .py change the import lines "from agent_components." to "from .agent_components."
@@ -80,7 +91,7 @@
  #   - agent_components/dictionary.py             ~1.6k topic keywords (financial / corruption /
  #                                                organized_crime × en/ro/ru) for filter_key_terms_node
  #   - agent_components/utils.py                  APIVault + small text helpers
- #   - agent_components/agents_personas.json      20 pre-baked journalist personas per topic
+ #   - agent_components/agents_personas.json      NOT used any more (personas removed)
  #   - agent_components/agents_hyde_articles.json ~100 pre-baked HyDe reference articles per topic
  #
  # Python: 3.10+ (Literal / Annotated / get_args usage from typing)
@@ -92,23 +103,22 @@
  # ──────────────────────────────────────────────────────────────
  #
  # EXTERNAL APIs
- #   1. OpenAI API                  https://api.openai.com
+ #   1. OpenAI API                  through APISIX (openai_url); openai_url=None -> https://api.openai.com
  #        - gpt-4.1                 URL summarisation, evidence-claim consolidation,
  #                                  reflection, final risk assessment
  #        - gpt-4.1-mini            tool-selection, search-payload generation,
  #                                  name-variation, expert/HyDe generation
- #        - text-embedding-3-small  embedding_main (reserved)
  #        - text-embedding-3-large  HyDe cosine-similarity scoring (3072-dim)
- #        Auth: Bearer,             env var OPENAI_API_KEY
+ #        Auth: openai_api_key (also sent as "apikey" header for APISIX)
  #
- #   2. Tavily API                  https://api.tavily.com
+ #   2. Tavily API                  through APISIX (tavily_url); tavily_url=None -> https://api.tavily.com
  #        - /search                 multi-language adverse-media search (advanced depth)
  #        - /extract                page content extraction, batches of 20 URLs
- #        Auth: api_key argument,   env var TAVILY_API_KEY
+ #        Auth: tavily_api_key (also sent as "apikey" header for APISIX)
  #
- #   3. SerpAPI (Google Search)     https://serpapi.com
+ #   3. SerpAPI (Google Search)     https://serpapi.com  (direct, NOT through the gateway)
  #        - /search                 Google adverse-media search with hl/lr language scoping
- #        Auth: api_key param,      env var SERP_GOOGLE_API_KEY
+ #        Auth: serp_api_key, sent as the api_key query parameter
  #
  # INPUT (passed in, not read from files)
  #   - contragents: rows [{"ID": ..., "IDENTIFYCODE": ..., "SNAME": ...}] given to run_osint_agent()
@@ -116,7 +126,7 @@
  #     by the caller (read with make_engine + load_contragents from this file, see HOW TO RUN FROM AIRFLOW)
  #
  # LOCAL FILES (must exist next to this script)
- #   - .env                                    secrets, see env vars listed above
+ #   - .env                                    local runs only; under Airflow secrets come as arguments
  #   - agent_components/                       package described in the header above
  #
  # OUTPUTS WRITTEN BY THIS SCRIPT
