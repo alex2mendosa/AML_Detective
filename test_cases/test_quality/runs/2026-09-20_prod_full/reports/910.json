@@ -1,0 +1,16 @@
+{
+  "contragentid": 910,
+  "idno": "QC-TEST-10",
+  "arcdate": "2026-09-19",
+  "runtime": "2026-09-20 10:58:00",
+  "aml_report": {
+    "rezumat_analiza": "Nu au fost identificate informații de presă negativă pentru Lukoil-Moldova S.R.L. în sursele consultate. Entitatea nu figurează în articole, registre sau dosare publice cu privire la încălcări de conformitate, investigații sau sancțiuni. Nu există date privind amenzi, penalități sau alte acțiuni de reglementare care să implice Lukoil-Moldova S.R.L. la nivel național sau internațional. \n\nDin lipsa oricăror mențiuni negative, nu se poate determina existența unor riscuri de conformitate semnificative sau a unor probleme sistemice. Evaluarea se limitează la absența totală a suspiciunilor sau acuzațiilor în spațiul public, ceea ce sugerează un profil de risc scăzut. \n\nGeografic, nu au fost identificate incidente în nicio jurisdicție. Temporal, nu există nicio referință la posibile încălcări sau investigații, indiferent de perioadă. \n\nÎn concluzie, pe baza surselor publice consultate, Lukoil-Moldova S.R.L. prezintă un risc de conformitate foarte redus, fără indicii de probleme recente sau istorice.",
+    "scor_risc": 0,
+    "analiza_suspiciuni": "Nu au fost identificate suspiciuni.",
+    "situatie_actuala": "Nu au fost identificate în sursele consultate investigații, sancțiuni sau acțiuni de reglementare la data de 2026-09-20.",
+    "traiectorie": "UNKNOWN — date insuficiente pentru evaluare.",
+    "recomandare_relatie_afaceri": "CONTINUE — nu există motive de îngrijorare identificate în sursele publice consultate.",
+    "concluzie_finala": "Nu au fost identificate informații adverse despre Lukoil-Moldova S.R.L.. Recomandăm monitorizare standard și revizuire după 12 luni. Riscurile critice de urmărit sunt: apariția unor investigații noi, modificări legislative relevante și orice raportare negativă viitoare. Recomandarea s-ar putea schimba doar în cazul apariției unor date noi privind încălcări sau investigații.",
+    "rezultate_cautare": []
+  }
+}

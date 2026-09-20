@@ -1,0 +1,479 @@
+2026-09-20 13:09:18 | INFO     | aml_research | Logger initialized — writing to D:\MICB_Projects\8_aml_detective\test_cases\runs\2026-09-20_prod_subset\aml_research.log
+2026-09-20 13:09:18 | INFO     | aml_research | New batch run started
+2026-09-20 13:09:18 | INFO     | aml_research | [BATCH] Built test_companies: 1 of 1 rows
+2026-09-20 13:09:18 | INFO     | aml_research | ============================================================
+2026-09-20 13:09:18 | INFO     | aml_research | [BATCH] Starting: LUKOIL (IDNO=1027700035769, contragent ID=901)
+2026-09-20 13:09:18 | INFO     | aml_research | ============================================================
+2026-09-20 13:09:19 | INFO     | aml_research | [generate_name_regex] LUKOIL → 2 variants: ['LUKOIL', 'ЛУКОИЛ']
+2026-09-20 13:09:19 | INFO     | aml_research | [scenario_selection_node] Raw links: 0
+2026-09-20 13:09:19 | INFO     | aml_research | [scenario_selection_node] Selected: tool_google_search | Used: []
+2026-09-20 13:09:19 | INFO     | aml_research | [route_trigger_search] Tool scenario 'tool_google_search' → search_payload_generate_node
+2026-09-20 13:09:19 | INFO     | aml_research | [search_payload_generate_node] Scenario: tool_google_search | Entity: LUKOIL | Built 18 tool calls in code
+2026-09-20 13:09:19 | INFO     | aml_research | [tool_execute_search_node] Scenario: tool_google_search | Raw links so far: 0
+2026-09-20 13:09:40 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "LUKOIL" OR "ЛУКОИЛ" ("money laundering" OR fraud OR "tax evasion" OR embezzleme
+2026-09-20 13:09:40 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "LUKOIL" OR "ЛУКОИЛ" ("money laundering" OR fraud OR "tax evasion" OR embezzleme
+2026-09-20 13:09:40 | DEBUG    | aml_research | [tool_execute_search_node] Query 1 | Raw: 0 → Kept: 0 | lang: en
+2026-09-20 13:09:42 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" ("spălare de bani" OR fraudă OR "evaziune fiscală" OR delap
+2026-09-20 13:09:42 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.facebook.com
+2026-09-20 13:09:42 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.reddit.com
+2026-09-20 13:09:42 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:09:42 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.facebook.com
+2026-09-20 13:09:42 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.facebook.com
+2026-09-20 13:09:42 | DEBUG    | aml_research | [tool_execute_search_node] Query 2 | Raw: 7 → Kept: 2 | lang: ro
+2026-09-20 13:09:44 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" ("отмывание денег" OR мошенничество OR "уклонение от налого
+2026-09-20 13:09:44 | DEBUG    | aml_research | [tool_execute_search_node] Query 3 | Raw: 7 → Kept: 7 | lang: ru
+2026-09-20 13:09:46 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "LUKOIL" OR "ЛУКОИЛ" (corruption OR bribery OR "influence peddling" OR kickback 
+2026-09-20 13:09:46 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "LUKOIL" OR "ЛУКОИЛ" (corruption OR bribery OR "influence peddling" OR kickback 
+2026-09-20 13:09:46 | DEBUG    | aml_research | [tool_execute_search_node] Query 4 | Raw: 0 → Kept: 0 | lang: en
+2026-09-20 13:09:48 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (corupție OR mită OR "trafic de influență" OR "îmbogățire i
+2026-09-20 13:09:48 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.instagram.com
+2026-09-20 13:09:48 | DEBUG    | aml_research | [tool_execute_search_node] Query 5 | Raw: 7 → Kept: 6 | lang: ro
+2026-09-20 13:09:49 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (коррупция OR взятка OR "злоупотребление влиянием" OR откат
+2026-09-20 13:09:49 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.instagram.com
+2026-09-20 13:09:49 | DEBUG    | aml_research | [tool_execute_search_node] Query 6 | Raw: 7 → Kept: 6 | lang: ru
+2026-09-20 13:09:51 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "LUKOIL" OR "ЛУКОИЛ" ("organized crime" OR mafia OR cartel OR smuggling OR traff
+2026-09-20 13:09:51 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "LUKOIL" OR "ЛУКОИЛ" ("organized crime" OR mafia OR cartel OR smuggling OR traff
+2026-09-20 13:09:51 | DEBUG    | aml_research | [tool_execute_search_node] Query 7 | Raw: 0 → Kept: 0 | lang: en
+2026-09-20 13:10:04 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" ("crimă organizată" OR mafie OR cartel OR contrabandă OR tr
+2026-09-20 13:10:04 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:04 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:04 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:04 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.facebook.com
+2026-09-20 13:10:04 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:04 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:04 | DEBUG    | aml_research | [tool_execute_search_node] Query 8 | Raw: 7 → Kept: 1 | lang: ro
+2026-09-20 13:10:06 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" ("организованная преступность" OR мафия OR картель OR контр
+2026-09-20 13:10:06 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:06 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:06 | DEBUG    | aml_research | [tool_execute_search_node] Query 9 | Raw: 7 → Kept: 5 | lang: ru
+2026-09-20 13:10:12 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (sanctions OR blacklist OR OFAC OR penalty OR "regulatory a
+2026-09-20 13:10:12 | DEBUG    | aml_research | [tool_execute_search_node] Query 10 | Raw: 7 → Kept: 7 | lang: en
+2026-09-20 13:10:14 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (sancțiuni OR "listă neagră" OR penalitate OR "acțiune regu
+2026-09-20 13:10:14 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.facebook.com
+2026-09-20 13:10:14 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.reddit.com
+2026-09-20 13:10:14 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:14 | DEBUG    | aml_research | [tool_execute_search_node] Query 11 | Raw: 7 → Kept: 4 | lang: ro
+2026-09-20 13:10:16 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (санкции OR "чёрный список" OR штраф OR "регуляторные меры"
+2026-09-20 13:10:16 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:16 | DEBUG    | aml_research | [tool_execute_search_node] Query 12 | Raw: 7 → Kept: 6 | lang: ru
+2026-09-20 13:10:18 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (lawsuit OR indictment OR arrest OR conviction OR "criminal
+2026-09-20 13:10:18 | DEBUG    | aml_research | [tool_execute_search_node] Query 13 | Raw: 7 → Kept: 7 | lang: en
+2026-09-20 13:10:31 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" ("dosar penal" OR arest OR condamnare OR "acuzații penale" 
+2026-09-20 13:10:31 | DEBUG    | aml_research | [tool_execute_search_node] Query 14 | Raw: 7 → Kept: 7 | lang: ro
+2026-09-20 13:10:42 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" ("судебный иск" OR "обвинительное заключение" OR арест OR о
+2026-09-20 13:10:42 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:42 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://fesenkolaw.com/ru/blog2/sankczii-protiv-lukojla-ofac-v-chetvertyj-raz-prodlevaet-liczenziyu-na-peregovory-o-prodazhe-lukoil-international-gmbh
+2026-09-20 13:10:42 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:42 | DEBUG    | aml_research | [tool_execute_search_node] Query 15 | Raw: 7 → Kept: 4 | lang: ru
+2026-09-20 13:10:43 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (scandal OR controversy OR misconduct OR whistleblower OR "
+2026-09-20 13:10:43 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:10:43 | DEBUG    | aml_research | [tool_execute_search_node] Query 16 | Raw: 7 → Kept: 6 | lang: en
+2026-09-20 13:11:15 | WARNING  | aml_research | [google_search] Attempt 1/2 failed: request failed: ReadTimeout: HTTPSConnectionPool(host='serpapi.com', port=443): Read timed out. (read timeout=30) | retrying in 5s | query: "LUKOIL" OR "ЛУКОИЛ" (scandal OR controversă OR "conduită necorespunzătoare" OR 
+2026-09-20 13:11:21 | INFO     | aml_research | [google_search] Succeeded on attempt 2/2 | query: "LUKOIL" OR "ЛУКОИЛ" (scandal OR controversă OR "conduită necorespunzătoare" OR 
+2026-09-20 13:11:21 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (scandal OR controversă OR "conduită necorespunzătoare" OR 
+2026-09-20 13:11:21 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.instagram.com
+2026-09-20 13:11:21 | DEBUG    | aml_research | [tool_execute_search_node] Query 17 | Raw: 7 → Kept: 6 | lang: ro
+2026-09-20 13:11:23 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 7 | query: "LUKOIL" OR "ЛУКОИЛ" (скандал OR спор OR нарушение OR информатор OR "негативные 
+2026-09-20 13:11:23 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:11:23 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:11:23 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 13:11:23 | DEBUG    | aml_research | [tool_execute_search_node] Query 18 | Raw: 7 → Kept: 4 | lang: ru
+2026-09-20 13:11:24 | INFO     | aml_research | [tool_execute_search_node] Done | New unique links: 78 | By engine: {'tool_google_search': 78} | Total queries: 18
+2026-09-20 13:11:24 | INFO     | aml_research | [extract_content_node] Scenario: tool_google_search | Total raw: 78 | To process: 78 | Skipped (other scenarios): 0
+2026-09-20 13:11:24 | INFO     | aml_research | [tavily_content_extractor] Starting extraction | URLs: 78 | Batches: 4 | depth: advanced
+2026-09-20 13:11:24 | INFO     | aml_research | [tavily_content_extractor] Batch 1/4 | URLs: 20
+2026-09-20 13:11:50 | WARNING  | aml_research | [tavily_content_extractor] Batch 1/4 — Tavily could not extract 3 URLs: ['https://www.forbes.ru/news/295863-rumyniya-predyavila-dochke', 'https://www.forbes.ru/news/279893-lukoil-reshil-suditsya-s-k', 'https://dzen.ru/a/ap_eY6KBtmtjIQRW']
+2026-09-20 13:11:50 | DEBUG    | aml_research | [tavily_content_extractor] Batch 1 extracted 17 results
+2026-09-20 13:11:50 | INFO     | aml_research | [tavily_content_extractor] Batch 2/4 | URLs: 20
+2026-09-20 13:12:02 | WARNING  | aml_research | [tavily_content_extractor] Batch 2/4 — Tavily could not extract 4 URLs: ['https://www.consilium.europa.eu/ro/policies/sanctions-agains', 'https://www.consilium.europa.eu/ro/policies/sanctions-differ', 'https://www.spglobal.com/energy/en/news-research/latest-news', 'https://rumafia.io/news/tag/Lukoil']
+2026-09-20 13:12:02 | DEBUG    | aml_research | [tavily_content_extractor] Batch 2 extracted 16 results
+2026-09-20 13:12:02 | INFO     | aml_research | [tavily_content_extractor] Batch 3/4 | URLs: 20
+2026-09-20 13:12:18 | WARNING  | aml_research | [tavily_content_extractor] Batch 3/4 — Tavily could not extract 2 URLs: ['https://www.cisg.info/wk-termin.php?id=958', 'https://www.govinfo.gov/app/details/USCOURTS-flsd-1_18-cv-20']
+2026-09-20 13:12:18 | DEBUG    | aml_research | [tavily_content_extractor] Batch 3 extracted 18 results
+2026-09-20 13:12:18 | INFO     | aml_research | [tavily_content_extractor] Batch 4/4 | URLs: 18
+2026-09-20 13:12:31 | DEBUG    | aml_research | [tavily_content_extractor] Batch 4 extracted 18 results
+2026-09-20 13:12:31 | INFO     | aml_research | [tavily_content_extractor] Entity filter | Extracted: 69 | Matched: 59 | Dropped: 10
+2026-09-20 13:12:31 | INFO     | aml_research | [tavily_content_extractor] Done | Returned 59 enriched LinkCollections from 78 input
+2026-09-20 13:12:31 | INFO     | aml_research | [extract_content_node] Completed | Input: 78 | Entity-filtered: 59 | Dropped: 19
+2026-09-20 13:12:44 | INFO     | aml_research | [filter_key_terms_node] Scenario: tool_google_search | Patterns: 1674 | Input: 59 | Passed: 47 | Filtered out: 12
+2026-09-20 13:12:44 | INFO     | aml_research | [route_expert_generation] Routing to Expert Generation
+2026-09-20 13:12:44 | INFO     | aml_research | [call_subgraph] Executing | Raw links: 78
+2026-09-20 13:12:44 | INFO     | aml_research | [generate_hyde_document_node] Loaded 100 articles for 'LUKOIL'
+2026-09-20 13:12:44 | INFO     | aml_research | [call_subgraph] Done | Articles: 100
+2026-09-20 13:12:44 | INFO     | aml_research | [filter_semantic_similarity_node] Raw links: 78
+2026-09-20 13:13:25 | INFO     | aml_research | [filter_semantic_similarity_node] Scored: 47 | Above threshold (0.45): 46 | Returned (TOP_K=30): 30
+2026-09-20 13:13:25 | INFO     | aml_research | [filter_semantic_similarity_node] Score range: 0.53 - 0.74 | Top 5: ['https://www.acerislaw.com › Ne', 'https://ofac.treasury.gov › fa', 'https://www.business-humanrigh', 'https://lukoil.ru › Sustainabi', 'https://interfax.com › newsroo']
+2026-09-20 13:13:25 | INFO     | aml_research | [filter_semantic_similarity_node] Completed
+2026-09-20 13:13:25 | INFO     | aml_research | [generate_url_summary_node] Entity: LUKOIL | Processing 30 URLs
+2026-09-20 13:13:25 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.acerislaw.com/lukoil-arbitration-cases/
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://ofac.treasury.gov/faqs/1224
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.business-humanrights.org/ru/%D0%BA%D0%BE%D0%BC%D
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://lukoil.ru/Sustainability/Ethics
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://interfax.com/newsroom/top-stories/119192/
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://tbcarchives.org/category/lukoil/
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://vk.ru/wall-67011832_8195
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://fesenkolaw.com/ru/blog2/sankczii-protiv-lukojla-ofac
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.dw.com/ru/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D
+2026-09-20 13:13:26 | DEBUG    | aml_research | [generate_url_summary] Starting: https://ru.wikinews.org/wiki/%D0%92_%D0%BE%D1%84%D0%B8%D1%81
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://eurodebt.eu/ru/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://neftegaz.ru/news/arbitrage/533139-sud-rumynii-vozobn
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://aconsole-static.s3.amazonaws.com/media/public/cases/
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.svoboda.org/a/prodavay-poka-vygodno/33588288.htm
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.jonesday.com/en/practices/experience/2009/08/luk
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.dw.com/ru/zarubeznye-aktivy-lukojla-prodadut-kom
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://courthousenews.com/diamond-miners-sue-lukoil-for-1-2
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.profit.ro/povesti-cu-profit/energie/scandalul-lu
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:62
+2026-09-20 13:13:30 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.romania-actualitati.ro/stiri/romania/petrotel-lu
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://revista22.ro/opinii/mariana-bechir/dosarul-lukoil-ev
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.zf.ro/companii/energie/cazul-lukoil-ar-lua-rafin
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://ziare.com/lukoil/sechestru-active-companie-vanzare-c
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.riseproject.ro/investigations/uncategorized/mega
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.dw.com/ru/bloomberg-lukojl-pytalsa-vyjti-na-ryno
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://tass.ru/ekonomika/27950055
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://ir.gettyrealty.com/news-and-events/news-details/2013
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://rus.ventasbalss.lv/zinas/chp/4745-moshennichestvo-na
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://romania.europalibera.org/a/controlul-mafiei-in-bulga
+2026-09-20 13:13:35 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.profit.ro/povesti-cu-profit/vecini/republica-ele
+2026-09-20 13:13:40 | INFO     | aml_research | [generate_url_summary_node] Summarised 30/30 pages
+2026-09-20 13:13:40 | INFO     | aml_research | [extract_evidence_claims_node] Extracting claims | Raw links: 78
+2026-09-20 13:13:53 | INFO     | aml_research | [extract_evidence_claims_node] Extracted 13 unique claims from 30 summaries
+2026-09-20 13:13:53 | DEBUG    | aml_research | [extract_evidence_claims_node] Claims: [EvidenceClaim(claim_text='On March 1, 2011, four employees of LUKoil Baltija R, a subsidiary of LUKOIL, were formally charged in Latvia with embezzlement and document forgery involving over 20,000 Latvian lats at a Ventspils gas station, with the case scheduled for trial in Ventspils court.', claim_type='charge', supporting_urls=['https://rus.ventasbalss.lv/zinas/chp/4745-moshennichestvo-na-lukoil'], date_publish='2011-03-01'), EvidenceClaim(claim_text='On August 3, 2015, Romanian authorities brought formal criminal charges against LUKOIL subsidiaries Petrotel Lukoil Company and Lukoil Europe Holdings, and several Russian managers, for alleged money laundering and fraud involving approximately 1.5–2 billion euros, including asset seizures, with proceedings sent to court.', claim_type='charge', supporting_urls=['https://www.dw.com/ru/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1%D0%B2%D0%B8%D0%BD%D0%B8%D0%BB%D0%B0-%D0%BB%D1%83%D0%BA%D0%BE%D0%B9%D0%BB-%D0%B2-%D0%BC%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5-%D0%B8-%D0%BE%D1%82%D0%BC%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/a-18624790', 'https://www.romania-actualitati.ro/stiri/romania/petrotel-lukoil-ploiesti-si-lukoil-europe-holdings-trimise-in-judecata-id73871.html'], date_publish='2015-08-03'), EvidenceClaim(claim_text='On July 17, 2013, Lukoil entities agreed to a $93 million settlement in the United States Bankruptcy Court, Southern District of New York, resolving allegations of fraudulent conveyance and breach of fiduciary duties brought by the Getty Petroleum Marketing Inc. Trust, with the settlement subject to court approval.', claim_type='settlement', supporting_urls=['https://ir.gettyrealty.com/news-and-events/news-details/2013/Getty-Realty-Corp-Announces-That-a-Settlement-in-Principle-Has-Been-Reached-by-the-Getty-Petroleum-Marketing-Inc-Trust-of-Its-Lawsuit-against-Lukoil-for-93-Million/default.aspx'], date_publish='2013-07-17'), EvidenceClaim(claim_text='As of July 21, 2015, Romanian prosecutors were investigating LUKOIL and its subsidiaries, including Petrotel Lukoil and Lukoil Europe Holdings BV Netherlands, for alleged tax evasion, money laundering, and corruption, with asset seizures totaling up to 2 billion euros imposed as part of the probe, making it the largest such investigation in Romania at the time.', claim_type='investigation', supporting_urls=['https://revista22.ro/opinii/mariana-bechir/dosarul-lukoil-evaziune-splare-de-bani-i-corupie'], date_publish='2015-07-21'), EvidenceClaim(claim_text="On April 27, 2009, complaints were filed with the Compliance Advisor Ombudsman of the IFC and MIGA alleging that Lukoil Overseas Karachaganak B.V., as a partner in the Karachaganak project in Kazakhstan, breached environmental and social legislation and IFC policies, including involuntary resettlement requirements; the CAO audit found general compliance but noted unresolved issues, and allegations of fraud and corruption were referred to the World Bank's Department of Institutional Integrity, with no formal findings against LUKOIL reported.", claim_type='allegation', supporting_urls=['https://aconsole-static.s3.amazonaws.com/media/public/cases/KPO-3FinalAssessmentReport_Russian.pdf'], date_publish='2009-04-27'), EvidenceClaim(claim_text='On December 23, 2016, Romanian authorities were conducting an active criminal investigation into Petrotel Lukoil, a LUKOIL subsidiary, for alleged tax evasion and money laundering amounting to 1 billion lei, involving asset freezes and scrutiny of asset valuation practices, with no final findings or charges reported at that time.', claim_type='investigation', supporting_urls=['https://www.riseproject.ro/investigations/uncategorized/megaevaziunea-fiscala-a-lukoil-una-la-judecator-alta-la-perceptor/'], date_publish='2016-12-23'), EvidenceClaim(claim_text='On April 6, 2016, LUKOIL and its subsidiaries were under investigation by Bulgarian authorities for alleged cartel collusion and price-fixing in the fuel market, and by Romanian authorities for fraud and money laundering, with the Romanian case seeing charges filed and later dismissed by the court; no convictions or penalties were reported as of that date.', claim_type='investigation', supporting_urls=['https://ru.wikinews.org/wiki/%D0%92_%D0%BE%D1%84%D0%B8%D1%81%D0%B0%D1%85_%C2%AB%D0%9B%D1%83%D0%BA%D0%BE%D0%B9%D0%BB%D0%B0%C2%BB_%D0%B2_%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D0%B8_%D0%BF%D1%80%D0%BE%D1%88%D0%BB%D0%B8_%D0%BE%D0%B1%D1%8B%D1%81%D0%BA%D0%B8_%D0%BF%D0%BE_%D0%B4%D0%B5%D0%BB%D1%83_%D0%BE_%D0%BD%D0%B0%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%B8%D0%B8_%D0%B0%D0%BD%D1%82%D0%B8%D0%BC%D0%BE%D0%BD%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0'], date_publish='2016-04-06'), EvidenceClaim(claim_text="On March 11, 2020, LUKOIL's Romanian subsidiary Petrotel Lukoil S.A. and its management were the subject of a high-profile investigation for alleged tax evasion and money laundering between 2011 and 2014, with asset freezes imposed and subsequent acquittals in 2017 and 2018, but the case remained under judicial review following prosecution appeals as of the last update.", claim_type='investigation', supporting_urls=['https://neftegaz.ru/news/arbitrage/533139-sud-rumynii-vozobnovil-delo-protiv-petrotel-lukoil-s-a-dochki-lukoyla-/'], date_publish='2020-03-11'), EvidenceClaim(claim_text='On November 14, 2025, multiple allegations and suspicions of financial crime, including money laundering and organized crime infiltration, were reported in relation to LUKOIL and Monaco-based Sotrama S.A.M. (now CINPIT S.A.M.), with references to law enforcement and intelligence reports, but no formal regulatory or criminal findings against LUKOIL itself were documented.', claim_type='allegation', supporting_urls=['https://tbcarchives.org/category/lukoil/'], date_publish='2025-11-14'), EvidenceClaim(claim_text='On April 23, 2025, Archangel Diamond Corporation Liquidating Trust filed a civil lawsuit in Colorado federal court against LUKOIL, alleging mail and wire fraud, money laundering, racketeering, and unjust enrichment in connection with a failed diamond joint venture, seeking $3.6 billion in damages; the allegations remain unproven and are the subject of ongoing litigation.', claim_type='allegation', supporting_urls=['https://courthousenews.com/diamond-miners-sue-lukoil-for-1-2-billion/'], date_publish='2025-04-23'), EvidenceClaim(claim_text='On September 18, 2025, LUKOIL-Moldova, a subsidiary of LUKOIL, was under investigation by Moldovan anti-corruption authorities for suspected money laundering and illegal financing of political parties and media, with over 20 million Moldovan lei seized as evidence; the investigation was ongoing with no charges or convictions reported at that time.', claim_type='investigation', supporting_urls=['https://www.profit.ro/povesti-cu-profit/vecini/republica-electorala-moldova-coruptie-electorala-operatiunea-pro-rusa-lukoil-moldova-si-razboaie-politice-22168882'], date_publish='2025-09-18'), EvidenceClaim(claim_text='On November 30, 2025, LUKOIL and its subsidiaries were subject to ongoing criminal proceedings in Romania for alleged money laundering and illegal fund transfers totaling nearly 1.8 billion euros, with asset seizures in place and active US sanctions further complicating operations; the case involved multiple jurisdictions and remained unresolved.', claim_type='investigation', supporting_urls=['https://ziare.com/lukoil/sechestru-active-companie-vanzare-companie-1979759'], date_publish='2025-11-30'), EvidenceClaim(claim_text="On October 22, 2025, the U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) designated LUKOIL and certain subsidiaries as Specially Designated Nationals, imposing comprehensive U.S. sanctions that prohibit most transactions and freeze assets under U.S. jurisdiction, with related general licenses authorizing only limited negotiations for asset sales, and similar sanctions imposed by the EU and UK; these measures have resulted in operational disruptions, asset freezes, and forced divestitures across multiple jurisdictions.", claim_type='sanction_listing', supporting_urls=['https://ofac.treasury.gov/faqs/1224', 'https://interfax.com/newsroom/top-stories/119192/', 'https://fesenkolaw.com/ru/blog2/sankczii-protiv-lukojla-ofac-v-chetvertyj-raz-prodlevaet-liczenziyu-na-peregovory-o-prodazhe-lukoil-international-gmbh', 'https://www.dw.com/ru/bloomberg-lukojl-pytalsa-vyjti-na-rynok-torgovli-zernom/a-75852975', 'https://tass.ru/ekonomika/27950055', 'https://www.acerislaw.com/lukoil-arbitration-cases/', 'https://www.svoboda.org/a/prodavay-poka-vygodno/33588288.html', 'https://www.dw.com/ru/zarubeznye-aktivy-lukojla-prodadut-kompanii-gunvor/a-74554086', 'https://www.profit.ro/povesti-cu-profit/energie/scandalul-lukoil-efecte-in-romania-ce-operatiuni-au-voie-sa-efectueze-companiile-lukoil-din-romania-si-pana-cand-22244937', 'https://eurodebt.eu/ru/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F-Petrotel-Lukoil-%D0%BE%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D0%B8%D0%BB%D0%B0%D1%81%D1%8C--460-%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D1%81%D0%BA%D0%B8%D1%85-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8-%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D1%81%D1%82%D0%B2%D0%B0--%D0%BE%D1%82%D1%80%D0%B0%D1%81%D0%BB%D1%8C-TSL-%D0%BE%D1%85%D0%B2%D0%B0%D1%87%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B6%D0%B0%D1%80%D0%BE%D0%BC./', 'https://romania.europalibera.org/a/controlul-mafiei-in-bulgaria-gerb-dps-bsp-si-itn-au-convenit-ca-un-administrator-de-stat-ar-putea-vinde-activele-lukoil/33584335.html', 'https://www.zf.ro/companii/energie/cazul-lukoil-ar-lua-rafinaria-petrotel-tinta-unuia-dintre-cele-mari-22949076'], date_publish='2025-10-28')]
+2026-09-20 13:13:53 | INFO     | aml_research | [url_verification_node] Executing | Raw links: 78
+2026-09-20 13:13:53 | INFO     | aml_research | [url_verification_node] Evidence URLs: 25 | Collection URLs: 78 | Hallucinated: 1
+2026-09-20 13:13:53 | WARNING  | aml_research | [url_verification_node] Hallucinated URL: https://eurodebt.eu/ru/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F-Petrotel-Lukoil-%D0%BE%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D0%B8%D0%BB%D0%B0%D1%81%D1%8C--460-%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D1%81%D0%BA%D0%B8%D1%85-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8-%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D1%81%D1%82%D0%B2%D0%B0--%D0%BE%D1%82%D1%80%D0%B0%D1%81%D0%BB%D1%8C-TSL-%D0%BE%D1%85%D0%B2%D0%B0%D1%87%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B6%D0%B0%D1%80%D0%BE%D0%BC./
+2026-09-20 13:13:53 | WARNING  | aml_research | [route_evidence_validation] ✗ Hallucinations detected - repeating consolidation
+2026-09-20 13:13:53 | INFO     | aml_research | [extract_evidence_claims_node] Extracting claims | Raw links: 78
+2026-09-20 13:13:53 | INFO     | aml_research | [extract_evidence_claims_node] Retry attempt - incorporating feedback
+2026-09-20 13:14:09 | INFO     | aml_research | [extract_evidence_claims_node] Extracted 23 unique claims from 30 summaries
+2026-09-20 13:14:09 | DEBUG    | aml_research | [extract_evidence_claims_node] Claims: [EvidenceClaim(claim_text='On March 1, 2011, four employees of LUKoil Baltija R, a subsidiary of LUKOIL, were formally charged in Latvia with embezzlement and document forgery involving over 20,000 Latvian lats at a Ventspils gas station.', claim_type='charge', supporting_urls=['https://rus.ventasbalss.lv/zinas/chp/4745-moshennichestvo-na-lukoil'], date_publish='2011-03-01'), EvidenceClaim(claim_text='On August 3, 2015, Romanian authorities brought formal criminal charges against LUKOIL subsidiaries Petrotel Lukoil Company and Lukoil Europe Holdings for alleged money laundering and fraud involving approximately 1.5–2 billion euros, with senior Russian management named as defendants.', claim_type='charge', supporting_urls=['https://www.dw.com/ru/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1%D0%B2%D0%B8%D0%BD%D0%B8%D0%BB%D0%B0-%D0%BB%D1%83%D0%BA%D0%BE%D0%B9%D0%BB-%D0%B2-%D0%BC%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5-%D0%B8-%D0%BE%D1%82%D0%BC%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/a-18624790', 'https://www.romania-actualitati.ro/stiri/romania/petrotel-lukoil-ploiesti-si-lukoil-europe-holdings-trimise-in-judecata-id73871.html'], date_publish='2015-08-03'), EvidenceClaim(claim_text='On July 17, 2013, Lukoil entities agreed to a $93 million settlement in the U.S. Bankruptcy Court, Southern District of New York, to resolve allegations of fraudulent conveyance and breach of fiduciary duties in the Getty Petroleum Marketing Inc. bankruptcy case.', claim_type='settlement', supporting_urls=['https://ir.gettyrealty.com/news-and-events/news-details/2013/Getty-Realty-Corp-Announces-That-a-Settlement-in-Principle-Has-Been-Reached-by-the-Getty-Petroleum-Marketing-Inc-Trust-of-Its-Lawsuit-against-Lukoil-for-93-Million/default.aspx'], date_publish='2013-07-17'), EvidenceClaim(claim_text='As of July 21, 2015, Romanian prosecutors were investigating LUKOIL and its subsidiaries for tax evasion, money laundering, and corruption, with asset seizures totaling up to €2 billion and allegations of fictitious loans and capital decapitalization at the Petrotel refinery.', claim_type='investigation', supporting_urls=['https://revista22.ro/opinii/mariana-bechir/dosarul-lukoil-evaziune-splare-de-bani-i-corupie'], date_publish='2015-07-21'), EvidenceClaim(claim_text='On April 6, 2016, Bulgarian authorities were conducting an antimonopoly investigation into LUKOIL Bulgaria and other fuel retailers for alleged cartel collusion and price-fixing, while Romanian courts had previously dismissed charges of fraud and money laundering against LUKOIL subsidiaries Petrotel Lukoil and Lukoil Europe Holdings.', claim_type='investigation', supporting_urls=['https://ru.wikinews.org/wiki/%D0%92_%D0%BE%D1%84%D0%B8%D1%81%D0%B0%D1%85_%C2%AB%D0%9B%D1%83%D0%BA%D0%BE%D0%B9%D0%BB%D0%B0%C2%BB_%D0%B2_%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D0%B8_%D0%BF%D1%80%D0%BE%D1%88%D0%BB%D0%B8_%D0%BE%D0%B1%D1%8B%D1%81%D0%BA%D0%B8_%D0%BF%D0%BE_%D0%B4%D0%B5%D0%BB%D1%83_%D0%BE_%D0%BD%D0%B0%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%B8%D0%B8_%D0%B0%D0%BD%D1%82%D0%B8%D0%BC%D0%BE%D0%BD%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0'], date_publish='2016-04-06'), EvidenceClaim(claim_text='On December 23, 2016, Romanian authorities were actively investigating Petrotel Lukoil, a LUKOIL subsidiary, for alleged tax evasion and money laundering involving asset valuation discrepancies and a reported 1 billion lei in damages.', claim_type='investigation', supporting_urls=['https://www.riseproject.ro/investigations/uncategorized/megaevaziunea-fiscala-a-lukoil-una-la-judecator-alta-la-perceptor/'], date_publish='2016-12-23'), EvidenceClaim(claim_text="As of March 11, 2020, LUKOIL's Romanian subsidiary Petrotel Lukoil S.A. and its management were under ongoing investigation for alleged tax evasion and money laundering, with initial asset freezes of up to €2 billion, multiple acquittals, and continued judicial review following prosecution appeals.", claim_type='investigation', supporting_urls=['https://neftegaz.ru/news/arbitrage/533139-sud-rumynii-vozobnovil-delo-protiv-petrotel-lukoil-s-a-dochki-lukoyla-/'], date_publish='2020-03-11'), EvidenceClaim(claim_text='On September 18, 2025, Moldovan authorities were investigating LUKOIL-Moldova for suspected money laundering and illegal political party financing, with raids resulting in the seizure of over 20 million Moldovan lei in evidence.', claim_type='investigation', supporting_urls=['https://www.profit.ro/povesti-cu-profit/vecini/republica-electorala-moldova-coruptie-electorala-operatiunea-pro-rusa-lukoil-moldova-si-razboaie-politice-22168882'], date_publish='2025-09-18'), EvidenceClaim(claim_text='On November 30, 2025, Romanian courts maintained asset seizures valued at approximately $2 billion against LUKOIL Holdings BV (Netherlands) and Petrotel-Lukoil refinery as part of a decade-long criminal investigation into alleged money laundering and illegal fund transfers totaling nearly €1.8 billion.', claim_type='investigation', supporting_urls=['https://ziare.com/lukoil/sechestru-active-companie-vanzare-companie-1979759'], date_publish='2025-11-30'), EvidenceClaim(claim_text='On April 23, 2025, Archangel Diamond Corporation Liquidating Trust filed a civil lawsuit in Colorado federal court against LUKOIL, alleging mail and wire fraud, money laundering, racketeering, and unjust enrichment in connection with a failed diamond joint venture in Russia, seeking $3.6 billion in damages.', claim_type='allegation', supporting_urls=['https://courthousenews.com/diamond-miners-sue-lukoil-for-1-2-billion/'], date_publish='2025-04-23'), EvidenceClaim(claim_text="On April 27, 2009, NGOs filed complaints with the Compliance Advisor Ombudsman of the IFC and MIGA alleging that Lukoil Overseas Karachaganak B.V., a LUKOIL subsidiary, breached Kazakh environmental and social laws and IFC policies in the Karachaganak oil and gas project, with references to unresolved allegations of fraud and corruption forwarded to the World Bank's integrity unit.", claim_type='allegation', supporting_urls=['https://aconsole-static.s3.amazonaws.com/media/public/cases/KPO-3FinalAssessmentReport_Russian.pdf'], date_publish='2009-04-27'), EvidenceClaim(claim_text='On November 14, 2025, multiple media and law enforcement sources alleged that LUKOIL and associated individuals were linked to money laundering and organized crime, including connections to the Tambov gang and suspicious financial flows through Monaco-based Sotrama S.A.M., though no formal regulatory or criminal findings against LUKOIL were reported.', claim_type='allegation', supporting_urls=['https://tbcarchives.org/category/lukoil/'], date_publish='2025-11-14'), EvidenceClaim(claim_text='As of October 28, 2025, LUKOIL was subject to US and EU sanctions, resulting in asset freezes, payment restrictions, and transfer prohibitions that disrupted business operations and enforcement of arbitral awards, with LUKOIL restructuring international operations in response.', claim_type='sanction_listing', supporting_urls=['https://www.acerislaw.com/lukoil-arbitration-cases/'], date_publish='2025-10-28'), EvidenceClaim(claim_text="On October 30, 2025, LUKOIL announced the sale of its foreign assets to Gunvor Group Ltd. as a direct result of US sanctions imposed on LUKOIL and its subsidiaries, with the transaction requiring approval from the US Treasury Department's OFAC.", claim_type='sanction_listing', supporting_urls=['https://www.dw.com/ru/zarubeznye-aktivy-lukojla-prodadut-kompanii-gunvor/a-74554086'], date_publish='2025-10-30'), EvidenceClaim(claim_text="On November 12, 2025, the US Department of the Treasury's OFAC imposed sanctions on LUKOIL and its subsidiaries, prohibiting US companies from transactions with LUKOIL and exposing non-US companies to secondary sanctions, while a major criminal case involving LUKOIL's Romanian subsidiary Petrotel Lukoil for alleged €1.7 billion financial prejudice remained under judicial review.", claim_type='sanction_listing', supporting_urls=['https://www.zf.ro/companii/energie/cazul-lukoil-ar-lua-rafinaria-petrotel-tinta-unuia-dintre-cele-mari-22949076'], date_publish='2025-11-12'), EvidenceClaim(claim_text='On November 12, 2025, the US Treasury imposed additional sanctions on LUKOIL and its subsidiaries, including bans on facilitating activities for LUKOIL, leading to operational disruptions and asset divestitures in Bulgaria, Romania, and Finland, with LUKOIL facing potential losses of up to $14 billion in assets.', claim_type='sanction_listing', supporting_urls=['https://www.svoboda.org/a/prodavay-poka-vygodno/33588288.html'], date_publish='2025-11-12'), EvidenceClaim(claim_text='On November 14, 2025, the US imposed sanctions on LUKOIL and its subsidiaries, resulting in the shutdown and bankruptcy of Petrotel Lukoil refinery in Romania, with significant financial distress for creditors and supply chain partners due to operational paralysis and blocked payments.', claim_type='sanction_listing', supporting_urls=['https://eurodebt.eu/ru/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F-Petrotel-Lukoil-%D0%BE%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D0%B8%D0%BB%D0%B0%D1%81%D1%8C--460-%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D1%81%D0%BA%D0%B8%D1%85-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8-%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D1%81%D1%82%D0%B2%D0%B0--%D0%BE%D1%82%D1%80%D0%B0%D1%81%D0%BB%D1%8C-TSL-%D0%BE%D1%85%D0%B2%D0%B0%D1%87%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B6%D0%B0%D1%80%D0%BE%D0%BC./'], date_publish='2026-09-16'), EvidenceClaim(claim_text='On November 21, 2025, the US OFAC sanctioned LUKOIL and its subsidiaries, including Lukoil International GmbH and Romanian entities, restricting intra-group payments and requiring blocked accounts for sanctioned entities, while allowing continued operations in Romania until December 13, 2025, subject to compliance conditions.', claim_type='sanction_listing', supporting_urls=['https://www.profit.ro/povesti-cu-profit/energie/scandalul-lukoil-efecte-in-romania-ce-operatiuni-au-voie-sa-efectueze-companiile-lukoil-din-romania-si-pana-cand-22244937'], date_publish='2025-11-21'), EvidenceClaim(claim_text='On February 7, 2026, it was reported that US and UK sanctions imposed in late 2025 on LUKOIL and its subsidiaries disrupted operations, forced asset divestitures, and led to the liquidation of Teruva FZCO in Dubai, with key individuals and entities targeted for their strategic importance to Russia.', claim_type='sanction_listing', supporting_urls=['https://www.dw.com/ru/bloomberg-lukojl-pytalsa-vyjti-na-rynok-torgovli-zernom/a-75852975'], date_publish='2026-02-07'), EvidenceClaim(claim_text='On July 24, 2026, the US Department of the Treasury extended sanctions against LUKOIL and its subsidiaries, including a general license permitting certain transactions related to the sale of Lukoil International GmbH, while prohibiting transfers of funds to Russia and requiring assets owed to LUKOIL to be blocked in US jurisdiction.', claim_type='sanction_listing', supporting_urls=['https://tass.ru/ekonomika/27950055'], date_publish='2026-07-24'), EvidenceClaim(claim_text="On September 18, 2026, the US Department of the Treasury's OFAC designated LUKOIL as a sanctioned entity, prohibiting most transactions with US persons, freezing assets under US jurisdiction, and imposing strict conditions on the sale of Lukoil International GmbH and its subsidiaries, with the license set to expire on October 22, 2026.", claim_type='sanction_listing', supporting_urls=['https://ofac.treasury.gov/faqs/1224', 'https://interfax.com/newsroom/top-stories/119192/'], date_publish='2026-09-18'), EvidenceClaim(claim_text='As of March 30, 2026, the US OFAC maintained LUKOIL and its controlled entities, including Lukoil International GmbH, on the SDN List under Executive Order 14024, issuing a series of General Licenses to temporarily authorize negotiations for asset sales, with all proceeds due to LUKOIL to be held in blocked accounts and no immediate benefit allowed to LUKOIL.', claim_type='sanction_listing', supporting_urls=['https://fesenkolaw.com/ru/blog2/sankczii-protiv-lukojla-ofac-v-chetvertyj-raz-prodlevaet-liczenziyu-na-peregovory-o-prodazhe-lukoil-international-gmbh'], date_publish='Unknown'), EvidenceClaim(claim_text="In October 2025, the US government imposed sanctions on LUKOIL and its subsidiaries, directly impacting operations at the Lukoil Neftochim Burgas refinery in Bulgaria and prompting the Bulgarian government to adopt emergency legislation for state management or sale of LUKOIL's Bulgarian assets.", claim_type='sanction_listing', supporting_urls=['https://romania.europalibera.org/a/controlul-mafiei-in-bulgaria-gerb-dps-bsp-si-itn-au-convenit-ca-un-administrator-de-stat-ar-putea-vinde-activele-lukoil/33584335.html'], date_publish='Unknown')]
+2026-09-20 13:14:09 | INFO     | aml_research | [url_verification_node] Executing | Raw links: 78
+2026-09-20 13:14:09 | INFO     | aml_research | [url_verification_node] Evidence URLs: 25 | Collection URLs: 78 | Hallucinated: 1
+2026-09-20 13:14:09 | WARNING  | aml_research | [url_verification_node] Still 1 invalid URL(s) after 1 retry, removed them | claims dropped (no valid URL left): 1 | ['https://eurodebt.eu/ru/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F-Petrotel-Lukoil-%D0%BE%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D0%B8%D0%BB%D0%B0%D1%81%D1%8C--460-%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D1%81%D0%BA%D0%B8%D1%85-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%B3%D1%80%D0%B0%D0%BD%D0%B8-%D0%B1%D0%B0%D0%BD%D0%BA%D1%80%D0%BE%D1%82%D1%81%D1%82%D0%B2%D0%B0--%D0%BE%D1%82%D1%80%D0%B0%D1%81%D0%BB%D1%8C-TSL-%D0%BE%D1%85%D0%B2%D0%B0%D1%87%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B6%D0%B0%D1%80%D0%BE%D0%BC./']
+2026-09-20 13:14:09 | INFO     | aml_research | [route_evidence_validation] ✓ Validation passed - proceeding
+2026-09-20 13:14:09 | INFO     | aml_research | [reflect_evidence_quality_node] Executing | Raw links: 78
+2026-09-20 13:14:09 | DEBUG    | aml_research | [reflect_evidence_quality_node] Claim types: ['allegation', 'charge', 'investigation', 'sanction_listing', 'settlement']
+2026-09-20 13:14:09 | DEBUG    | aml_research | [reflect_evidence_quality_node] Evidence block:
+ALLEGATION:
+EVIDENCE 1:
+{
+  "text": "On April 23, 2025, Archangel Diamond Corporation Liquidating Trust filed a civil lawsuit in Colorado federal court against LUKOIL, alleging mail and wire fraud, money laundering, racketeering, and unjust enrichment in connection with a failed diamond joint venture in Russia, seeking $3.6 billion in damages.",
+  "sources": "https://courthousenews.com/diamond-miners-sue-lukoil-for-1-2-billion/",
+  "number of evidences": 1,
+  "date_publish": "2025-04-23"
+}
+
+EVIDENCE 2:
+{
+  "text": "On April 27, 2009, NGOs filed complaints with the Compliance Advisor Ombudsman of the IFC and MIGA alleging that Lukoil Overseas Karachaganak B.V., a LUKOIL subsidiary, breached Kazakh environmental and social laws and IFC policies in the Karachaganak oil and gas project, with references to unresolved allegations of fraud and corruption forwarded to the World Bank's integrity unit.",
+  "sources": "https://aconsole-static.s3.amazonaws.com/media/public/cases/KPO-3FinalAssessmentReport_Russian.pdf",
+  "number of evidences": 1,
+  "date_publish": "2009-04-27"
+}
+
+EVIDENCE 3:
+{
+  "text": "On November 14, 2025, multiple media and law enforcement sources alleged that LUKOIL and associated individuals were linked to money laundering and organized crime, including connections to the Tambov gang and suspicious financial flows through Monaco-based Sotrama S.A.M., though no formal regulatory or criminal findings against LUKOIL were reported.",
+  "sources": "https://tbcarchives.org/category/lukoil/",
+  "number of evidences": 1,
+  "date_publish": "2025-11-14"
+}
+
+CHARGE:
+EVIDENCE 1:
+{
+  "text": "On March 1, 2011, four employees of LUKoil Baltija R, a subsidiary of LUKOIL, were formally charged in Latvia with embezzlement and document forgery involving over 20,000 Latvian lats at a Ventspils gas station.",
+  "sources": "https://rus.ventasbalss.lv/zinas/chp/4745-moshennichestvo-na-lukoil",
+  "number of evidences": 1,
+  "date_publish": "2011-03-01"
+}
+
+EVIDENCE 2:
+{
+  "text": "On August 3, 2015, Romanian authorities brought formal criminal charges against LUKOIL subsidiaries Petrotel Lukoil Company and Lukoil Europe Holdings for alleged money laundering and fraud involving approximately 1.5–2 billion euros, with senior Russian management named as defendants.",
+  "sources": "https://www.dw.com/ru/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1%D0%B2%D0%B8%D0%BD%D0%B8%D0%BB%D0%B0-%D0%BB%D1%83%D0%BA%D0%BE%D0%B9%D0%BB-%D0%B2-%D0%BC%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5-%D0%B8-%D0%BE%D1%82%D0%BC%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/a-18624790, https://www.romania-actualitati.ro/stiri/romania/petrotel-lukoil-ploiesti-si-lukoil-europe-holdings-trimise-in-judecata-id73871.html",
+  "number of evidences": 2,
+  "date_publish": "2015-08-03"
+}
+
+INVESTIGATION:
+EVIDENCE 1:
+{
+  "text": "As of July 21, 2015, Romanian prosecutors were investigating LUKOIL and its subsidiaries for tax evasion, money laundering, and corruption, with asset seizures totaling up to €2 billion and allegations of fictitious loans and capital decapitalization at the Petrotel refinery.",
+  "sources": "https://revista22.ro/opinii/mariana-bechir/dosarul-lukoil-evaziune-splare-de-bani-i-corupie",
+  "number of evidences": 1,
+  "date_publish": "2015-07-21"
+}
+
+EVIDENCE 2:
+{
+  "text": "On April 6, 2016, Bulgarian authorities were conducting an antimonopoly investigation into LUKOIL Bulgaria and other fuel retailers for alleged cartel collusion and price-fixing, while Romanian courts had previously dismissed charges of fraud and money laundering against LUKOIL subsidiaries Petrotel Lukoil and Lukoil Europe Holdings.",
+  "sources": "https://ru.wikinews.org/wiki/%D0%92_%D0%BE%D1%84%D0%B8%D1%81%D0%B0%D1%85_%C2%AB%D0%9B%D1%83%D0%BA%D0%BE%D0%B9%D0%BB%D0%B0%C2%BB_%D0%B2_%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D0%B8_%D0%BF%D1%80%D0%BE%D1%88%D0%BB%D0%B8_%D0%BE%D0%B1%D1%8B%D1%81%D0%BA%D0%B8_%D0%BF%D0%BE_%D0%B4%D0%B5%D0%BB%D1%83_%D0%BE_%D0%BD%D0%B0%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%B8%D0%B8_%D0%B0%D0%BD%D1%82%D0%B8%D0%BC%D0%BE%D0%BD%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0",
+  "number of evidences": 1,
+  "date_publish": "2016-04-06"
+}
+
+EVIDENCE 3:
+{
+  "text": "On December 23, 2016, Romanian authorities were actively investigating Petrotel Lukoil, a LUKOIL subsidiary, for alleged tax evasion and money laundering involving asset valuation discrepancies and a reported 1 billion lei in damages.",
+  "sources": "https://www.riseproject.ro/investigations/uncategorized/megaevaziunea-fiscala-a-lukoil-una-la-judecator-alta-la-perceptor/",
+  "number of evidences": 1,
+  "date_publish": "2016-12-23"
+}
+
+EVIDENCE 4:
+{
+  "text": "As of March 11, 2020, LUKOIL's Romanian subsidiary Petrotel Lukoil S.A. and its management were under ongoing investigation for alleged tax evasion and money laundering, with initial asset freezes of up to €2 billion, multiple acquittals, and continued judicial review following prosecution appeals.",
+  "sources": "https://neftegaz.ru/news/arbitrage/533139-sud-rumynii-vozobnovil-delo-protiv-petrotel-lukoil-s-a-dochki-lukoyla-/",
+  "number of evidences": 1,
+  "date_publish": "2020-03-11"
+}
+
+EVIDENCE 5:
+{
+  "text": "On September 18, 2025, Moldovan authorities were investigating LUKOIL-Moldova for suspected money laundering and illegal political party financing, with raids resulting in the seizure of over 20 million Moldovan lei in evidence.",
+  "sources": "https://www.profit.ro/povesti-cu-profit/vecini/republica-electorala-moldova-coruptie-electorala-operatiunea-pro-rusa-lukoil-moldova-si-razboaie-politice-22168882",
+  "number of evidences": 1,
+  "date_publish": "2025-09-18"
+}
+
+EVIDENCE 6:
+{
+  "text": "On November 30, 2025, Romanian courts maintained asset seizures valued at approximately $2 billion against LUKOIL Holdings BV (Netherlands) and Petrotel-Lukoil refinery as part of a decade-long criminal investigation into alleged money laundering and illegal fund transfers totaling nearly €1.8 billion.",
+  "sources": "https://ziare.com/lukoil/sechestru-active-companie-vanzare-companie-1979759",
+  "number of evidences": 1,
+  "date_publish": "2025-11-30"
+}
+
+SANCTION LISTING:
+EVIDENCE 1:
+{
+  "text": "As of October 28, 2025, LUKOIL was subject to US and EU sanctions, resulting in asset freezes, payment restrictions, and transfer prohibitions that disrupted business operations and enforcement of arbitral awards, with LUKOIL restructuring international operations in response.",
+  "sources": "https://www.acerislaw.com/lukoil-arbitration-cases/",
+  "number of evidences": 1,
+  "date_publish": "2025-10-28"
+}
+
+EVIDENCE 2:
+{
+  "text": "On October 30, 2025, LUKOIL announced the sale of its foreign assets to Gunvor Group Ltd. as a direct result of US sanctions imposed on LUKOIL and its subsidiaries, with the transaction requiring approval from the US Treasury Department's OFAC.",
+  "sources": "https://www.dw.com/ru/zarubeznye-aktivy-lukojla-prodadut-kompanii-gunvor/a-74554086",
+  "number of evidences": 1,
+  "date_publish": "2025-10-30"
+}
+
+EVIDENCE 3:
+{
+  "text": "On November 12, 2025, the US Department of the Treasury's OFAC imposed sanctions on LUKOIL and its subsidiaries, prohibiting US companies from transactions with LUKOIL and exposing non-US companies to secondary sanctions, while a major criminal case involving LUKOIL's Romanian subsidiary Petrotel Lukoil for alleged €1.7 billion financial prejudice remained under judicial review.",
+  "sources": "https://www.zf.ro/companii/energie/cazul-lukoil-ar-lua-rafinaria-petrotel-tinta-unuia-dintre-cele-mari-22949076",
+  "number of evidences": 1,
+  "date_publish": "2025-11-12"
+}
+
+EVIDENCE 4:
+{
+  "text": "On November 12, 2025, the US Treasury imposed additional sanctions on LUKOIL and its subsidiaries, including bans on facilitating activities for LUKOIL, leading to operational disruptions and asset divestitures in Bulgaria, Romania, and Finland, with LUKOIL facing potential losses of up to $14 billion in assets.",
+  "sources": "https://www.svoboda.org/a/prodavay-poka-vygodno/33588288.html",
+  "number of evidences": 1,
+  "date_publish": "2025-11-12"
+}
+
+EVIDENCE 5:
+{
+  "text": "On November 21, 2025, the US OFAC sanctioned LUKOIL and its subsidiaries, including Lukoil International GmbH and Romanian entities, restricting intra-group payments and requiring blocked accounts for sanctioned entities, while allowing continued operations in Romania until December 13, 2025, subject to compliance conditions.",
+  "sources": "https://www.profit.ro/povesti-cu-profit/energie/scandalul-lukoil-efecte-in-romania-ce-operatiuni-au-voie-sa-efectueze-companiile-lukoil-din-romania-si-pana-cand-22244937",
+  "number of evidences": 1,
+  "date_publish": "2025-11-21"
+}
+
+EVIDENCE 6:
+{
+  "text": "On February 7, 2026, it was reported that US and UK sanctions imposed in late 2025 on LUKOIL and its subsidiaries disrupted operations, forced asset divestitures, and led to the liquidation of Teruva FZCO in Dubai, with key individuals and entities targeted for their strategic importance to Russia.",
+  "sources": "https://www.dw.com/ru/bloomberg-lukojl-pytalsa-vyjti-na-rynok-torgovli-zernom/a-75852975",
+  "number of evidences": 1,
+  "date_publish": "2026-02-07"
+}
+
+EVIDENCE 7:
+{
+  "text": "On July 24, 2026, the US Department of the Treasury extended sanctions against LUKOIL and its subsidiaries, including a general license permitting certain transactions related to the sale of Lukoil International GmbH, while prohibiting transfers of funds to Russia and requiring assets owed to LUKOIL to be blocked in US jurisdiction.",
+  "sources": "https://tass.ru/ekonomika/27950055",
+  "number of evidences": 1,
+  "date_publish": "2026-07-24"
+}
+
+EVIDENCE 8:
+{
+  "text": "On September 18, 2026, the US Department of the Treasury's OFAC designated LUKOIL as a sanctioned entity, prohibiting most transactions with US persons, freezing assets under US jurisdiction, and imposing strict conditions on the sale of Lukoil International GmbH and its subsidiaries, with the license set to expire on October 22, 2026.",
+  "sources": "https://ofac.treasury.gov/faqs/1224, https://interfax.com/newsroom/top-stories/119192/",
+  "number of evidences": 2,
+  "date_publish": "2026-09-18"
+}
+
+EVIDENCE 9:
+{
+  "text": "As of March 30, 2026, the US OFAC maintained LUKOIL and its controlled entities, including Lukoil International GmbH, on the SDN List under Executive Order 14024, issuing a series of General Licenses to temporarily authorize negotiations for asset sales, with all proceeds due to LUKOIL to be held in blocked accounts and no immediate benefit allowed to LUKOIL.",
+  "sources": "https://fesenkolaw.com/ru/blog2/sankczii-protiv-lukojla-ofac-v-chetvertyj-raz-prodlevaet-liczenziyu-na-peregovory-o-prodazhe-lukoil-international-gmbh",
+  "number of evidences": 1,
+  "date_publish": "Unknown"
+}
+
+EVIDENCE 10:
+{
+  "text": "In October 2025, the US government imposed sanctions on LUKOIL and its subsidiaries, directly impacting operations at the Lukoil Neftochim Burgas refinery in Bulgaria and prompting the Bulgarian government to adopt emergency legislation for state management or sale of LUKOIL's Bulgarian assets.",
+  "sources": "https://romania.europalibera.org/a/controlul-mafiei-in-bulgaria-gerb-dps-bsp-si-itn-au-convenit-ca-un-administrator-de-stat-ar-putea-vinde-activele-lukoil/33584335.html",
+  "number of evidences": 1,
+  "date_publish": "Unknown"
+}
+
+SETTLEMENT:
+EVIDENCE 1:
+{
+  "text": "On July 17, 2013, Lukoil entities agreed to a $93 million settlement in the U.S. Bankruptcy Court, Southern District of New York, to resolve allegations of fraudulent conveyance and breach of fiduciary duties in the Getty Petroleum Marketing Inc. bankruptcy case.",
+  "sources": "https://ir.gettyrealty.com/news-and-events/news-details/2013/Getty-Realty-Corp-Announces-That-a-Settlement-in-Principle-Has-Been-Reached-by-the-Getty-Petroleum-Marketing-Inc-Trust-of-Its-Lawsuit-against-Lukoil-for-93-Million/default.aspx",
+  "number of evidences": 1,
+  "date_publish": "2013-07-17"
+}
+2026-09-20 13:14:10 | INFO     | aml_research | [reflect_evidence_quality_node] Assessment: convinced | Reasoning: There are multiple, recent, and credible sources (court records, government sanctions, regulatory actions, and reputable media) documenting lawsuits, criminal charges, ongoing investigations, and major sanctions against LUKOIL and its subsidiaries for financial crimes. This is sufficient to form a confident opinion.
+2026-09-20 13:14:10 | INFO     | aml_research | [reflect_evidence_quality_node] Done
+2026-09-20 13:14:10 | INFO     | aml_research | [generate_risk_assessment_node] Executing | Raw links: 78
+2026-09-20 13:14:10 | DEBUG    | aml_research | [generate_risk_assessment_node] Claim types: ['allegation', 'charge', 'investigation', 'sanction_listing', 'settlement']
+2026-09-20 13:14:10 | DEBUG    | aml_research | [generate_risk_assessment_node] Evidence prompt:
+Evidence for LUKOIL (IDNO 1027700035769):
+
+            Public-source evidence:
+            ALLEGATION:
+[
+  {
+    "text": "On April 23, 2025, Archangel Diamond Corporation Liquidating Trust filed a civil lawsuit in Colorado federal court against LUKOIL, alleging mail and wire fraud, money laundering, racketeering, and unjust enrichment in connection with a failed diamond joint venture in Russia, seeking $3.6 billion in damages.",
+    "sources": "https://courthousenews.com/diamond-miners-sue-lukoil-for-1-2-billion/",
+    "date_publish": "2025-04-23"
+  },
+  {
+    "text": "On April 27, 2009, NGOs filed complaints with the Compliance Advisor Ombudsman of the IFC and MIGA alleging that Lukoil Overseas Karachaganak B.V., a LUKOIL subsidiary, breached Kazakh environmental and social laws and IFC policies in the Karachaganak oil and gas project, with references to unresolved allegations of fraud and corruption forwarded to the World Bank's integrity unit.",
+    "sources": "https://aconsole-static.s3.amazonaws.com/media/public/cases/KPO-3FinalAssessmentReport_Russian.pdf",
+    "date_publish": "2009-04-27"
+  },
+  {
+    "text": "On November 14, 2025, multiple media and law enforcement sources alleged that LUKOIL and associated individuals were linked to money laundering and organized crime, including connections to the Tambov gang and suspicious financial flows through Monaco-based Sotrama S.A.M., though no formal regulatory or criminal findings against LUKOIL were reported.",
+    "sources": "https://tbcarchives.org/category/lukoil/",
+    "date_publish": "2025-11-14"
+  }
+]
+
+CHARGE:
+[
+  {
+    "text": "On March 1, 2011, four employees of LUKoil Baltija R, a subsidiary of LUKOIL, were formally charged in Latvia with embezzlement and document forgery involving over 20,000 Latvian lats at a Ventspils gas station.",
+    "sources": "https://rus.ventasbalss.lv/zinas/chp/4745-moshennichestvo-na-lukoil",
+    "date_publish": "2011-03-01"
+  },
+  {
+    "text": "On August 3, 2015, Romanian authorities brought formal criminal charges against LUKOIL subsidiaries Petrotel Lukoil Company and Lukoil Europe Holdings for alleged money laundering and fraud involving approximately 1.5–2 billion euros, with senior Russian management named as defendants.",
+    "sources": "https://www.dw.com/ru/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1%D0%B2%D0%B8%D0%BD%D0%B8%D0%BB%D0%B0-%D0%BB%D1%83%D0%BA%D0%BE%D0%B9%D0%BB-%D0%B2-%D0%BC%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5-%D0%B8-%D0%BE%D1%82%D0%BC%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/a-18624790, https://www.romania-actualitati.ro/stiri/romania/petrotel-lukoil-ploiesti-si-lukoil-europe-holdings-trimise-in-judecata-id73871.html",
+    "date_publish": "2015-08-03"
+  }
+]
+
+INVESTIGATION:
+[
+  {
+    "text": "As of July 21, 2015, Romanian prosecutors were investigating LUKOIL and its subsidiaries for tax evasion, money laundering, and corruption, with asset seizures totaling up to €2 billion and allegations of fictitious loans and capital decapitalization at the Petrotel refinery.",
+    "sources": "https://revista22.ro/opinii/mariana-bechir/dosarul-lukoil-evaziune-splare-de-bani-i-corupie",
+    "date_publish": "2015-07-21"
+  },
+  {
+    "text": "On April 6, 2016, Bulgarian authorities were conducting an antimonopoly investigation into LUKOIL Bulgaria and other fuel retailers for alleged cartel collusion and price-fixing, while Romanian courts had previously dismissed charges of fraud and money laundering against LUKOIL subsidiaries Petrotel Lukoil and Lukoil Europe Holdings.",
+    "sources": "https://ru.wikinews.org/wiki/%D0%92_%D0%BE%D1%84%D0%B8%D1%81%D0%B0%D1%85_%C2%AB%D0%9B%D1%83%D0%BA%D0%BE%D0%B9%D0%BB%D0%B0%C2%BB_%D0%B2_%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D0%B8_%D0%BF%D1%80%D0%BE%D1%88%D0%BB%D0%B8_%D0%BE%D0%B1%D1%8B%D1%81%D0%BA%D0%B8_%D0%BF%D0%BE_%D0%B4%D0%B5%D0%BB%D1%83_%D0%BE_%D0%BD%D0%B0%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%B8%D0%B8_%D0%B0%D0%BD%D1%82%D0%B8%D0%BC%D0%BE%D0%BD%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0",
+    "date_publish": "2016-04-06"
+  },
+  {
+    "text": "On December 23, 2016, Romanian authorities were actively investigating Petrotel Lukoil, a LUKOIL subsidiary, for alleged tax evasion and money laundering involving asset valuation discrepancies and a reported 1 billion lei in damages.",
+    "sources": "https://www.riseproject.ro/investigations/uncategorized/megaevaziunea-fiscala-a-lukoil-una-la-judecator-alta-la-perceptor/",
+    "date_publish": "2016-12-23"
+  },
+  {
+    "text": "As of March 11, 2020, LUKOIL's Romanian subsidiary Petrotel Lukoil S.A. and its management were under ongoing investigation for alleged tax evasion and money laundering, with initial asset freezes of up to €2 billion, multiple acquittals, and continued judicial review following prosecution appeals.",
+    "sources": "https://neftegaz.ru/news/arbitrage/533139-sud-rumynii-vozobnovil-delo-protiv-petrotel-lukoil-s-a-dochki-lukoyla-/",
+    "date_publish": "2020-03-11"
+  },
+  {
+    "text": "On September 18, 2025, Moldovan authorities were investigating LUKOIL-Moldova for suspected money laundering and illegal political party financing, with raids resulting in the seizure of over 20 million Moldovan lei in evidence.",
+    "sources": "https://www.profit.ro/povesti-cu-profit/vecini/republica-electorala-moldova-coruptie-electorala-operatiunea-pro-rusa-lukoil-moldova-si-razboaie-politice-22168882",
+    "date_publish": "2025-09-18"
+  },
+  {
+    "text": "On November 30, 2025, Romanian courts maintained asset seizures valued at approximately $2 billion against LUKOIL Holdings BV (Netherlands) and Petrotel-Lukoil refinery as part of a decade-long criminal investigation into alleged money laundering and illegal fund transfers totaling nearly €1.8 billion.",
+    "sources": "https://ziare.com/lukoil/sechestru-active-companie-vanzare-companie-1979759",
+    "date_publish": "2025-11-30"
+  }
+]
+
+SANCTION LISTING:
+[
+  {
+    "text": "As of October 28, 2025, LUKOIL was subject to US and EU sanctions, resulting in asset freezes, payment restrictions, and transfer prohibitions that disrupted business operations and enforcement of arbitral awards, with LUKOIL restructuring international operations in response.",
+    "sources": "https://www.acerislaw.com/lukoil-arbitration-cases/",
+    "date_publish": "2025-10-28"
+  },
+  {
+    "text": "On October 30, 2025, LUKOIL announced the sale of its foreign assets to Gunvor Group Ltd. as a direct result of US sanctions imposed on LUKOIL and its subsidiaries, with the transaction requiring approval from the US Treasury Department's OFAC.",
+    "sources": "https://www.dw.com/ru/zarubeznye-aktivy-lukojla-prodadut-kompanii-gunvor/a-74554086",
+    "date_publish": "2025-10-30"
+  },
+  {
+    "text": "On November 12, 2025, the US Department of the Treasury's OFAC imposed sanctions on LUKOIL and its subsidiaries, prohibiting US companies from transactions with LUKOIL and exposing non-US companies to secondary sanctions, while a major criminal case involving LUKOIL's Romanian subsidiary Petrotel Lukoil for alleged €1.7 billion financial prejudice remained under judicial review.",
+    "sources": "https://www.zf.ro/companii/energie/cazul-lukoil-ar-lua-rafinaria-petrotel-tinta-unuia-dintre-cele-mari-22949076",
+    "date_publish": "2025-11-12"
+  },
+  {
+    "text": "On November 12, 2025, the US Treasury imposed additional sanctions on LUKOIL and its subsidiaries, including bans on facilitating activities for LUKOIL, leading to operational disruptions and asset divestitures in Bulgaria, Romania, and Finland, with LUKOIL facing potential losses of up to $14 billion in assets.",
+    "sources": "https://www.svoboda.org/a/prodavay-poka-vygodno/33588288.html",
+    "date_publish": "2025-11-12"
+  },
+  {
+    "text": "On November 21, 2025, the US OFAC sanctioned LUKOIL and its subsidiaries, including Lukoil International GmbH and Romanian entities, restricting intra-group payments and requiring blocked accounts for sanctioned entities, while allowing continued operations in Romania until December 13, 2025, subject to compliance conditions.",
+    "sources": "https://www.profit.ro/povesti-cu-profit/energie/scandalul-lukoil-efecte-in-romania-ce-operatiuni-au-voie-sa-efectueze-companiile-lukoil-din-romania-si-pana-cand-22244937",
+    "date_publish": "2025-11-21"
+  },
+  {
+    "text": "On February 7, 2026, it was reported that US and UK sanctions imposed in late 2025 on LUKOIL and its subsidiaries disrupted operations, forced asset divestitures, and led to the liquidation of Teruva FZCO in Dubai, with key individuals and entities targeted for their strategic importance to Russia.",
+    "sources": "https://www.dw.com/ru/bloomberg-lukojl-pytalsa-vyjti-na-rynok-torgovli-zernom/a-75852975",
+    "date_publish": "2026-02-07"
+  },
+  {
+    "text": "On July 24, 2026, the US Department of the Treasury extended sanctions against LUKOIL and its subsidiaries, including a general license permitting certain transactions related to the sale of Lukoil International GmbH, while prohibiting transfers of funds to Russia and requiring assets owed to LUKOIL to be blocked in US jurisdiction.",
+    "sources": "https://tass.ru/ekonomika/27950055",
+    "date_publish": "2026-07-24"
+  },
+  {
+    "text": "On September 18, 2026, the US Department of the Treasury's OFAC designated LUKOIL as a sanctioned entity, prohibiting most transactions with US persons, freezing assets under US jurisdiction, and imposing strict conditions on the sale of Lukoil International GmbH and its subsidiaries, with the license set to expire on October 22, 2026.",
+    "sources": "https://ofac.treasury.gov/faqs/1224, https://interfax.com/newsroom/top-stories/119192/",
+    "date_publish": "2026-09-18"
+  },
+  {
+    "text": "As of March 30, 2026, the US OFAC maintained LUKOIL and its controlled entities, including Lukoil International GmbH, on the SDN List under Executive Order 14024, issuing a series of General Licenses to temporarily authorize negotiations for asset sales, with all proceeds due to LUKOIL to be held in blocked accounts and no immediate benefit allowed to LUKOIL.",
+    "sources": "https://fesenkolaw.com/ru/blog2/sankczii-protiv-lukojla-ofac-v-chetvertyj-raz-prodlevaet-liczenziyu-na-peregovory-o-prodazhe-lukoil-international-gmbh",
+    "date_publish": "Unknown"
+  },
+  {
+    "text": "In October 2025, the US government imposed sanctions on LUKOIL and its subsidiaries, directly impacting operations at the Lukoil Neftochim Burgas refinery in Bulgaria and prompting the Bulgarian government to adopt emergency legislation for state management or sale of LUKOIL's Bulgarian assets.",
+    "sources": "https://romania.europalibera.org/a/controlul-mafiei-in-bulgaria-gerb-dps-bsp-si-itn-au-convenit-ca-un-administrator-de-stat-ar-putea-vinde-activele-lukoil/33584335.html",
+    "date_publish": "Unknown"
+  }
+]
+
+SETTLEMENT:
+[
+  {
+    "text": "On July 17, 2013, Lukoil entities agreed to a $93 million settlement in the U.S. Bankruptcy Court, Southern District of New York, to resolve allegations of fraudulent conveyance and breach of fiduciary duties in the Getty Petroleum Marketing Inc. bankruptcy case.",
+    "sources": "https://ir.gettyrealty.com/news-and-events/news-details/2013/Getty-Realty-Corp-Announces-That-a-Settlement-in-Principle-Has-Been-Reached-by-the-Getty-Petroleum-Marketing-Inc-Trust-of-Its-Lawsuit-against-Lukoil-for-93-Million/default.aspx",
+    "date_publish": "2013-07-17"
+  }
+]
+
+            Analyze this evidence according to the framework provided.
+2026-09-20 13:14:10 | INFO     | aml_research | [generate_risk_assessment_node] Requesting final conclusion from LLM
+2026-09-20 13:14:30 | INFO     | aml_research | [generate_risk_assessment_node] Search sources: 24 media URLs
+2026-09-20 13:14:30 | INFO     | aml_research | [generate_risk_assessment_node] Risk assessment completed
+2026-09-20 13:14:30 | INFO     | aml_research | [BATCH] Saved: D:\MICB_Projects\8_aml_detective\test_cases\runs\2026-09-20_prod_subset\reports\901.json

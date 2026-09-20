@@ -264,7 +264,9 @@ from .agent_components.prompts_v2 import (
     url_summary_instructions,            # system prompt for per-URL ContentSummary generation
     system_messages_search_tools,        # dict: tool_name -> system message for search-payload generation
     final_summary_prompt,                # system prompt for final FinalReport (Romanian)
-    lead_researcher_prompt               # system prompt for scenario-loop / lead-researcher routing
+    lead_researcher_prompt,              # system prompt for scenario-loop / lead-researcher routing
+    INJECTION_GUARD,                     # spotlighting guard appended to system prompts fed untrusted web text
+    wrap_untrusted                       # marks start/end of untrusted content, strips escape attempts
 )
 
 # States & Pydantic models (everything from states_v2 the notebook needs at runtime)
@@ -1748,8 +1750,10 @@ async def generate_url_summary(
                     date_published="Unknown"
                 ) }
     
-    system_message = url_summary_instructions.format(entity_name=entity_name)
-    messages = [SystemMessage(content=system_message), HumanMessage(content=raw_content)]
+    # raw_content is scraped from the open internet: guard the system prompt and
+    # fence the page text so a page cannot pose as an instruction to the model.
+    system_message = url_summary_instructions.format(entity_name=entity_name) + INJECTION_GUARD
+    messages = [SystemMessage(content=system_message), HumanMessage(content=wrap_untrusted(raw_content))]
     attempts = len(SUMMARY_TOKEN_LIMITS)
 
     # Network errors, timeouts, 429 and 5xx are retried inside the OpenAI client (max_retries=3).
@@ -1769,6 +1773,8 @@ async def generate_url_summary(
             if response is not None and response.summary and response.summary.strip():
                 if attempt > 1:
                     logger.info(f"[generate_url_summary] Succeeded on attempt {attempt}/{attempts} | url: {url[:80]}")
+                if "INJECTION_ATTEMPT_DETECTED" in response.summary:
+                    logger.warning(f"[generate_url_summary] INJECTION_ATTEMPT_DETECTED - page content tried to instruct the model | url: {url}")
                 return {url: response}
             reason = "empty summary"
         logger.warning(f"[generate_url_summary] Attempt {attempt}/{attempts} failed: {reason} | url: {url[:80]}")
