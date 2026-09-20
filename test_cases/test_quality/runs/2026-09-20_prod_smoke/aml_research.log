@@ -1,0 +1,523 @@
+2026-09-20 09:38:48 | INFO     | aml_research | Logger initialized — writing to D:\MICB_Projects\8_aml_detective\test_cases\runs\2026-09-20_prod_smoke\aml_research.log
+2026-09-20 09:38:48 | INFO     | aml_research | New batch run started
+2026-09-20 09:38:48 | INFO     | aml_research | [BATCH] Built test_companies: 2 of 2 rows
+2026-09-20 09:38:48 | INFO     | aml_research | ============================================================
+2026-09-20 09:38:48 | INFO     | aml_research | [BATCH] Starting: AIRROCK SOLUTIONS (IDNO=1021600048015, contragent ID=901)
+2026-09-20 09:38:48 | INFO     | aml_research | ============================================================
+2026-09-20 09:38:50 | INFO     | aml_research | [generate_name_regex] AIRROCK SOLUTIONS → 4 variants: ['AIRROCK SOLUTIONS', 'ЭЙРРОК СОЛЮШНС', 'AIRROCKSOLUTIONS', 'ЭЙРРОКСОЛЮШНС']
+2026-09-20 09:38:50 | INFO     | aml_research | [scenario_selection_node] Raw links: 0
+2026-09-20 09:38:50 | INFO     | aml_research | [scenario_selection_node] Selected: tool_google_search | Used: []
+2026-09-20 09:38:50 | INFO     | aml_research | [route_trigger_search] Tool scenario 'tool_google_search' → search_payload_generate_node
+2026-09-20 09:38:50 | INFO     | aml_research | [search_payload_generate_node] Scenario: tool_google_search | Entity: AIRROCK SOLUTIONS | Built 18 tool calls in code
+2026-09-20 09:38:50 | INFO     | aml_research | [tool_execute_search_node] Scenario: tool_google_search | Raw links so far: 0
+2026-09-20 09:38:56 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:38:56 | DEBUG    | aml_research | [tool_execute_search_node] Query 1 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:39:19 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:39:19 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.facebook.com
+2026-09-20 09:39:19 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:39:19 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.reddit.com
+2026-09-20 09:39:19 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.facebook.com
+2026-09-20 09:39:19 | DEBUG    | aml_research | [tool_execute_search_node] Query 2 | Raw: 5 → Kept: 1 | lang: ro
+2026-09-20 09:39:21 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 3 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:39:21 | DEBUG    | aml_research | [tool_execute_search_node] Query 3 | Raw: 3 → Kept: 3 | lang: ru
+2026-09-20 09:39:52 | WARNING  | aml_research | [google_search] Attempt 1/2 failed: request failed: ReadTimeout: HTTPSConnectionPool(host='serpapi.com', port=443): Read timed out. (read timeout=30) | retrying in 5s | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:27 | WARNING  | aml_research | [google_search] NO LINKS RETURNED after 2 attempts | last reason: request failed: ReadTimeout: HTTPSConnectionPool(host='serpapi.com', port=443): Read timed out. (read timeout=30) | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:27 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:27 | DEBUG    | aml_research | [tool_execute_search_node] Query 4 | Raw: 0 → Kept: 0 | lang: en
+2026-09-20 09:40:34 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:34 | DEBUG    | aml_research | [tool_execute_search_node] Query 5 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:40:37 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:37 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:37 | DEBUG    | aml_research | [tool_execute_search_node] Query 6 | Raw: 0 → Kept: 0 | lang: ru
+2026-09-20 09:40:39 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:39 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://ofac.treasury.gov/recent-actions/20240612
+2026-09-20 09:40:39 | DEBUG    | aml_research | [tool_execute_search_node] Query 7 | Raw: 5 → Kept: 4 | lang: en
+2026-09-20 09:40:41 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:41 | DEBUG    | aml_research | [tool_execute_search_node] Query 8 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:40:42 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:40:42 | DEBUG    | aml_research | [tool_execute_search_node] Query 9 | Raw: 5 → Kept: 5 | lang: ru
+2026-09-20 09:41:13 | WARNING  | aml_research | [google_search] Attempt 1/2 failed: request failed: ReadTimeout: HTTPSConnectionPool(host='serpapi.com', port=443): Read timed out. (read timeout=30) | retrying in 5s | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:41:25 | INFO     | aml_research | [google_search] Succeeded on attempt 2/2 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:41:25 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:41:25 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://www.opensanctions.org/entities/NK-iid59npbdGKq3rEPaTtrai/
+2026-09-20 09:41:25 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://ofac.treasury.gov/recent-actions/20240612
+2026-09-20 09:41:25 | DEBUG    | aml_research | [tool_execute_search_node] Query 10 | Raw: 5 → Kept: 3 | lang: en
+2026-09-20 09:41:56 | WARNING  | aml_research | [google_search] Attempt 1/2 failed: request failed: ReadTimeout: HTTPSConnectionPool(host='serpapi.com', port=443): Read timed out. (read timeout=30) | retrying in 5s | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:01 | INFO     | aml_research | [google_search] Succeeded on attempt 2/2 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:01 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:01 | DEBUG    | aml_research | [tool_execute_search_node] Query 11 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:42:03 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:03 | DEBUG    | aml_research | [tool_execute_search_node] Query 12 | Raw: 5 → Kept: 5 | lang: ru
+2026-09-20 09:42:05 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:05 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://www.rferl.org/a/moldova-russia-eu-sanctions-airplane-parts/33076958.html
+2026-09-20 09:42:05 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://unn.ua/en/news/since-the-beginning-of-the-war-three-moldovan-companies-have-sold-dollar15-million-worth-of-aircraft-parts-to-russia
+2026-09-20 09:42:05 | DEBUG    | aml_research | [tool_execute_search_node] Query 13 | Raw: 5 → Kept: 3 | lang: en
+2026-09-20 09:42:07 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:07 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:07 | DEBUG    | aml_research | [tool_execute_search_node] Query 14 | Raw: 0 → Kept: 0 | lang: ro
+2026-09-20 09:42:16 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:16 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:42:16 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:42:16 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:42:16 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:42:16 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:42:16 | DEBUG    | aml_research | [tool_execute_search_node] Query 15 | Raw: 5 → Kept: 0 | lang: ru
+2026-09-20 09:42:18 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:18 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://www.opensanctions.org/entities/NK-iid59npbdGKq3rEPaTtrai/
+2026-09-20 09:42:18 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://2021-2025.state.gov/taking-additional-measures-to-degrade-russias-wartime-economy/
+2026-09-20 09:42:18 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://ofac.treasury.gov/recent-actions/20240612
+2026-09-20 09:42:18 | DEBUG    | aml_research | [tool_execute_search_node] Query 16 | Raw: 5 → Kept: 2 | lang: en
+2026-09-20 09:42:19 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:19 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:19 | DEBUG    | aml_research | [tool_execute_search_node] Query 17 | Raw: 0 → Kept: 0 | lang: ro
+2026-09-20 09:42:22 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "AIRROCK SOLUTIONS" OR "ЭЙРРОК СОЛЮШНС" OR "AIRROCKSOLUTIONS" OR "ЭЙРРОКСОЛЮШНС"
+2026-09-20 09:42:22 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://point.md/ru/novosti/politika/ssha-vveli-sanktsii-protiv-bashkana-gagauzii-evgenii-gutsul/
+2026-09-20 09:42:22 | DEBUG    | aml_research | [tool_execute_search_node] Query 18 | Raw: 5 → Kept: 4 | lang: ru
+2026-09-20 09:42:23 | INFO     | aml_research | [tool_execute_search_node] Done | New unique links: 50 | By engine: {'tool_google_search': 50} | Total queries: 18
+2026-09-20 09:42:23 | INFO     | aml_research | [extract_content_node] Scenario: tool_google_search | Total raw: 50 | To process: 50 | Skipped (other scenarios): 0
+2026-09-20 09:42:23 | INFO     | aml_research | [tavily_content_extractor] Starting extraction | URLs: 50 | Batches: 3 | depth: advanced
+2026-09-20 09:42:23 | INFO     | aml_research | [tavily_content_extractor] Batch 1/3 | URLs: 20
+2026-09-20 09:42:46 | WARNING  | aml_research | [tavily_content_extractor] Batch 1/3 — Tavily could not extract 1 URLs: ['https://www1.votum.md/ru/novosti/obschestvo/plyngeu-initsiat']
+2026-09-20 09:42:46 | DEBUG    | aml_research | [tavily_content_extractor] Batch 1 extracted 19 results
+2026-09-20 09:42:46 | INFO     | aml_research | [tavily_content_extractor] Batch 2/3 | URLs: 20
+2026-09-20 09:43:05 | WARNING  | aml_research | [tavily_content_extractor] Batch 2/3 — Tavily could not extract 2 URLs: ['https://sanctions.lursoft.lv/person/airrock-solutions-limite', 'https://infobiz.md/en/1021600048015/societatea-cu-raspundere']
+2026-09-20 09:43:05 | DEBUG    | aml_research | [tavily_content_extractor] Batch 2 extracted 18 results
+2026-09-20 09:43:05 | INFO     | aml_research | [tavily_content_extractor] Batch 3/3 | URLs: 10
+2026-09-20 09:43:15 | WARNING  | aml_research | [tavily_content_extractor] Batch 3/3 — Tavily could not extract 1 URLs: ['https://www.lexology.com/library/detail.aspx?g=a51a63f8-4d89']
+2026-09-20 09:43:15 | DEBUG    | aml_research | [tavily_content_extractor] Batch 3 extracted 9 results
+2026-09-20 09:43:15 | INFO     | aml_research | [tavily_content_extractor] Entity filter | Extracted: 46 | Matched: 37 | Dropped: 9
+2026-09-20 09:43:15 | INFO     | aml_research | [tavily_content_extractor] Done | Returned 37 enriched LinkCollections from 50 input
+2026-09-20 09:43:15 | INFO     | aml_research | [extract_content_node] Completed | Input: 50 | Entity-filtered: 37 | Dropped: 13
+2026-09-20 09:43:31 | INFO     | aml_research | [filter_key_terms_node] Scenario: tool_google_search | Patterns: 1674 | Input: 37 | Passed: 31 | Filtered out: 6
+2026-09-20 09:43:31 | INFO     | aml_research | [route_expert_generation] Routing to Expert Generation
+2026-09-20 09:43:31 | INFO     | aml_research | [call_subgraph] Executing | Raw links: 50
+2026-09-20 09:43:31 | INFO     | aml_research | [generate_hyde_document_node] Loaded 100 articles for 'AIRROCK SOLUTIONS'
+2026-09-20 09:43:31 | INFO     | aml_research | [call_subgraph] Done | Articles: 100
+2026-09-20 09:43:31 | INFO     | aml_research | [filter_semantic_similarity_node] Raw links: 50
+2026-09-20 09:44:02 | INFO     | aml_research | [filter_semantic_similarity_node] Scored: 31 | Above threshold (0.45): 17 | Returned (TOP_K=30): 17
+2026-09-20 09:44:02 | INFO     | aml_research | [filter_semantic_similarity_node] Score range: 0.45 - 0.72 | Top 5: ['https://www.opensanctions.org ', 'https://sanctions-finder.com ›', 'https://kyivindependent.com › ', 'https://infodebit.md › societa', 'https://ofac.treasury.gov › re']
+2026-09-20 09:44:02 | INFO     | aml_research | [filter_semantic_similarity_node] Completed
+2026-09-20 09:44:02 | INFO     | aml_research | [generate_url_summary_node] Entity: AIRROCK SOLUTIONS | Processing 17 URLs
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.opensanctions.org/entities/NK-iid59npbdGKq3rEPaT
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://sanctions-finder.com/sanction/airrock-solutions-limi
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://kyivindependent.com/rfe-rl-moldovan-companies-suppli
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://infodebit.md/en/1021600048015/societatea-cu-raspunde
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://ofac.treasury.gov/recent-actions/20240612
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://simpleflying.com/moldova-aircraft-parts-russia-sanct
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://mybusiness.md/ru/novosti-biznesa/item/30957-ssha-vve
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://unn.ua/en/news/since-the-beginning-of-the-war-three-
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://profiles.rise.md/mobile/profile.php?id=240930142626&
+2026-09-20 09:44:02 | DEBUG    | aml_research | [generate_url_summary] Starting: https://english.nv.ua/nation/moldova-companies-sold-15-billi
+2026-09-20 09:44:07 | DEBUG    | aml_research | [generate_url_summary] Starting: https://news.telegraf.com.ua/mir/2024-03-11/5839256-rozvalyu
+2026-09-20 09:44:07 | DEBUG    | aml_research | [generate_url_summary] Starting: https://2021-2025.state.gov/taking-additional-measures-to-de
+2026-09-20 09:44:07 | DEBUG    | aml_research | [generate_url_summary] Starting: https://data2b.md/ro/companies/1021600048015/srl-airrock-sol
+2026-09-20 09:44:07 | DEBUG    | aml_research | [generate_url_summary] Starting: https://news.telegraf.com.ua/politika/2024-02-01/5831438-san
+2026-09-20 09:44:07 | DEBUG    | aml_research | [generate_url_summary] Starting: https://podul.md/articol-ru/1010/trei-companii-din-rmoldova-
+2026-09-20 09:44:07 | DEBUG    | aml_research | [generate_url_summary] Starting: https://focus.ua/economics/623949-moldavskie-kompanii-postav
+2026-09-20 09:44:07 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.infotag.md/incidents-ru/313554/
+2026-09-20 09:44:11 | INFO     | aml_research | [generate_url_summary_node] Summarised 17/17 pages
+2026-09-20 09:44:11 | INFO     | aml_research | [extract_evidence_claims_node] Extracting claims | Raw links: 50
+2026-09-20 09:44:16 | INFO     | aml_research | [extract_evidence_claims_node] Extracted 5 unique claims from 17 summaries
+2026-09-20 09:44:16 | DEBUG    | aml_research | [extract_evidence_claims_node] Claims: [EvidenceClaim(claim_text='Multiple authoritative sources report that AIRROCK SOLUTIONS LIMITED LIABILITY COMPANY, registered in Moldova, is subject to international sanctions and export controls, including listings on the U.S. OFAC SDN List, U.S. Trade Consolidated Screening List, US SAM Procurement Exclusions, Taiwan Strategic High-Tech Commodities Entity List, and the Ukraine War and Sanctions database, indicating asset freezes, prohibitions on dealings by U.S. persons, and other restrictions.', claim_type='sanction_listing', supporting_urls=['https://www.opensanctions.org/entities/NK-iid59npbdGKq3rEPaTtrai/'], date_publish='Unknown'), EvidenceClaim(claim_text="On June 12, 2024, the U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) designated AIRROCK SOLUTIONS LIMITED LIABILITY COMPANY under Executive Order 14024 for supplying controlled electronic and aviation components to Russia-based companies, with measures including blocking property, suspending entry, and trade sanctions.", claim_type='sanction_listing', supporting_urls=['https://sanctions-finder.com/sanction/airrock-solutions-limited-liability-company/AIRROCK%20SOLUTIONS%20LIMITED%20LIABILITY%20COMPANY', 'https://ofac.treasury.gov/recent-actions/20240612', 'https://profiles.rise.md/mobile/profile.php?id=240930142626&lang=rom', 'https://2021-2025.state.gov/taking-additional-measures-to-degrade-russias-wartime-economy/'], date_publish='2024-06-12'), EvidenceClaim(claim_text='On June 16, 2024, the United States imposed sanctions against AIRROCK SOLUTIONS, Aerostage Services, and Max Jet Service for supplying aviation components and electronics to Russian companies, resulting in blocking of all property in the United States or in the possession or control of U.S. persons, and prohibitions on transactions and provision or receipt of funds, goods, or services.', claim_type='sanction_listing', supporting_urls=['https://mybusiness.md/ru/novosti-biznesa/item/30957-ssha-vveli-sanktsii-protiv-trjokh-moldavskikh-kompanij'], date_publish='2024-06-16'), EvidenceClaim(claim_text='Media investigations allege that AIRROCK SOLUTIONS, along with Aerostage Services and Maxjet Service, supplied aircraft parts worth approximately $15 million to Russia between 2022 and 2023, potentially circumventing EU sanctions, with transactions structured to avoid Moldovan customs records and no formal investigations or penalties reported as of the publication dates.', claim_type='allegation', supporting_urls=['https://kyivindependent.com/rfe-rl-moldovan-companies-supplied-aircraft-parts-to-russia-in-2023/', 'https://simpleflying.com/moldova-aircraft-parts-russia-sanctions/', 'https://unn.ua/en/news/since-the-beginning-of-the-war-three-moldovan-companies-have-sold-dollar15-million-worth-of-aircraft-parts-to-russia', 'https://english.nv.ua/nation/moldova-companies-sold-15-billion-worth-of-plane-spare-parts-to-russia-despite-sanctions-50389055.html', 'https://news.telegraf.com.ua/mir/2024-03-11/5839256-rozvalyuyutsya-u-poloti-v-rosii-pochalisya-nepriemnosti-z-litakami-shcho-vozyat-otochennya-putina', 'https://news.telegraf.com.ua/politika/2024-02-01/5831438-sanktsii-pratsyuyut-moldovski-kompanii-prodali-rosii-aviazapchastin-na-milyoni', 'https://focus.ua/economics/623949-moldavskie-kompanii-postavlyali-aviazapchasti-v-rf-nesmotrya-na-sankcii-zapada-smi', 'https://www.infotag.md/incidents-ru/313554/'], date_publish='2024-01-31'), EvidenceClaim(claim_text='As of February 6, 2024, Moldovan authorities, in response to EU concerns, have acknowledged and are conducting investigations into AIRROCK SOLUTIONS and two other Moldovan companies for allegedly acting as intermediaries in the sale of aircraft parts to Russia in 2022 and 2023, with no criminal investigations initiated against the directors at the time of reporting.', claim_type='investigation', supporting_urls=['https://podul.md/articol-ru/1010/trei-companii-din-rmoldova-au-inregistrat-profituri-uriase-livrand-rusiei-piese-de-avion-in-valoare-de-milioane-de-dolari-in-ciuda-sanctiunilor-occidentale-autoritatile-de-la-chisinau-promit-investigatii'], date_publish='2024-02-06')]
+2026-09-20 09:44:16 | INFO     | aml_research | [url_verification_node] Executing | Raw links: 50
+2026-09-20 09:44:16 | INFO     | aml_research | [url_verification_node] Evidence URLs: 15 | Collection URLs: 50 | Hallucinated: 0
+2026-09-20 09:44:16 | INFO     | aml_research | [url_verification_node] No hallucinations detected
+2026-09-20 09:44:16 | INFO     | aml_research | [route_evidence_validation] ✓ Validation passed - proceeding
+2026-09-20 09:44:16 | INFO     | aml_research | [reflect_evidence_quality_node] Executing | Raw links: 50
+2026-09-20 09:44:16 | DEBUG    | aml_research | [reflect_evidence_quality_node] Claim types: ['allegation', 'investigation', 'sanction_listing']
+2026-09-20 09:44:16 | DEBUG    | aml_research | [reflect_evidence_quality_node] Evidence block:
+ALLEGATION:
+EVIDENCE 1:
+{
+  "text": "Media investigations allege that AIRROCK SOLUTIONS, along with Aerostage Services and Maxjet Service, supplied aircraft parts worth approximately $15 million to Russia between 2022 and 2023, potentially circumventing EU sanctions, with transactions structured to avoid Moldovan customs records and no formal investigations or penalties reported as of the publication dates.",
+  "sources": "https://kyivindependent.com/rfe-rl-moldovan-companies-supplied-aircraft-parts-to-russia-in-2023/, https://simpleflying.com/moldova-aircraft-parts-russia-sanctions/, https://unn.ua/en/news/since-the-beginning-of-the-war-three-moldovan-companies-have-sold-dollar15-million-worth-of-aircraft-parts-to-russia, https://english.nv.ua/nation/moldova-companies-sold-15-billion-worth-of-plane-spare-parts-to-russia-despite-sanctions-50389055.html, https://news.telegraf.com.ua/mir/2024-03-11/5839256-rozvalyuyutsya-u-poloti-v-rosii-pochalisya-nepriemnosti-z-litakami-shcho-vozyat-otochennya-putina, https://news.telegraf.com.ua/politika/2024-02-01/5831438-sanktsii-pratsyuyut-moldovski-kompanii-prodali-rosii-aviazapchastin-na-milyoni, https://focus.ua/economics/623949-moldavskie-kompanii-postavlyali-aviazapchasti-v-rf-nesmotrya-na-sankcii-zapada-smi, https://www.infotag.md/incidents-ru/313554/",
+  "number of evidences": 8,
+  "date_publish": "2024-01-31"
+}
+
+INVESTIGATION:
+EVIDENCE 1:
+{
+  "text": "As of February 6, 2024, Moldovan authorities, in response to EU concerns, have acknowledged and are conducting investigations into AIRROCK SOLUTIONS and two other Moldovan companies for allegedly acting as intermediaries in the sale of aircraft parts to Russia in 2022 and 2023, with no criminal investigations initiated against the directors at the time of reporting.",
+  "sources": "https://podul.md/articol-ru/1010/trei-companii-din-rmoldova-au-inregistrat-profituri-uriase-livrand-rusiei-piese-de-avion-in-valoare-de-milioane-de-dolari-in-ciuda-sanctiunilor-occidentale-autoritatile-de-la-chisinau-promit-investigatii",
+  "number of evidences": 1,
+  "date_publish": "2024-02-06"
+}
+
+SANCTION LISTING:
+EVIDENCE 1:
+{
+  "text": "Multiple authoritative sources report that AIRROCK SOLUTIONS LIMITED LIABILITY COMPANY, registered in Moldova, is subject to international sanctions and export controls, including listings on the U.S. OFAC SDN List, U.S. Trade Consolidated Screening List, US SAM Procurement Exclusions, Taiwan Strategic High-Tech Commodities Entity List, and the Ukraine War and Sanctions database, indicating asset freezes, prohibitions on dealings by U.S. persons, and other restrictions.",
+  "sources": "https://www.opensanctions.org/entities/NK-iid59npbdGKq3rEPaTtrai/",
+  "number of evidences": 1,
+  "date_publish": "Unknown"
+}
+
+EVIDENCE 2:
+{
+  "text": "On June 12, 2024, the U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) designated AIRROCK SOLUTIONS LIMITED LIABILITY COMPANY under Executive Order 14024 for supplying controlled electronic and aviation components to Russia-based companies, with measures including blocking property, suspending entry, and trade sanctions.",
+  "sources": "https://sanctions-finder.com/sanction/airrock-solutions-limited-liability-company/AIRROCK%20SOLUTIONS%20LIMITED%20LIABILITY%20COMPANY, https://ofac.treasury.gov/recent-actions/20240612, https://profiles.rise.md/mobile/profile.php?id=240930142626&lang=rom, https://2021-2025.state.gov/taking-additional-measures-to-degrade-russias-wartime-economy/",
+  "number of evidences": 4,
+  "date_publish": "2024-06-12"
+}
+
+EVIDENCE 3:
+{
+  "text": "On June 16, 2024, the United States imposed sanctions against AIRROCK SOLUTIONS, Aerostage Services, and Max Jet Service for supplying aviation components and electronics to Russian companies, resulting in blocking of all property in the United States or in the possession or control of U.S. persons, and prohibitions on transactions and provision or receipt of funds, goods, or services.",
+  "sources": "https://mybusiness.md/ru/novosti-biznesa/item/30957-ssha-vveli-sanktsii-protiv-trjokh-moldavskikh-kompanij",
+  "number of evidences": 1,
+  "date_publish": "2024-06-16"
+}
+2026-09-20 09:44:17 | INFO     | aml_research | [reflect_evidence_quality_node] Assessment: convinced | Reasoning: Multiple credible, recent, and official sources confirm AIRROCK SOLUTIONS is under active international sanctions for supplying aviation parts to Russia, with ongoing investigations. The evidence is detailed, consistent, and from authoritative agencies, meeting the threshold for a confident decision.
+2026-09-20 09:44:17 | INFO     | aml_research | [reflect_evidence_quality_node] Done
+2026-09-20 09:44:17 | INFO     | aml_research | [generate_risk_assessment_node] Executing | Raw links: 50
+2026-09-20 09:44:17 | DEBUG    | aml_research | [generate_risk_assessment_node] Claim types: ['allegation', 'investigation', 'sanction_listing']
+2026-09-20 09:44:17 | DEBUG    | aml_research | [generate_risk_assessment_node] Evidence prompt:
+Evidence for AIRROCK SOLUTIONS (IDNO 1021600048015):
+
+            Public-source evidence:
+            ALLEGATION:
+[
+  {
+    "text": "Media investigations allege that AIRROCK SOLUTIONS, along with Aerostage Services and Maxjet Service, supplied aircraft parts worth approximately $15 million to Russia between 2022 and 2023, potentially circumventing EU sanctions, with transactions structured to avoid Moldovan customs records and no formal investigations or penalties reported as of the publication dates.",
+    "sources": "https://kyivindependent.com/rfe-rl-moldovan-companies-supplied-aircraft-parts-to-russia-in-2023/, https://simpleflying.com/moldova-aircraft-parts-russia-sanctions/, https://unn.ua/en/news/since-the-beginning-of-the-war-three-moldovan-companies-have-sold-dollar15-million-worth-of-aircraft-parts-to-russia, https://english.nv.ua/nation/moldova-companies-sold-15-billion-worth-of-plane-spare-parts-to-russia-despite-sanctions-50389055.html, https://news.telegraf.com.ua/mir/2024-03-11/5839256-rozvalyuyutsya-u-poloti-v-rosii-pochalisya-nepriemnosti-z-litakami-shcho-vozyat-otochennya-putina, https://news.telegraf.com.ua/politika/2024-02-01/5831438-sanktsii-pratsyuyut-moldovski-kompanii-prodali-rosii-aviazapchastin-na-milyoni, https://focus.ua/economics/623949-moldavskie-kompanii-postavlyali-aviazapchasti-v-rf-nesmotrya-na-sankcii-zapada-smi, https://www.infotag.md/incidents-ru/313554/",
+    "date_publish": "2024-01-31"
+  }
+]
+
+INVESTIGATION:
+[
+  {
+    "text": "As of February 6, 2024, Moldovan authorities, in response to EU concerns, have acknowledged and are conducting investigations into AIRROCK SOLUTIONS and two other Moldovan companies for allegedly acting as intermediaries in the sale of aircraft parts to Russia in 2022 and 2023, with no criminal investigations initiated against the directors at the time of reporting.",
+    "sources": "https://podul.md/articol-ru/1010/trei-companii-din-rmoldova-au-inregistrat-profituri-uriase-livrand-rusiei-piese-de-avion-in-valoare-de-milioane-de-dolari-in-ciuda-sanctiunilor-occidentale-autoritatile-de-la-chisinau-promit-investigatii",
+    "date_publish": "2024-02-06"
+  }
+]
+
+SANCTION LISTING:
+[
+  {
+    "text": "Multiple authoritative sources report that AIRROCK SOLUTIONS LIMITED LIABILITY COMPANY, registered in Moldova, is subject to international sanctions and export controls, including listings on the U.S. OFAC SDN List, U.S. Trade Consolidated Screening List, US SAM Procurement Exclusions, Taiwan Strategic High-Tech Commodities Entity List, and the Ukraine War and Sanctions database, indicating asset freezes, prohibitions on dealings by U.S. persons, and other restrictions.",
+    "sources": "https://www.opensanctions.org/entities/NK-iid59npbdGKq3rEPaTtrai/",
+    "date_publish": "Unknown"
+  },
+  {
+    "text": "On June 12, 2024, the U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) designated AIRROCK SOLUTIONS LIMITED LIABILITY COMPANY under Executive Order 14024 for supplying controlled electronic and aviation components to Russia-based companies, with measures including blocking property, suspending entry, and trade sanctions.",
+    "sources": "https://sanctions-finder.com/sanction/airrock-solutions-limited-liability-company/AIRROCK%20SOLUTIONS%20LIMITED%20LIABILITY%20COMPANY, https://ofac.treasury.gov/recent-actions/20240612, https://profiles.rise.md/mobile/profile.php?id=240930142626&lang=rom, https://2021-2025.state.gov/taking-additional-measures-to-degrade-russias-wartime-economy/",
+    "date_publish": "2024-06-12"
+  },
+  {
+    "text": "On June 16, 2024, the United States imposed sanctions against AIRROCK SOLUTIONS, Aerostage Services, and Max Jet Service for supplying aviation components and electronics to Russian companies, resulting in blocking of all property in the United States or in the possession or control of U.S. persons, and prohibitions on transactions and provision or receipt of funds, goods, or services.",
+    "sources": "https://mybusiness.md/ru/novosti-biznesa/item/30957-ssha-vveli-sanktsii-protiv-trjokh-moldavskikh-kompanij",
+    "date_publish": "2024-06-16"
+  }
+]
+
+            Analyze this evidence according to the framework provided.
+2026-09-20 09:44:17 | INFO     | aml_research | [generate_risk_assessment_node] Requesting final conclusion from LLM
+2026-09-20 09:44:28 | INFO     | aml_research | [generate_risk_assessment_node] Search sources: 15 media URLs
+2026-09-20 09:44:28 | INFO     | aml_research | [generate_risk_assessment_node] Risk assessment completed
+2026-09-20 09:44:28 | INFO     | aml_research | [BATCH] Saved: D:\MICB_Projects\8_aml_detective\test_cases\runs\2026-09-20_prod_smoke\reports\901.json
+2026-09-20 09:44:28 | INFO     | aml_research | ============================================================
+2026-09-20 09:44:28 | INFO     | aml_research | [BATCH] Starting: VITASANMAX (IDNO=1003600005654, contragent ID=902)
+2026-09-20 09:44:28 | INFO     | aml_research | ============================================================
+2026-09-20 09:44:29 | INFO     | aml_research | [generate_name_regex] VITASANMAX → 2 variants: ['VITASANMAX', 'ВИТАСАНМАКС']
+2026-09-20 09:44:29 | INFO     | aml_research | [scenario_selection_node] Raw links: 0
+2026-09-20 09:44:29 | INFO     | aml_research | [scenario_selection_node] Selected: tool_google_search | Used: []
+2026-09-20 09:44:29 | INFO     | aml_research | [route_trigger_search] Tool scenario 'tool_google_search' → search_payload_generate_node
+2026-09-20 09:44:29 | INFO     | aml_research | [search_payload_generate_node] Scenario: tool_google_search | Entity: VITASANMAX | Built 18 tool calls in code
+2026-09-20 09:44:29 | INFO     | aml_research | [tool_execute_search_node] Scenario: tool_google_search | Raw links so far: 0
+2026-09-20 09:44:30 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("money laundering" OR fraud OR "tax evasion" OR e
+2026-09-20 09:44:30 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:44:30 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.linkedin.com
+2026-09-20 09:44:30 | DEBUG    | aml_research | [tool_execute_search_node] Query 1 | Raw: 5 → Kept: 3 | lang: en
+2026-09-20 09:44:32 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("spălare de bani" OR fraudă OR "evaziune fiscală"
+2026-09-20 09:44:32 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.reddit.com
+2026-09-20 09:44:32 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.reddit.com
+2026-09-20 09:44:32 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.facebook.com
+2026-09-20 09:44:32 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.reddit.com
+2026-09-20 09:44:32 | DEBUG    | aml_research | [tool_execute_search_node] Query 2 | Raw: 5 → Kept: 1 | lang: ro
+2026-09-20 09:44:34 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 2 | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("отмывание денег" OR мошенничество OR "уклонение 
+2026-09-20 09:44:34 | DEBUG    | aml_research | [tool_execute_search_node] Query 3 | Raw: 2 → Kept: 2 | lang: ru
+2026-09-20 09:44:42 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 1 | query: "VITASANMAX" OR "ВИТАСАНМАКС" (corruption OR bribery OR "influence peddling" OR 
+2026-09-20 09:44:42 | DEBUG    | aml_research | [tool_execute_search_node] Query 4 | Raw: 1 → Kept: 1 | lang: en
+2026-09-20 09:44:44 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 1 | query: "VITASANMAX" OR "ВИТАСАНМАКС" (corupție OR mită OR "trafic de influență" OR "îmb
+2026-09-20 09:44:44 | DEBUG    | aml_research | [tool_execute_search_node] Query 5 | Raw: 1 → Kept: 1 | lang: ro
+2026-09-20 09:44:46 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" (коррупция OR взятка OR "злоупотребление влиянием"
+2026-09-20 09:44:46 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.reddit.com
+2026-09-20 09:44:46 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:44:46 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:44:46 | DEBUG    | aml_research | [tool_execute_search_node] Query 6 | Raw: 5 → Kept: 2 | lang: ru
+2026-09-20 09:44:48 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("organized crime" OR mafia OR cartel OR smuggling
+2026-09-20 09:44:48 | DEBUG    | aml_research | [tool_execute_search_node] Query 7 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:44:50 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("crimă organizată" OR mafie OR cartel OR contraba
+2026-09-20 09:44:50 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:44:50 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:44:50 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://www.youtube.com
+2026-09-20 09:44:50 | DEBUG    | aml_research | [tool_execute_search_node] Query 8 | Raw: 5 → Kept: 2 | lang: ro
+2026-09-20 09:44:51 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("организованная преступность" OR мафия OR картель
+2026-09-20 09:44:51 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("организованная преступность" OR мафия OR картель
+2026-09-20 09:44:51 | DEBUG    | aml_research | [tool_execute_search_node] Query 9 | Raw: 0 → Kept: 0 | lang: ru
+2026-09-20 09:44:53 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" (sanctions OR blacklist OR OFAC OR penalty OR "reg
+2026-09-20 09:44:53 | DEBUG    | aml_research | [tool_execute_search_node] Query 10 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:44:55 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "VITASANMAX" OR "ВИТАСАНМАКС" (sancțiuni OR "listă neagră" OR penalitate OR "acț
+2026-09-20 09:44:55 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "VITASANMAX" OR "ВИТАСАНМАКС" (sancțiuni OR "listă neagră" OR penalitate OR "acț
+2026-09-20 09:44:55 | DEBUG    | aml_research | [tool_execute_search_node] Query 11 | Raw: 0 → Kept: 0 | lang: ro
+2026-09-20 09:44:57 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "VITASANMAX" OR "ВИТАСАНМАКС" (санкции OR "чёрный список" OR штраф OR "регулятор
+2026-09-20 09:44:57 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "VITASANMAX" OR "ВИТАСАНМАКС" (санкции OR "чёрный список" OR штраф OR "регулятор
+2026-09-20 09:44:57 | DEBUG    | aml_research | [tool_execute_search_node] Query 12 | Raw: 0 → Kept: 0 | lang: ru
+2026-09-20 09:44:58 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" (lawsuit OR indictment OR arrest OR conviction OR 
+2026-09-20 09:44:58 | DEBUG    | aml_research | [tool_execute_search_node] Query 13 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:45:05 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("dosar penal" OR arest OR condamnare OR "acuzații
+2026-09-20 09:45:05 | DEBUG    | aml_research | [tool_execute_search_node] Query 14 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:45:12 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 5 | query: "VITASANMAX" OR "ВИТАСАНМАКС" ("судебный иск" OR "обвинительное заключение" OR а
+2026-09-20 09:45:12 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://t.me
+2026-09-20 09:45:12 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://t.me
+2026-09-20 09:45:12 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://t.me
+2026-09-20 09:45:12 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://t.me
+2026-09-20 09:45:12 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://t.me
+2026-09-20 09:45:12 | DEBUG    | aml_research | [tool_execute_search_node] Query 15 | Raw: 5 → Kept: 0 | lang: ru
+2026-09-20 09:45:14 | INFO     | aml_research | [google_search] Google returned no results, not retrying | query: "VITASANMAX" OR "ВИТАСАНМАКС" (scandal OR controversy OR misconduct OR whistlebl
+2026-09-20 09:45:14 | WARNING  | aml_research | [tool_execute_search_node] 'tool_google_search' returned 0 results | query: "VITASANMAX" OR "ВИТАСАНМАКС" (scandal OR controversy OR misconduct OR whistlebl
+2026-09-20 09:45:14 | DEBUG    | aml_research | [tool_execute_search_node] Query 16 | Raw: 0 → Kept: 0 | lang: en
+2026-09-20 09:45:16 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 3 | query: "VITASANMAX" OR "ВИТАСАНМАКС" (scandal OR controversă OR "conduită necorespunzăt
+2026-09-20 09:45:16 | DEBUG    | aml_research | [tool_execute_search_node] Query 17 | Raw: 3 → Kept: 3 | lang: ro
+2026-09-20 09:45:17 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_google_search' raw results: 4 | query: "VITASANMAX" OR "ВИТАСАНМАКС" (скандал OR спор OR нарушение OR информатор OR "не
+2026-09-20 09:45:17 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://t.me
+2026-09-20 09:45:17 | DEBUG    | aml_research | [tool_execute_search_node] Low-value domain skipped: https://t.me
+2026-09-20 09:45:17 | DEBUG    | aml_research | [tool_execute_search_node] Query 18 | Raw: 4 → Kept: 2 | lang: ru
+2026-09-20 09:45:18 | INFO     | aml_research | [tool_execute_search_node] Done | New unique links: 37 | By engine: {'tool_google_search': 37} | Total queries: 18
+2026-09-20 09:45:18 | INFO     | aml_research | [extract_content_node] Scenario: tool_google_search | Total raw: 37 | To process: 37 | Skipped (other scenarios): 0
+2026-09-20 09:45:18 | INFO     | aml_research | [tavily_content_extractor] Starting extraction | URLs: 37 | Batches: 2 | depth: advanced
+2026-09-20 09:45:18 | INFO     | aml_research | [tavily_content_extractor] Batch 1/2 | URLs: 20
+2026-09-20 09:45:36 | WARNING  | aml_research | [tavily_content_extractor] Batch 1/2 — Tavily could not extract 2 URLs: ['https://md.linkedin.com/pub/dir/-+Viajes+Coral+-+And/-+Viaje', 'https://oag.ca.gov/system/files/prop65/notices/2025-00147.pd']
+2026-09-20 09:45:36 | DEBUG    | aml_research | [tavily_content_extractor] Batch 1 extracted 18 results
+2026-09-20 09:45:36 | INFO     | aml_research | [tavily_content_extractor] Batch 2/2 | URLs: 17
+2026-09-20 09:45:46 | WARNING  | aml_research | [tavily_content_extractor] Batch 2/2 — Tavily could not extract 2 URLs: ['https://www.legis.md/cautare/downloadpdf/135415', 'http://www.evedomosti.md/news/desyat-chelovek-podarili-sandu']
+2026-09-20 09:45:46 | DEBUG    | aml_research | [tavily_content_extractor] Batch 2 extracted 15 results
+2026-09-20 09:45:46 | INFO     | aml_research | [tavily_content_extractor] Entity filter | Extracted: 33 | Matched: 9 | Dropped: 24
+2026-09-20 09:45:46 | INFO     | aml_research | [tavily_content_extractor] Done | Returned 9 enriched LinkCollections from 37 input
+2026-09-20 09:45:46 | INFO     | aml_research | [extract_content_node] Completed | Input: 37 | Entity-filtered: 9 | Dropped: 28
+2026-09-20 09:45:50 | INFO     | aml_research | [filter_key_terms_node] Scenario: tool_google_search | Patterns: 1674 | Input: 9 | Passed: 6 | Filtered out: 3
+2026-09-20 09:45:50 | INFO     | aml_research | [route_expert_generation] Routing to Expert Generation
+2026-09-20 09:45:50 | INFO     | aml_research | [call_subgraph] Executing | Raw links: 37
+2026-09-20 09:45:50 | INFO     | aml_research | [generate_hyde_document_node] Loaded 100 articles for 'VITASANMAX'
+2026-09-20 09:45:50 | INFO     | aml_research | [call_subgraph] Done | Articles: 100
+2026-09-20 09:45:50 | INFO     | aml_research | [filter_semantic_similarity_node] Raw links: 37
+2026-09-20 09:45:56 | INFO     | aml_research | [filter_semantic_similarity_node] Scored: 6 | Above threshold (0.45): 1 | Returned (TOP_K=30): 1
+2026-09-20 09:45:56 | INFO     | aml_research | [filter_semantic_similarity_node] Score range: 0.48 - 0.48 | Top 5: ['http://stroyka.md › companies ']
+2026-09-20 09:45:56 | INFO     | aml_research | [filter_semantic_similarity_node] Completed
+2026-09-20 09:45:56 | INFO     | aml_research | [generate_url_summary_node] Entity: VITASANMAX | Processing 1 URLs
+2026-09-20 09:45:56 | DEBUG    | aml_research | [generate_url_summary] Starting: http://stroyka.md/en/companies/vitasanmax-srl
+2026-09-20 09:45:58 | INFO     | aml_research | [generate_url_summary_node] Summarised 1/1 pages
+2026-09-20 09:45:58 | INFO     | aml_research | [extract_evidence_claims_node] Extracting claims | Raw links: 37
+2026-09-20 09:45:58 | INFO     | aml_research | [extract_evidence_claims_node] Extracted 0 unique claims from 1 summaries
+2026-09-20 09:45:58 | DEBUG    | aml_research | [extract_evidence_claims_node] Claims: []
+2026-09-20 09:45:58 | INFO     | aml_research | [url_verification_node] Executing | Raw links: 37
+2026-09-20 09:45:58 | INFO     | aml_research | [url_verification_node] Evidence URLs: 0 | Collection URLs: 37 | Hallucinated: 0
+2026-09-20 09:45:58 | INFO     | aml_research | [url_verification_node] No hallucinations detected
+2026-09-20 09:45:58 | INFO     | aml_research | [route_evidence_validation] ✓ Validation passed - proceeding
+2026-09-20 09:45:58 | INFO     | aml_research | [reflect_evidence_quality_node] Executing | Raw links: 37
+2026-09-20 09:45:58 | DEBUG    | aml_research | [reflect_evidence_quality_node] Claim types: []
+2026-09-20 09:45:58 | DEBUG    | aml_research | [reflect_evidence_quality_node] Evidence block:
+No evidence available.
+2026-09-20 09:45:59 | INFO     | aml_research | [reflect_evidence_quality_node] Assessment: repeat_search | Reasoning: No evidence is available to support or refute the claims. Without credible sources or specific details, it's impossible to form a confident opinion. More information from authoritative sources is needed before making any decision.
+2026-09-20 09:45:59 | INFO     | aml_research | [reflect_evidence_quality_node] Done
+2026-09-20 09:45:59 | INFO     | aml_research | [scenario_selection_node] Raw links: 37
+2026-09-20 09:45:59 | INFO     | aml_research | [scenario_selection_node] Selected: tool_tavily_search | Used: ['tool_google_search']
+2026-09-20 09:45:59 | INFO     | aml_research | [route_trigger_search] Tool scenario 'tool_tavily_search' → search_payload_generate_node
+2026-09-20 09:45:59 | INFO     | aml_research | [search_payload_generate_node] Scenario: tool_tavily_search | Entity: VITASANMAX | Built 18 tool calls in code
+2026-09-20 09:45:59 | INFO     | aml_research | [tool_execute_search_node] Scenario: tool_tavily_search | Raw links so far: 37
+2026-09-20 09:45:59 | DEBUG    | aml_research | [tavily_search] Query: Find money laundering, fraud, tax evasion, or embezzlement allegations against V | topic: general | max_results: 5
+2026-09-20 09:46:05 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Find money laundering, fraud, tax evasion, or embezzlement allegations against V
+2026-09-20 09:46:05 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Find money laundering, fraud, tax evasion, or embezzlement allegations against V
+2026-09-20 09:46:05 | DEBUG    | aml_research | [tool_execute_search_node] Query 19 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:46:06 | DEBUG    | aml_research | [tavily_search] Query: Găsește acuzații de spălare de bani, fraudă, evaziune fiscală sau delapidare împ | topic: general | max_results: 5
+2026-09-20 09:46:11 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Găsește acuzații de spălare de bani, fraudă, evaziune fiscală sau delapidare împ
+2026-09-20 09:46:11 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Găsește acuzații de spălare de bani, fraudă, evaziune fiscală sau delapidare împ
+2026-09-20 09:46:11 | DEBUG    | aml_research | [tool_execute_search_node] Query 20 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:46:12 | DEBUG    | aml_research | [tavily_search] Query: Найти обвинения в отмывании денег, мошенничестве, уклонении от налогов против VI | topic: general | max_results: 5
+2026-09-20 09:46:18 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Найти обвинения в отмывании денег, мошенничестве, уклонении от налогов против VI
+2026-09-20 09:46:18 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Найти обвинения в отмывании денег, мошенничестве, уклонении от налогов против VI
+2026-09-20 09:46:18 | DEBUG    | aml_research | [tool_execute_search_node] Query 21 | Raw: 5 → Kept: 5 | lang: ru
+2026-09-20 09:46:19 | DEBUG    | aml_research | [tavily_search] Query: Find corruption, bribery, influence peddling allegations against VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:46:24 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Find corruption, bribery, influence peddling allegations against VITASANMAX
+2026-09-20 09:46:24 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Find corruption, bribery, influence peddling allegations against VITASANMAX
+2026-09-20 09:46:24 | DEBUG    | aml_research | [tool_execute_search_node] Query 22 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:46:25 | DEBUG    | aml_research | [tavily_search] Query: Găsește acuzații de corupție, mită, trafic de influență împotriva VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:46:29 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Găsește acuzații de corupție, mită, trafic de influență împotriva VITASANMAX
+2026-09-20 09:46:29 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Găsește acuzații de corupție, mită, trafic de influență împotriva VITASANMAX
+2026-09-20 09:46:29 | DEBUG    | aml_research | [tool_execute_search_node] Query 23 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:46:30 | DEBUG    | aml_research | [tavily_search] Query: Найти обвинения в коррупции, взяточничестве против VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:46:36 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Найти обвинения в коррупции, взяточничестве против VITASANMAX
+2026-09-20 09:46:36 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Найти обвинения в коррупции, взяточничестве против VITASANMAX
+2026-09-20 09:46:36 | DEBUG    | aml_research | [tool_execute_search_node] Query 24 | Raw: 5 → Kept: 5 | lang: ru
+2026-09-20 09:46:37 | DEBUG    | aml_research | [tavily_search] Query: Find organized crime, smuggling, trafficking allegations against VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:46:43 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Find organized crime, smuggling, trafficking allegations against VITASANMAX
+2026-09-20 09:46:43 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Find organized crime, smuggling, trafficking allegations against VITASANMAX
+2026-09-20 09:46:43 | DEBUG    | aml_research | [tool_execute_search_node] Query 25 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:46:44 | DEBUG    | aml_research | [tavily_search] Query: Găsește acuzații de crimă organizată, contrabandă împotriva VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:46:47 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Găsește acuzații de crimă organizată, contrabandă împotriva VITASANMAX
+2026-09-20 09:46:47 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Găsește acuzații de crimă organizată, contrabandă împotriva VITASANMAX
+2026-09-20 09:46:47 | DEBUG    | aml_research | [tool_execute_search_node] Query 26 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:46:48 | DEBUG    | aml_research | [tavily_search] Query: Найти обвинения в организованной преступности, контрабанде против VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:46:54 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Найти обвинения в организованной преступности, контрабанде против VITASANMAX
+2026-09-20 09:46:54 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Найти обвинения в организованной преступности, контрабанде против VITASANMAX
+2026-09-20 09:46:54 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: http://stroyka.md/en/companies/vitasanmax-srl
+2026-09-20 09:46:54 | DEBUG    | aml_research | [tool_execute_search_node] Query 27 | Raw: 5 → Kept: 4 | lang: ru
+2026-09-20 09:46:55 | DEBUG    | aml_research | [tavily_search] Query: Find sanctions, blacklist, OFAC penalties, or regulatory actions against VITASAN | topic: general | max_results: 5
+2026-09-20 09:47:01 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Find sanctions, blacklist, OFAC penalties, or regulatory actions against VITASAN
+2026-09-20 09:47:01 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Find sanctions, blacklist, OFAC penalties, or regulatory actions against VITASAN
+2026-09-20 09:47:01 | DEBUG    | aml_research | [tool_execute_search_node] Query 28 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:47:02 | DEBUG    | aml_research | [tavily_search] Query: Găsește sancțiuni, liste negre, penalități sau acțiuni regulatorii împotriva VIT | topic: general | max_results: 5
+2026-09-20 09:47:06 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Găsește sancțiuni, liste negre, penalități sau acțiuni regulatorii împotriva VIT
+2026-09-20 09:47:06 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Găsește sancțiuni, liste negre, penalități sau acțiuni regulatorii împotriva VIT
+2026-09-20 09:47:06 | DEBUG    | aml_research | [tool_execute_search_node] Query 29 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:47:07 | DEBUG    | aml_research | [tavily_search] Query: Найти санкции, чёрные списки, штрафы или регуляторные меры против VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:47:12 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Найти санкции, чёрные списки, штрафы или регуляторные меры против VITASANMAX
+2026-09-20 09:47:12 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Найти санкции, чёрные списки, штрафы или регуляторные меры против VITASANMAX
+2026-09-20 09:47:12 | DEBUG    | aml_research | [tool_execute_search_node] Query 30 | Raw: 5 → Kept: 5 | lang: ru
+2026-09-20 09:47:13 | DEBUG    | aml_research | [tavily_search] Query: Find lawsuits, indictments, arrests, or criminal charges against VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:47:16 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Find lawsuits, indictments, arrests, or criminal charges against VITASANMAX
+2026-09-20 09:47:16 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Find lawsuits, indictments, arrests, or criminal charges against VITASANMAX
+2026-09-20 09:47:16 | DEBUG    | aml_research | [tool_execute_search_node] Query 31 | Raw: 5 → Kept: 5 | lang: en
+2026-09-20 09:47:17 | DEBUG    | aml_research | [tavily_search] Query: Găsește dosare penale, aresturi, condamnări sau acuzații penale împotriva VITASA | topic: general | max_results: 5
+2026-09-20 09:47:20 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Găsește dosare penale, aresturi, condamnări sau acuzații penale împotriva VITASA
+2026-09-20 09:47:20 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Găsește dosare penale, aresturi, condamnări sau acuzații penale împotriva VITASA
+2026-09-20 09:47:20 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://globalsanctions.com/judgment
+2026-09-20 09:47:20 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://www.hbsslaw.com/cases
+2026-09-20 09:47:20 | DEBUG    | aml_research | [tool_execute_search_node] Query 32 | Raw: 5 → Kept: 3 | lang: ro
+2026-09-20 09:47:21 | DEBUG    | aml_research | [tavily_search] Query: Найти судебные иски, обвинительные заключения, аресты или уголовные дела против  | topic: general | max_results: 5
+2026-09-20 09:47:24 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Найти судебные иски, обвинительные заключения, аресты или уголовные дела против 
+2026-09-20 09:47:24 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Найти судебные иски, обвинительные заключения, аресты или уголовные дела против 
+2026-09-20 09:47:24 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://www.hbsslaw.com/cases
+2026-09-20 09:47:24 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://globalsanctions.com/judgment
+2026-09-20 09:47:24 | DEBUG    | aml_research | [tool_execute_search_node] Query 33 | Raw: 5 → Kept: 3 | lang: ru
+2026-09-20 09:47:25 | DEBUG    | aml_research | [tavily_search] Query: Find scandals, controversies, misconduct, or adverse media coverage about VITASA | topic: general | max_results: 5
+2026-09-20 09:47:31 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Find scandals, controversies, misconduct, or adverse media coverage about VITASA
+2026-09-20 09:47:31 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Find scandals, controversies, misconduct, or adverse media coverage about VITASA
+2026-09-20 09:47:31 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: http://stroyka.md/en/companies/vitasanmax-srl
+2026-09-20 09:47:31 | DEBUG    | aml_research | [tool_execute_search_node] Query 34 | Raw: 5 → Kept: 4 | lang: en
+2026-09-20 09:47:32 | DEBUG    | aml_research | [tavily_search] Query: Găsește scandaluri, controverse, conduită necorespunzătoare sau presă negativă d | topic: general | max_results: 5
+2026-09-20 09:47:35 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Găsește scandaluri, controverse, conduită necorespunzătoare sau presă negativă d
+2026-09-20 09:47:35 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Găsește scandaluri, controverse, conduită necorespunzătoare sau presă negativă d
+2026-09-20 09:47:35 | DEBUG    | aml_research | [tool_execute_search_node] Query 35 | Raw: 5 → Kept: 5 | lang: ro
+2026-09-20 09:47:36 | DEBUG    | aml_research | [tavily_search] Query: Найти скандалы, споры, нарушения или негативные новости о VITASANMAX | topic: general | max_results: 5
+2026-09-20 09:47:40 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: Найти скандалы, споры, нарушения или негативные новости о VITASANMAX
+2026-09-20 09:47:40 | DEBUG    | aml_research | [tool_execute_search_node] 'tool_tavily_search' raw results: 5 | query: Найти скандалы, споры, нарушения или негативные новости о VITASANMAX
+2026-09-20 09:47:40 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://qoobus.com/en/companies/md/vitasanmax-srl--1003600005654
+2026-09-20 09:47:40 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://www.verif.com/en/company/VITASANMAX-SRL-68d9d63d1299230338d20e69
+2026-09-20 09:47:40 | DEBUG    | aml_research | [tool_execute_search_node] Duplicate skipped: https://infodebit.md/ru/1003600005654/societatea-cu-raspundere-limitata-vitasanmax
+2026-09-20 09:47:40 | DEBUG    | aml_research | [tool_execute_search_node] Query 36 | Raw: 5 → Kept: 2 | lang: ru
+2026-09-20 09:47:41 | INFO     | aml_research | [tool_execute_search_node] Done | New unique links: 81 | By engine: {'tool_tavily_search': 81} | Total queries: 18
+2026-09-20 09:47:41 | INFO     | aml_research | [extract_content_node] Scenario: tool_tavily_search | Total raw: 118 | To process: 81 | Skipped (other scenarios): 37
+2026-09-20 09:47:41 | INFO     | aml_research | [tavily_content_extractor] Starting extraction | URLs: 81 | Batches: 5 | depth: advanced
+2026-09-20 09:47:41 | INFO     | aml_research | [tavily_content_extractor] Batch 1/5 | URLs: 20
+2026-09-20 09:47:52 | WARNING  | aml_research | [tavily_content_extractor] Batch 1/5 — Tavily could not extract 2 URLs: ['https://www.universuljuridic.ro/infractiuni-de-evaziune-fisc', 'https://www.researchgate.net/publication/387726135_Influence']
+2026-09-20 09:47:52 | DEBUG    | aml_research | [tavily_content_extractor] Batch 1 extracted 18 results
+2026-09-20 09:47:52 | INFO     | aml_research | [tavily_content_extractor] Batch 2/5 | URLs: 20
+2026-09-20 09:48:05 | WARNING  | aml_research | [tavily_content_extractor] Batch 2/5 — Tavily could not extract 1 URLs: ['https://fbi.gov/contact-us/field-offices/phoenix/news/malas-']
+2026-09-20 09:48:05 | DEBUG    | aml_research | [tavily_content_extractor] Batch 2 extracted 19 results
+2026-09-20 09:48:05 | INFO     | aml_research | [tavily_content_extractor] Batch 3/5 | URLs: 20
+2026-09-20 09:48:17 | WARNING  | aml_research | [tavily_content_extractor] Batch 3/5 — Tavily could not extract 2 URLs: ['https://legislatie.just.ro/public/DetaliiDocument/64844', 'https://infobiz.md/en/1003600005654/societatea-cu-raspundere']
+2026-09-20 09:48:17 | DEBUG    | aml_research | [tavily_content_extractor] Batch 3 extracted 18 results
+2026-09-20 09:48:17 | INFO     | aml_research | [tavily_content_extractor] Batch 4/5 | URLs: 20
+2026-09-20 09:48:26 | WARNING  | aml_research | [tavily_content_extractor] Batch 4/5 — Tavily could not extract 1 URLs: ['https://www.volza.com/company-profile/ooo-cersanite-invest-1']
+2026-09-20 09:48:26 | DEBUG    | aml_research | [tavily_content_extractor] Batch 4 extracted 19 results
+2026-09-20 09:48:26 | INFO     | aml_research | [tavily_content_extractor] Batch 5/5 | URLs: 1
+2026-09-20 09:48:27 | DEBUG    | aml_research | [tavily_content_extractor] Batch 5 extracted 1 results
+2026-09-20 09:48:27 | INFO     | aml_research | [tavily_content_extractor] Entity filter | Extracted: 75 | Matched: 14 | Dropped: 61
+2026-09-20 09:48:27 | INFO     | aml_research | [tavily_content_extractor] Done | Returned 14 enriched LinkCollections from 81 input
+2026-09-20 09:48:27 | INFO     | aml_research | [extract_content_node] Completed | Input: 81 | Entity-filtered: 14 | Dropped: 67
+2026-09-20 09:48:28 | INFO     | aml_research | [filter_key_terms_node] Scenario: tool_tavily_search | Patterns: 1674 | Input: 14 | Passed: 12 | Filtered out: 2
+2026-09-20 09:48:28 | INFO     | aml_research | [route_expert_generation] HyDE already generated — skipping
+2026-09-20 09:48:28 | INFO     | aml_research | [filter_semantic_similarity_node] Raw links: 118
+2026-09-20 09:48:36 | INFO     | aml_research | [filter_semantic_similarity_node] Scored: 12 | Above threshold (0.45): 8 | Returned (TOP_K=30): 8
+2026-09-20 09:48:36 | INFO     | aml_research | [filter_semantic_similarity_node] Score range: 0.51 - 0.65 | Top 5: ['https://www.marketinsidedata.c', 'https://b2bhint.com', 'https://www.exportgenius.in', 'https://infodebit.md', 'https://siriusb2b.md']
+2026-09-20 09:48:36 | INFO     | aml_research | [filter_semantic_similarity_node] Completed
+2026-09-20 09:48:36 | INFO     | aml_research | [generate_url_summary_node] Entity: VITASANMAX | Processing 8 URLs
+2026-09-20 09:48:36 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.marketinsidedata.com/en/company/vitasanmax-srl/3
+2026-09-20 09:48:36 | DEBUG    | aml_research | [generate_url_summary] Starting: https://b2bhint.com/ru/company/md/vitasanmax-srl--1003600005
+2026-09-20 09:48:36 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.exportgenius.in/company/vitasanmax-srl/35b45cc38
+2026-09-20 09:48:36 | DEBUG    | aml_research | [generate_url_summary] Starting: https://infodebit.md/en/1003600005654/societatea-cu-raspunde
+2026-09-20 09:48:36 | DEBUG    | aml_research | [generate_url_summary] Starting: https://siriusb2b.md/ru/1003600005654/srl-vitasanmax
+2026-09-20 09:48:36 | DEBUG    | aml_research | [generate_url_summary] Starting: https://posfix.md/ru/companii/1003600005654/srl-vitasanmax
+2026-09-20 09:48:36 | DEBUG    | aml_research | [generate_url_summary] Starting: https://infodebit.md/ru/1003600005654/societatea-cu-raspunde
+2026-09-20 09:48:36 | DEBUG    | aml_research | [generate_url_summary] Starting: https://www.infodebit.md/company/details/1003600005654
+2026-09-20 09:48:38 | INFO     | aml_research | [generate_url_summary_node] Summarised 8/8 pages
+2026-09-20 09:48:38 | INFO     | aml_research | [extract_evidence_claims_node] Extracting claims | Raw links: 118
+2026-09-20 09:48:39 | INFO     | aml_research | [extract_evidence_claims_node] Extracted 0 unique claims from 9 summaries
+2026-09-20 09:48:39 | DEBUG    | aml_research | [extract_evidence_claims_node] Claims: []
+2026-09-20 09:48:39 | INFO     | aml_research | [url_verification_node] Executing | Raw links: 118
+2026-09-20 09:48:39 | INFO     | aml_research | [url_verification_node] Evidence URLs: 0 | Collection URLs: 118 | Hallucinated: 0
+2026-09-20 09:48:39 | INFO     | aml_research | [url_verification_node] No hallucinations detected
+2026-09-20 09:48:39 | INFO     | aml_research | [route_evidence_validation] ✓ Validation passed - proceeding
+2026-09-20 09:48:39 | INFO     | aml_research | [reflect_evidence_quality_node] Executing | Raw links: 118
+2026-09-20 09:48:39 | DEBUG    | aml_research | [reflect_evidence_quality_node] Claim types: []
+2026-09-20 09:48:39 | DEBUG    | aml_research | [reflect_evidence_quality_node] Evidence block:
+No evidence available.
+2026-09-20 09:48:40 | INFO     | aml_research | [reflect_evidence_quality_node] Assessment: repeat_search | Reasoning: No evidence is available to support or refute the claims. Without credible sources or specific details, there is not enough information to form a confident opinion. Further investigation is necessary.
+2026-09-20 09:48:40 | INFO     | aml_research | [reflect_evidence_quality_node] Done
+2026-09-20 09:48:40 | INFO     | aml_research | [scenario_selection_node] Raw links: 118
+2026-09-20 09:48:40 | INFO     | aml_research | [scenario_selection_node] Selected: custom_scenario | Used: ['tool_google_search', 'tool_tavily_search']
+2026-09-20 09:48:40 | INFO     | aml_research | [route_trigger_search] custom_scenario → generate_custom_payload_execute_node
+2026-09-20 09:48:40 | INFO     | aml_research | [custom_search_node] Scenario: custom_scenario | Raw links so far: 118
+2026-09-20 09:48:44 | INFO     | aml_research | [custom_search_node] Capping 10 → 5 queries
+2026-09-20 09:48:44 | INFO     | aml_research | [custom_search_node] Generated 5 queries
+2026-09-20 09:48:44 | DEBUG    | aml_research | [tavily_search] Query: ВИТАСАНМАКС Росфинмониторинг санкции 2023 | topic: general | max_results: 5
+2026-09-20 09:48:50 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: ВИТАСАНМАКС Росфинмониторинг санкции 2023
+2026-09-20 09:48:51 | DEBUG    | aml_research | [tavily_search] Query: ВИТАСАНМАКС решение суда уголовное дело 2023 | topic: general | max_results: 5
+2026-09-20 09:49:00 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: ВИТАСАНМАКС решение суда уголовное дело 2023
+2026-09-20 09:49:01 | DEBUG    | aml_research | [tavily_search] Query: VITASANMAX sancțiuni FISC Moldova 2023 | topic: general | max_results: 5
+2026-09-20 09:49:03 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: VITASANMAX sancțiuni FISC Moldova 2023
+2026-09-20 09:49:04 | DEBUG    | aml_research | [tavily_search] Query: ВИТАСАНМАКС связи с чиновниками коррупция | topic: general | max_results: 5
+2026-09-20 09:49:07 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: ВИТАСАНМАКС связи с чиновниками коррупция
+2026-09-20 09:49:08 | DEBUG    | aml_research | [tavily_search] Query: VITASANMAX INTERPOL red notice investigation | topic: general | max_results: 5
+2026-09-20 09:49:11 | DEBUG    | aml_research | [tavily_search] Returned 5 results for: VITASANMAX INTERPOL red notice investigation
+2026-09-20 09:49:12 | INFO     | aml_research | [custom_search_node] Collected 25 new unique links
+2026-09-20 09:49:12 | INFO     | aml_research | [extract_content_node] Scenario: custom_scenario | Total raw: 143 | To process: 25 | Skipped (other scenarios): 118
+2026-09-20 09:49:12 | INFO     | aml_research | [tavily_content_extractor] Starting extraction | URLs: 25 | Batches: 2 | depth: advanced
+2026-09-20 09:49:12 | INFO     | aml_research | [tavily_content_extractor] Batch 1/2 | URLs: 20
+2026-09-20 09:49:35 | DEBUG    | aml_research | [tavily_content_extractor] Batch 1 extracted 20 results
+2026-09-20 09:49:35 | INFO     | aml_research | [tavily_content_extractor] Batch 2/2 | URLs: 5
+2026-09-20 09:49:35 | DEBUG    | aml_research | [tavily_content_extractor] Batch 2 extracted 5 results
+2026-09-20 09:49:35 | INFO     | aml_research | [tavily_content_extractor] Entity filter | Extracted: 25 | Matched: 0 | Dropped: 25
+2026-09-20 09:49:35 | INFO     | aml_research | [tavily_content_extractor] Done | Returned 0 enriched LinkCollections from 25 input
+2026-09-20 09:49:35 | INFO     | aml_research | [extract_content_node] Completed | Input: 25 | Entity-filtered: 0 | Dropped: 25
+2026-09-20 09:49:36 | INFO     | aml_research | [filter_key_terms_node] Scenario: custom_scenario | Patterns: 1674 | Input: 0 | Passed: 0 | Filtered out: 0
+2026-09-20 09:49:36 | INFO     | aml_research | [route_expert_generation] HyDE already generated — skipping
+2026-09-20 09:49:36 | INFO     | aml_research | [filter_semantic_similarity_node] Raw links: 143
+2026-09-20 09:49:37 | INFO     | aml_research | [filter_semantic_similarity_node] Scored: 0 | Above threshold (0.45): 0 | Returned (TOP_K=30): 0
+2026-09-20 09:49:37 | WARNING  | aml_research | [filter_semantic_similarity_node] No articles passed relevance threshold!
+2026-09-20 09:49:37 | INFO     | aml_research | [filter_semantic_similarity_node] Completed
+2026-09-20 09:49:37 | INFO     | aml_research | [generate_url_summary_node] Entity: VITASANMAX | Processing 0 URLs
+2026-09-20 09:49:37 | INFO     | aml_research | [generate_url_summary_node] Summarised 0/0 pages
+2026-09-20 09:49:37 | INFO     | aml_research | [extract_evidence_claims_node] Extracting claims | Raw links: 143
+2026-09-20 09:49:38 | INFO     | aml_research | [extract_evidence_claims_node] Extracted 0 unique claims from 9 summaries
+2026-09-20 09:49:38 | DEBUG    | aml_research | [extract_evidence_claims_node] Claims: []
+2026-09-20 09:49:38 | INFO     | aml_research | [url_verification_node] Executing | Raw links: 143
+2026-09-20 09:49:38 | INFO     | aml_research | [url_verification_node] Evidence URLs: 0 | Collection URLs: 143 | Hallucinated: 0
+2026-09-20 09:49:38 | INFO     | aml_research | [url_verification_node] No hallucinations detected
+2026-09-20 09:49:38 | INFO     | aml_research | [route_evidence_validation] ✓ Validation passed - proceeding
+2026-09-20 09:49:38 | INFO     | aml_research | [reflect_evidence_quality_node] Executing | Raw links: 143
+2026-09-20 09:49:38 | DEBUG    | aml_research | [reflect_evidence_quality_node] Claim types: []
+2026-09-20 09:49:38 | DEBUG    | aml_research | [reflect_evidence_quality_node] Evidence block:
+No evidence available.
+2026-09-20 09:49:39 | INFO     | aml_research | [reflect_evidence_quality_node] Assessment: repeat_search | Reasoning: No evidence is available to support or refute the claims. Without credible sources or specific details, it is not possible to form a confident opinion. More information from authoritative sources is needed.
+2026-09-20 09:49:39 | INFO     | aml_research | [reflect_evidence_quality_node] Done
+2026-09-20 09:49:39 | INFO     | aml_research | [scenario_selection_node] Raw links: 143
+2026-09-20 09:49:39 | INFO     | aml_research | [scenario_selection_node] Selected: exit_scenario | Used: ['tool_google_search', 'tool_tavily_search', 'custom_scenario']
+2026-09-20 09:49:39 | WARNING  | aml_research | [route_trigger_search] Scenarios exhausted → generate_risk_assessment_node
+2026-09-20 09:49:39 | INFO     | aml_research | [generate_risk_assessment_node] Executing | Raw links: 143
+2026-09-20 09:49:39 | DEBUG    | aml_research | [generate_risk_assessment_node] Claim types: []
+2026-09-20 09:49:39 | DEBUG    | aml_research | [generate_risk_assessment_node] Evidence prompt:
+Evidence for VITASANMAX (IDNO 1003600005654):
+
+            Public-source evidence:
+            No evidence available.
+
+            Analyze this evidence according to the framework provided.
+2026-09-20 09:49:39 | INFO     | aml_research | [generate_risk_assessment_node] Requesting final conclusion from LLM
+2026-09-20 09:49:41 | INFO     | aml_research | [generate_risk_assessment_node] Search sources: 0 media URLs
+2026-09-20 09:49:41 | INFO     | aml_research | [generate_risk_assessment_node] Risk assessment completed
+2026-09-20 09:49:41 | INFO     | aml_research | [BATCH] Saved: D:\MICB_Projects\8_aml_detective\test_cases\runs\2026-09-20_prod_smoke\reports\902.json

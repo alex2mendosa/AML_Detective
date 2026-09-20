@@ -1,0 +1,366 @@
+{
+  "purpose": "Did the agent identify the risk? Ground truth is one label per company: risk or clean. The comparison is done by a separate LLM judge on the conclusion text - not on specific facts, dates or URLs.",
+  "created": "2026-09-20",
+  "ground_truth_status": "VERIFIED 2026-09-20 by web search. 3 labels corrected from clean to risk: Lukoil-Moldova, BEMOL RETAIL, PRO IMOBIL GRUP.",
+  "companies": [
+    {
+      "name": "Danske Bank A/S",
+      "idno": "",
+      "expected": "risk",
+      "expected_note": "Pleaded guilty to US bank fraud over its Estonian branch AML failures; forfeited over USD 2bn, plus USD 413m to the SEC (Dec 2022).",
+      "our_conclusion": "Danske Bank A/S nu îndeplinește pe deplin standardele de conformitate pentru o relație de afaceri fără restricții, având în vedere istoricul recent de încălcări grave AML, condamnarea penală și sancțiunile semnificative. Recomandarea este ENHANCED_DUE_DILIGENCE, cu monitorizare strictă și condiții clare. Cele mai critice riscuri sunt: (1) recidiva în deficiențe AML, (2) riscul reputațional asociat, (3) potențiale investigații suplimentare în alte jurisdicții. Următoarea revizuire trebuie efectuată în maximum 6 luni. Recomandarea se poate schimba doar în cazul apariției unor noi încălcări sau, dimpotrivă, a dovezilor solide de remediere și audituri externe pozitive consecutive.",
+      "our_scor_risc": 85,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified significant AML risk, recent criminal conviction, and recommended enhanced due diligence, matching the expected 'risk' label.",
+      "source": "https://www.justice.gov/archives/opa/pr/danske-bank-pleads-guilty-fraud-us-banks-multi-billion-dollar-scheme-access-us-financial",
+      "verified": true,
+      "our_rezumat": "Danske Bank A/S este una dintre cele mai mari instituții financiare din regiunea nordică, cu operațiuni extinse în mai multe jurisdicții europene. În perioada 2007-2019, banca a fost implicată într-unul dintre cele mai mari scandaluri de spălare de bani din Europa, cu acuzații și dovezi privind facilitarea unor tranzacții suspecte în valoare de până la 200 miliarde EUR prin filiala sa din Estonia. Aceste activități au atras atenția autorităților de reglementare și de aplicare a legii din Danemarca, Estonia, SUA, Marea Britanie, Irlanda și alte state.\n\nPrincipalele încălcări de conformitate identificate includ deficiențe grave în sistemele de prevenire a spălării banilor (AML), manipulare de piață, furnizarea de informații false către autorități și investitori, precum și lipsa monitorizării tranzacțiilor și a due diligence-ului pentru clienți cu risc ridicat. Aceste încălcări au dus la investigații penale și civile, amenzi semnificative și retragerea băncii din mai multe piețe (Estonia, Rusia, statele baltice).\n\nScandalul a avut o amploare multijurisdicțională, implicând autorități din Danemarca, Estonia, SUA, Marea Britanie, Irlanda și Franța, cu investigații și sancțiuni aplicate în aceste țări. Perioada principală a încălcărilor acoperă anii 2007-2019, cu investigații, acuzații și sancțiuni continuând până în 2024.\n\nImpactul financiar total al sancțiunilor și amenzilor depășește 2 miliarde USD, incluzând penalități majore din partea autorităților americane, daneze și irlandeze. Deși banca a implementat unele măsuri de remediere, amploarea și gravitatea încălcărilor, precum și recenta finalizare a unor investigații și sancțiuni, indică un risc ridicat și necesitatea unei monitorizări stricte.",
+      "our_recomandare": "ENHANCED_DUE_DILIGENCE — Având în vedere scorul de risc ridicat (85), amploarea încălcărilor, condamnarea penală și sancțiunile recente, relația de afaceri poate fi menținută doar cu condiții stricte. Se impune due diligence suplimentar, monitorizare trimestrială a tranzacțiilor și a programelor de conformitate, solicitarea de rapoarte periodice privind implementarea măsurilor AML și audituri independente anuale. Orice nouă investigație penală, sancțiune majoră sau identificare a unor deficiențe sistemice va declanșa suspendarea imediată a relației. Escaladarea se va face către conducerea superioară și autoritățile relevante.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Wirecard AG",
+      "idno": "",
+      "expected": "risk",
+      "expected_note": "Collapsed in 2020 after EUR 1.9bn could not be traced; Germany's largest post-war fraud. Ex-CEO in custody since 2020, criminal trial from Dec 2022; board ordered to pay EUR 140m damages (2024).",
+      "our_conclusion": "Wirecard AG nu îndeplinește standardele de conformitate pentru parteneriat. Se recomandă încetarea imediată a oricărei relații de afaceri. Cele mai critice riscuri sunt: (1) investigații penale și civile active multijurisdicționale, (2) condamnări definitive pentru fraudă și falsificare, (3) lipsa unor măsuri de remediere și guvernanță eficientă. Următoarea revizuire ar trebui efectuată doar dacă apar dovezi publice clare de rezolvare a tuturor investigațiilor și implementare a unor măsuri solide de conformitate. Orice schimbare a recomandării depinde de închiderea tuturor procedurilor legale și demonstrarea unei culturi reale de conformitate.",
+      "our_scor_risc": 95,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified and flagged significant risk, recommending termination due to major adverse findings.",
+      "source": "https://en.wikipedia.org/wiki/Wirecard",
+      "verified": true,
+      "our_rezumat": "Wirecard AG este o companie germană care a activat în sectorul plăților electronice și a devenit subiectul unuia dintre cele mai mari scandaluri financiare din Europa. Începând cu anul 2018, au apărut suspiciuni și investigații privind fraudă contabilă, manipulare de piață și lipsa unor fonduri semnificative (1,9 miliarde euro), culminând cu insolvența companiei în 2020. \n\nEvidența publică relevă multiple încălcări grave de conformitate, inclusiv fraudă financiară la scară largă, manipulare contabilă, corupție și deficiențe majore în controalele anti-spălare de bani (AML). Investigațiile au implicat autorități din Germania, Singapore și Filipine, precum și procese civile în SUA. S-au înregistrat acuzații formale împotriva foștilor directori, inclusiv CEO-ul Markus Braun și COO-ul Jan Marsalek, iar unele condamnări au fost deja pronunțate în Singapore.\n\nScandalul Wirecard are o amploare multijurisdicțională, cu investigații și acțiuni legale în Europa și Asia, reflectând un risc sistemic și deficiențe de guvernanță corporativă. Perioada de încălcare acoperă cel puțin 2018–2026, cu procese și investigații încă active la data prezentei analize.\n\nAvând în vedere gravitatea și persistența încălcărilor, lipsa unor dovezi clare de remediere eficientă și condamnările recente, riscul asociat Wirecard AG este extrem de ridicat, iar expunerea la parteneriate comerciale cu această entitate este considerată critică.",
+      "our_recomandare": "TERMINATE - Nu se poate continua parteneriatul. Risc critic, cu investigații penale și civile active, condamnări recente și lipsă de remediere. Orice relație de afaceri ar expune banca la riscuri legale, reputaționale și de conformitate inacceptabile. Condiții pentru parteneriat nu pot fi stabilite în acest context. Monitorizarea nu este suficientă; orice tentativă de reluare a relației ar trebui escaladată imediat la conducerea superioară și autoritățile de reglementare.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Glencore plc",
+      "idno": "",
+      "expected": "risk",
+      "expected_note": "Pleaded guilty in May 2022 to foreign bribery (7 countries) and oil price manipulation; over USD 1.1bn in US penalties, plus UK SFO and Brazil resolutions.",
+      "our_conclusion": "Glencore plc nu îndeplinește în prezent standardele de conformitate necesare pentru o relație de parteneriat sigură, având în vedere condamnările penale recente, procesele penale și civile în curs și riscul reputațional ridicat. Recomandarea este SUSPEND, cu reevaluare după finalizarea proceselor penale majore (cel târziu după procesul din UK din 2027). Cele mai critice riscuri sunt: 1) riscul penal nerezolvat (procese în curs), 2) riscul reputațional global, 3) riscul de listare pe liste de excludere și posibile sancțiuni suplimentare. Următoarea revizuire ar trebui să aibă loc la 6 luni sau la orice evoluție semnificativă a cazurilor. O schimbare a recomandării este posibilă doar dacă toate procesele penale sunt închise fără noi condamnări și dacă se menține un program robust de conformitate.",
+      "our_scor_risc": 85,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified and flagged significant risk, recommending suspension due to recent criminal convictions and ongoing legal proceedings.",
+      "source": "https://www.justice.gov/archives/opa/pr/glencore-entered-guilty-pleas-foreign-bribery-and-market-manipulation-schemes",
+      "verified": true,
+      "our_rezumat": "Glencore plc este una dintre cele mai mari companii globale din domeniul comerțului cu materii prime, activând în multiple jurisdicții, inclusiv Africa, America de Sud, Europa și Asia. În ultimii ani, compania a fost implicată într-o serie de scandaluri de corupție, mită, manipulare de piață și încălcări ale reglementărilor, cu investigații și acțiuni legale desfășurate de autorități din SUA, Marea Britanie, Elveția, Brazilia și Canada. \n\nCele mai grave încălcări identificate includ condamnări penale pentru corupție, mită și manipulare de piață, cu recunoașterea vinovăției și plata unor penalități totale de peste 1,5 miliarde USD în 2022, precum și amenzi suplimentare în Elveția în 2024. Investigațiile au vizat activități desfășurate între 2007 și cel puțin 2018, cu procese penale și civile încă în desfășurare în 2026. \n\nCompania a fost vizată de acuzații și procese în mai multe jurisdicții, inclusiv Africa (Nigeria, Camerun, Côte d'Ivoire, Republica Democrată Congo, Sudanul de Sud), Europa (Elveția, Belgia, Marea Britanie), America de Sud (Brazilia) și America de Nord (SUA, Canada). De asemenea, Glencore a apărut pe liste de excludere la nivel de stat în SUA (Texas, Pennsylvania) din cauza activităților cu entități iraniene, însă nu există dovezi de sancțiuni internaționale formale împotriva companiei.\n\nPerioada de încălcare acoperă cel puțin 2007-2024, cu unele procese și investigații active până în 2027. Deși au fost implementate unele măsuri de remediere, inclusiv încheierea monitorizării DOJ în 2025, persistența unor procese penale și civile, precum și amploarea și gravitatea încălcărilor, indică un risc ridicat și o traiectorie de conformitate încă incertă.",
+      "our_recomandare": "SUSPEND — Având în vedere scorul de risc ridicat (85), condamnările penale recente, procesele penale și civile încă în desfășurare, precum și listările pe liste de excludere la nivel de stat SUA, recomandăm suspendarea relației de afaceri până la clarificarea și rezolvarea tuturor procedurilor penale majore (în special procesul penal din UK programat pentru 2027). Condiții pentru reluare: demonstrarea încheierii tuturor proceselor penale, menținerea programelor de conformitate, raportare trimestrială privind evoluția cazurilor. Orice nouă condamnare penală sau sancțiune internațională va declanșa reevaluare imediată și posibilă terminare. Escaladarea se va face către conducerea superioară și autoritățile de reglementare relevante.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Banca de Economii S.A.",
+      "idno": "",
+      "expected": "risk",
+      "expected_note": "One of three banks drained in the 2014 Moldovan bank fraud (~MDL 13.3bn / 12% of GDP); under liquidation since 2014.",
+      "our_conclusion": "Banca de Economii S.A. nu îndeplinește standardele de conformitate pentru un parteneriat. Se recomandă terminarea oricărei relații de afaceri, având în vedere riscul critic, condamnările penale recente, investigațiile în curs și lipsa remediilor autentice. Cele mai critice riscuri sunt: (1) expunerea la spălare de bani și fraudă, (2) riscul reputațional major, (3) riscul legal din cauza investigațiilor și condamnărilor continue. Următoarea revizuire ar trebui efectuată doar dacă apar dovezi clare de remediere și închiderea tuturor procedurilor legale. Recomandarea s-ar putea schimba doar în cazul unei restructurări complete, cu remediere verificată și încetarea tuturor investigațiilor.",
+      "our_scor_risc": 85,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified and flagged significant risk, recommending termination due to major adverse findings and ongoing investigations.",
+      "source": "https://en.wikipedia.org/wiki/2014_Moldovan_bank_fraud_scandal",
+      "verified": true,
+      "our_rezumat": "Banca de Economii S.A. este o instituție bancară din Republica Moldova care a fost implicată într-unul dintre cele mai mari scandaluri financiare din Europa de Est, cunoscut sub numele de „furtul miliardului”. Conform surselor publice, banca a fost implicată într-o schemă de delapidare și spălare de bani de proporții mari, cu peste 1 miliard de dolari SUA sustras prin intermediul unor entități offshore și structuri de proprietate opace (https://internationalbanker.com/finance/the-end-of-european-money-laundering-scandals-or-just-the-beginning/). \n\nÎncălcările principale identificate includ spălare de bani, fraudă și delapidare, cu investigații și condamnări penale documentate. Printre acestea se numără condamnarea lui Ilan Șor în 2017 pentru prejudicierea băncii și spălare de bani, precum și condamnarea altor două persoane în 2025 pentru infracțiuni similare, cu sentințe de 5 și 9 ani de închisoare și obligația de a achita despăgubiri către bancă (https://tv8.md/2021/05/11/raspunsul-bnm-la-scrisoarea-lui-sor-privind-demararea-discutiilor-pentru-reintoarcerea-banilor-din-frauda-bancara/155286, https://noi.md/ru/obshhestvo/obiyavleny-ocherednye-prigovory-po-delu-banca-de-economii).\n\nScandalul are o dimensiune multi-jurisdicțională, implicând transferuri internaționale și entități offshore, dar investigațiile și acțiunile legale au fost conduse în principal de autoritățile moldovenești. Perioada de referință pentru încălcări și investigații se întinde din 2013 până cel puțin în 2025, cu procese și recuperări de active încă în desfășurare.\n\nAvând în vedere amploarea prejudiciului, durata și gravitatea încălcărilor, precum și faptul că investigațiile și procesele continuă până în prezent, riscul asociat cu Banca de Economii S.A. este considerat ridicat spre critic. Nu există dovezi clare privind remedierea eficientă sau îmbunătățirea substanțială a conformității, iar banca se află în proces de lichidare după retragerea licenței în 2015.",
+      "our_recomandare": "TERMINATE - Nu se poate continua parteneriatul. Risc critic, confirmat de condamnări penale recente, investigații continue și prejudicii masive nerezolvate. Orice relație de afaceri ar expune instituția la riscuri legale, reputaționale și financiare majore. Condițiile minime pentru parteneriat (remediere, conformitate, lipsa investigațiilor) nu sunt îndeplinite. Monitorizarea nu este suficientă; orice implicare trebuie evitată până la închiderea definitivă a tuturor procedurilor legale și clarificarea situației patrimoniale. Orice nouă investigație sau condamnare suplimentară ar trebui să declanșeze raportare și escaladare imediată către conducere și autorități.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Astra Asigurari S.A.",
+      "idno": "",
+      "expected": "risk",
+      "expected_note": "Romania's largest insurance bankruptcy (ASF withdrew authorisation, 2015); DNA case over ~MDL 800m damages. NOTE: all defendants were later acquitted by the supreme court, and the main shareholder died in detention.",
+      "our_conclusion": "Nu au fost identificate informații adverse despre Astra Asigurari S.A.. Recomandăm monitorizare standard și revizuire după 12 luni.",
+      "our_scor_risc": 0,
+      "judge_match": false,
+      "judge_comment": "The agent failed to identify the major bankruptcy, regulatory action, and criminal case, so the risk signal was missed.",
+      "source": "https://www.digi24.ro/stiri/economie/ce-s-a-intamplat-dupa-marile-falimente-din-asigurari-dosarele-astra-carpatica-si-city-insurance-2286185",
+      "verified": true,
+      "our_rezumat": "Nu au fost identificate informații de presă negativă pentru Astra Asigurari S.A. în sursele consultate. Nu există date privind încălcări de conformitate, investigații, sancțiuni sau alte suspiciuni relevante din surse publice. Contextul de afaceri și aria geografică nu pot fi evaluate suplimentar în lipsa unor informații concrete. Nu au fost raportate incidente sau acțiuni de reglementare care să afecteze entitatea pe perioada analizată. În concluzie, riscul general asociat entității, pe baza surselor disponibile, este minim.",
+      "our_recomandare": "CONTINUE — nu există motive de îngrijorare identificate în sursele publice consultate.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Air Moldova",
+      "idno": "",
+      "expected": "risk",
+      "expected_note": "Insolvency from 2023, liquidation ordered Jan 2026. Parliamentary inquiry found the 2018 privatisation involved artificial debts and dubious transactions; prosecutors charged individuals in 2020; reported Sor links.",
+      "our_conclusion": "Air Moldova nu îndeplinește în prezent standardele de conformitate necesare pentru o relație de parteneriat sigură. Se recomandă suspendarea relației de afaceri, având în vedere riscurile critice: (1) investigații penale majore nerezolvate pentru spălare de bani și corupție, (2) lipsa unor măsuri de remediere și transparență, (3) expunere reputațională și operațională semnificativă. Următoarea revizuire trebuie efectuată în maximum 6 luni sau imediat ce apar evoluții relevante în dosarele penale. Recomandarea poate fi revizuită doar în cazul închiderii investigațiilor și implementării unor măsuri solide de conformitate, dovedite prin audit extern.",
+      "our_scor_risc": 68,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified significant risk and recommended suspension due to ongoing criminal investigations and reputational issues.",
+      "source": "https://anticoruptie.md/ro/post_show/stiri/cum-a-fost-privatizata-compania-air-moldova-datorii-artificiale-concurs-viciat-si-tranzactii-dubioase",
+      "verified": true,
+      "our_rezumat": "Air Moldova, companie aeriană națională a Republicii Moldova, a fost subiectul mai multor acuzații și investigații privind managementul defectuos, corupția, spălarea de bani și fraude financiare, în special în contextul procesului de privatizare din 2018 și al activităților conducerii anterioare. Contextul de afaceri este unul complex, cu schimbări frecvente de conducere și dificultăți financiare recurente, reflectate în multiple anchete și sancțiuni administrative recente.\n\nCele mai grave încălcări identificate includ acuzații formale de delapidare, abuz de serviciu și spălare de bani împotriva foștilor directori (2005, 2023, 2025), investigații penale continue privind tranzacții fictive și spălare de bani la scară largă (2019–2025), precum și sancțiuni administrative pentru practici comerciale frauduloase și nerespectarea drepturilor pasagerilor (2023). Deși există și acuzații publice privind posibile legături cu grupuri sancționate sau încălcări ale sancțiunilor UE, nu au fost raportate investigații sau sancțiuni directe împotriva Air Moldova în acest sens.\n\nGeografic, riscurile și investigațiile sunt concentrate în Republica Moldova, dar există implicații transfrontaliere (sechestrări de active în Irlanda, suspiciuni privind exporturi către Rusia). Temporal, încălcările și investigațiile acoperă o perioadă extinsă (2005–2025), cu o frecvență crescută a incidentelor și lipsa unor soluționări definitive pentru cazurile recente.\n\nEvaluarea generală indică un risc ridicat de conformitate, având în vedere persistența investigațiilor penale, lipsa unor remedieri clare, sancțiunile administrative recente și expunerea la riscuri reputaționale și operaționale semnificative. Deși nu există sancțiuni internaționale active raportate, contextul actual impune prudență maximă.",
+      "our_recomandare": "SUSPEND — Se recomandă suspendarea relației de afaceri până la clarificarea și soluționarea investigațiilor penale majore în curs. Risc ridicat, confirmat de multiple anchete penale active, lipsa unor remedieri clare și expunere la riscuri reputaționale și financiare semnificative. Condițiile pentru reluarea relației: prezentarea unor dovezi clare de remediere, închiderea dosarelor penale majore, implementarea unui program robust de conformitate și audit extern independent. Monitorizarea trebuie să fie trimestrială, cu raportare directă către conducerea băncii. Orice nouă sancțiune penală, condamnare sau extindere a investigațiilor va declanșa suspendarea/rezilierea imediată. Escaladarea se va face către Comitetul de Conformitate și Consiliul de Administrație.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Purcari Wineries",
+      "idno": "",
+      "expected": "clean",
+      "expected_note": "No adverse findings in verification search. Coverage is commercial/financial (listed company).",
+      "our_conclusion": "Purcari Wineries îndeplinește standardele de conformitate pentru parteneriat, pe baza dovezilor disponibile. Se recomandă continuarea relației de afaceri cu monitorizare standard. Cele mai importante trei riscuri de monitorizat sunt: (1) evoluția investigației din România, (2) posibile noi acuzații sau investigații care să implice direct Purcari Wineries, și (3) orice schimbare în statutul de parte vătămată. Următoarea revizuire ar trebui efectuată peste 12 luni sau mai devreme dacă apar noi informații. Recomandarea ar putea fi modificată dacă Purcari Wineries devine subiect al unor acuzații sau investigații directe privind încălcări AML, fraudă sau sancțiuni.",
+      "our_scor_risc": 10,
+      "judge_match": true,
+      "judge_comment": "The agent correctly found no adverse findings and recommended standard monitoring, matching the expected 'clean' label.",
+      "source": "",
+      "verified": true,
+      "our_rezumat": "Purcari Wineries este un producător important din sectorul vitivinicol, cu activitate principală în Republica Moldova și prezență pe piața internațională. Conform surselor publice analizate, nu au fost identificate încălcări directe ale normelor de conformitate sau suspiciuni de spălare de bani, fraudă sau sancțiuni care să implice Purcari Wineries ca subiect al investigațiilor.\n\nSingura mențiune relevantă din sursele publice se referă la o investigație judiciară în desfășurare în România, care vizează posibile abuzuri la Ecosmart Union SA, anterior achiziției de către Purcari Group. Important de subliniat, Purcari Wineries figurează în această investigație ca parte vătămată și reclamant, nu ca suspect sau inculpat.\n\nGeografic, incidentul are legătură cu România, dar nu implică o expunere multi-jurisdicțională semnificativă pentru Purcari Wineries. Din punct de vedere temporal, investigația este activă în 2024, dar nu există date despre încălcări anterioare sau repetate.\n\nÎn ansamblu, riscul de conformitate asociat Purcari Wineries, pe baza dovezilor disponibile, este redus, deoarece nu există acuzații sau sancțiuni directe împotriva entității, iar rolul său este de parte vătămată într-o investigație externă.",
+      "our_recomandare": "CONTINUE_WITH_MONITORING — Riscul este minim, dar se recomandă monitorizare standard, având în vedere existența unei investigații externe în care Purcari Wineries este parte vătămată. Condițiile pentru parteneriat includ: monitorizare periodică (cel puțin anuală) a surselor publice pentru noi informații relevante, raportare imediată dacă statutul investigației se modifică sau apar noi suspiciuni, și reevaluare dacă Purcari Wineries devine subiect al unor acuzații directe. Orice implicare directă în încălcări AML, fraudă sau sancțiuni ar declanșa suspendarea sau încetarea relației.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Orange Moldova S.A.",
+      "idno": "",
+      "expected": "clean",
+      "expected_note": "No adverse findings for the Moldovan entity. MISATTRIBUTION TRAP: Orange Romania - a different entity - was fined by the data-protection authority. A high score here caused by Romanian coverage is a false positive.",
+      "our_conclusion": "Orange Moldova S.A. îndeplinește standardele de conformitate pentru parteneriat la acest moment. Se recomandă CONTINUE_WITH_MONITORING, cu monitorizare anuală. Cele mai importante riscuri sunt: (1) existența unei acuzații academice de fraudă neclarificată, (2) lipsa de transparență privind investigațiile interne sau măsurile de remediere, (3) posibilitatea apariției unor noi informații negative. Următoarea revizuire ar trebui efectuată peste 12 luni sau mai devreme dacă apar noi date. O schimbare a recomandării ar putea apărea în cazul apariției unor investigații oficiale sau sancțiuni confirmate.",
+      "our_scor_risc": 10,
+      "judge_match": true,
+      "judge_comment": "The agent correctly reports no significant adverse findings for Orange Moldova S.A. and recommends continuing the relationship with standard monitoring, matching the expected 'clean' label.",
+      "source": "",
+      "verified": true,
+      "our_rezumat": "Orange Moldova S.A. este o companie activă în sectorul telecomunicațiilor din Republica Moldova. În contextul evaluării de conformitate AML, a fost identificată o singură sursă de presă negativă: un articol academic publicat în 2015 care aduce acuzații generale privind implicarea Orange Moldova S.A. în fraude de tip tranzacții mici și manipulări în sistemele financiare. Totuși, această sursă nu oferă detalii concrete privind sumele implicate, perioada exactă a presupuselor fapte sau existența unor investigații oficiale sau sancțiuni aplicate.\n\nNu au fost identificate alte surse publice care să confirme sau să detalieze aceste acuzații. Nu există mențiuni despre amenzi, penalități, investigații oficiale sau alte măsuri de reglementare împotriva Orange Moldova S.A. în legătură cu aceste presupuse fapte. Astfel, impactul financiar și severitatea potențială a acestor acuzații nu pot fi cuantificate.\n\nDin punct de vedere geografic, acuzația se referă exclusiv la activitatea din Republica Moldova, fără mențiuni privind alte jurisdicții. Temporal, singura referință este anul 2015, fără indicii privind continuitatea sau rezolvarea situației.\n\nÎn ansamblu, riscul asociat acestor acuzații este scăzut, având în vedere lipsa detaliilor, a confirmărilor din alte surse și a oricăror consecințe juridice sau financiare identificate până la data actuală.",
+      "our_recomandare": "CONTINUE_WITH_MONITORING — Având în vedere scorul de risc scăzut și lipsa unor dovezi concrete sau investigații oficiale, se recomandă continuarea relației de afaceri cu monitorizare standard. Condiții: monitorizare anuală a surselor publice pentru noi acuzații sau investigații, raportare imediată dacă apar suspiciuni suplimentare sau dacă se inițiază investigații oficiale. Orice confirmare de investigație oficială sau sancțiune va declanșa reevaluarea relației și posibila suspendare.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Sudzucker Moldova S.A.",
+      "idno": "",
+      "expected": "clean",
+      "expected_note": "No adverse findings. MISATTRIBUTION TRAP: in a 2016 competition case Sudzucker was the INJURED party - a competitor was fined for imitating its logo. Scoring Sudzucker as risky over that case is a false positive.",
+      "our_conclusion": "Nu au fost identificate informații adverse despre Sudzucker Moldova S.A.. Recomandăm monitorizare standard și revizuire după 12 luni.",
+      "our_scor_risc": 0,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified no adverse findings and did not misattribute the competitor's case to Sudzucker Moldova S.A.",
+      "source": "",
+      "verified": true,
+      "our_rezumat": "Nu au fost identificate informații de presă negativă pentru Sudzucker Moldova S.A. în sursele consultate. Nu există mențiuni privind investigații, sancțiuni, amenzi sau alte încălcări de conformitate care să implice această entitate. Contextul de afaceri pare a fi unul curat, fără semnale de risc major sau incidente raportate în spațiul public. \n\nNu au fost identificate probleme de conformitate, nici la nivel local, nici internațional, iar lipsa oricăror mențiuni negative sugerează o activitate desfășurată în parametri normali din punct de vedere al reglementărilor AML/CFT. \n\nRiscul geografic este limitat la o singură jurisdicție, iar perioada analizată nu a relevat incidente sau suspiciuni recente sau istorice. \n\nÎn concluzie, pe baza datelor disponibile, Sudzucker Moldova S.A. prezintă un profil de risc scăzut, fără semnale de alarmă privind integritatea sau conformitatea.",
+      "our_recomandare": "CONTINUE — nu există motive de îngrijorare identificate în sursele publice consultate.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_full",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "Lukoil-Moldova S.R.L.",
+      "idno": "",
+      "expected": "risk",
+      "expected_note": "CORRECTED from clean. Employees implicated in a tax-evasion and money-laundering case tied to the SOR organisation (searches Sept 2025); fined in the 2024 fuel price-fixing cartel; fined 5% of turnover over the airport fuel complex; parent sanctioned by the US late 2025.",
+      "our_conclusion": "Nu au fost identificate informații adverse despre Lukoil-Moldova S.R.L.. Recomandăm monitorizare standard și revizuire după 12 luni.",
+      "our_scor_risc": 0,
+      "judge_match": false,
+      "judge_comment": "The agent failed to identify multiple significant adverse events and incorrectly assessed the company as low risk.",
+      "source": "https://www.europalibera.md/a/ce-se-poate-intampla-cu-benzinariile-lukoil-moldova-dupa-intrarea-in-vigoare-a-sanctiunilor-americane/33595572.html",
+      "verified": true,
+      "our_rezumat": "Nu au fost identificate informații de presă negativă pentru Lukoil-Moldova S.R.L. în sursele consultate. Nu există date privind încălcări de conformitate, investigații, sancțiuni sau alte riscuri relevante asociate acestei entități. Contextul de afaceri rămâne neafectat de suspiciuni sau acuzații publice, iar activitatea pare să se desfășoare într-o singură jurisdicție, fără implicații transfrontaliere sau expuneri la riscuri majore. \n\nNu au fost raportate amenzi, penalități sau investigații recente sau istorice, iar lipsa oricăror mențiuni negative sugerează un profil de risc scăzut. Nu există indicii privind încălcări AML, fraudă, corupție sau legături cu entități sancționate. \n\nPrin urmare, evaluarea generală a riscului pentru Lukoil-Moldova S.R.L. este una minimă, fără necesitatea unor măsuri suplimentare de remediere sau monitorizare intensificată la acest moment.",
+      "our_recomandare": "CONTINUE — nu există motive de îngrijorare identificate în sursele publice consultate.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_subset",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "AIRROCK SOLUTIONS",
+      "idno": "1021600048015",
+      "expected": "risk",
+      "expected_note": "CONFIRMED: OFAC SDN listing 12 June 2024 under RUSSIA-EO14024 - supplied at least USD 1.5m of controlled electronic and aviation components to Russian companies. Tax ID on the listing is 1021600048015, matching this row.",
+      "our_conclusion": "AIRROCK SOLUTIONS nu îndeplinește standardele de conformitate pentru parteneriat, având sancțiuni internaționale active, investigații în curs și lipsă de remediere. Recomandarea este TERMINATE — încetarea imediată a oricărei relații de afaceri. Cele mai critice riscuri sunt: (1) listarea pe OFAC SDN List și sancțiuni internaționale, (2) investigații nerezolvate privind încălcarea sancțiunilor, (3) lipsa măsurilor de remediere și transparență. Următoarea revizuire ar trebui efectuată doar dacă statutul de sancțiuni se modifică semnificativ. Recomandarea poate fi revizuită doar în cazul ridicării tuturor sancțiunilor și prezentării unor dovezi solide de conformitate.",
+      "our_scor_risc": 95,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified and flagged the critical risk, citing the OFAC SDN listing and recommending immediate termination.",
+      "source": "https://www.opensanctions.org/entities/NK-iid59npbdGKq3rEPaTtrai/",
+      "verified": true,
+      "our_rezumat": "AIRROCK SOLUTIONS (IDNO 1021600048015) este o companie cu activitate în domeniul pieselor de schimb pentru aviație, cu operațiuni raportate în Republica Moldova și conexiuni comerciale cu entități din Federația Rusă. În perioada 2022-2023, compania a fost acuzată public de implicare în vânzarea și livrarea de piese de schimb pentru avioane, în valoare totală de aproximativ 15 milioane USD, către entități rusești, acțiuni care ar fi putut ocoli regimul internațional de sancțiuni impus Rusiei. \n\nConform surselor media și a rapoartelor oficiale, autoritățile moldovenești au deschis o investigație privind posibile încălcări ale sancțiunilor internaționale de către AIRROCK SOLUTIONS, însă până la data raportării nu au fost formulate acuzații formale sau aplicate penalități pecuniare la nivel local. Totuși, la 2024-06-12, compania a fost inclusă pe lista de sancțiuni OFAC SDN (SUA), sub Executive Order 14024, pentru furnizarea de componente electronice și de aviație către Rusia, ceea ce a dus la impunerea de sancțiuni internaționale, inclusiv înghețarea activelor și restricții de export. Alte jurisdicții, precum Taiwan și Ucraina, au impus de asemenea restricții similare, iar compania este debarată de la achiziții federale în SUA.\n\nGeografic, riscurile și acțiunile de conformitate se extind pe mai multe jurisdicții: Moldova (investigație locală), SUA (sancțiuni și debarment), Taiwan și Ucraina (restricții suplimentare). Temporal, încălcările și acțiunile relevante acoperă perioada 2022-2024, cu sancțiuni active și nerezolvate la data de 2026-09-20.\n\nÎn ansamblu, riscul de conformitate asociat AIRROCK SOLUTIONS este critic, având în vedere existența sancțiunilor internaționale active, investigațiilor în curs și lipsa unor dovezi de remediere sau de încetare a practicilor contestate. Compania prezintă un profil de risc ridicat pentru orice parteneriat financiar sau comercial.",
+      "our_recomandare": "TERMINATE — Riscul este critic, având în vedere listarea activă pe OFAC SDN List, sancțiunile internaționale multiple și investigațiile nerezolvate. Nu se recomandă inițierea sau continuarea oricărei relații de afaceri cu AIRROCK SOLUTIONS. Condiții: orice relație existentă trebuie încetată imediat, cu notificarea autorităților relevante. Monitorizarea trebuie să fie continuă pentru identificarea oricăror tranzacții reziduale. Orice tentativă de ocolire a restricțiilor sau de implicare indirectă trebuie raportată și escaladată la conducerea superioară și autoritățile de reglementare.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_subset",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "AUTOFRAME-FM",
+      "idno": "1004600068795",
+      "expected": "clean",
+      "expected_note": "No adverse findings in verification search. Thin web presence - absence of evidence, not evidence of absence.",
+      "our_conclusion": "Nu au fost identificate informații adverse despre AUTOFRAME-FM. Recomandăm monitorizare standard și revizuire după 12 luni.",
+      "our_scor_risc": 0,
+      "judge_match": true,
+      "judge_comment": "The agent correctly reported no adverse findings and recommended standard monitoring, matching the expected 'clean' label.",
+      "source": "",
+      "verified": true,
+      "our_rezumat": "Nu au fost identificate informații de presă negativă pentru AUTOFRAME-FM în sursele consultate. Nu există mențiuni despre investigații, sancțiuni, amenzi sau alte încălcări de conformitate raportate public. Contextul de afaceri și aria geografică nu pot fi evaluate suplimentar în lipsa datelor adverse. Nu există indicii privind riscuri de conformitate, încălcări AML sau alte probleme relevante pentru evaluarea riscului.\n\nPrin urmare, pe baza surselor publice analizate, AUTOFRAME-FM nu prezintă semne de risc reputațional sau de conformitate la acest moment. Evaluarea de risc este minimă, iar monitorizarea standard este adecvată.",
+      "our_recomandare": "CONTINUE — nu există motive de îngrijorare identificate în sursele publice consultate.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_subset",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "BEMOL RETAIL",
+      "idno": "1004601004787",
+      "expected": "risk",
+      "expected_note": "CORRECTED from clean. One of six fuel retailers fined by the Competition Council in June 2024 (over MDL 480m total) for a 2019-2021 price-fixing cartel.",
+      "our_conclusion": "BEMOL RETAIL nu îndeplinește pe deplin standardele de conformitate pentru o relație de afaceri fără restricții, având în vedere amenda recentă pentru cartel și lipsa dovezilor de remediere. Recomandarea este ENHANCED_DUE_DILIGENCE, cu monitorizare strictă și condiționarea continuării relației de implementarea unor măsuri concrete de conformitate. Cele mai critice riscuri sunt: recurența practicilor anticoncurențiale, lipsa transparenței privind remedierea și potențialul de noi litigii sau investigații. Următoarea revizuire trebuie efectuată în maximum 6 luni sau imediat la apariția unor noi informații relevante. O schimbare a recomandării ar putea surveni doar în cazul prezentării unor dovezi clare de remediere și absența unor noi incidente.",
+      "our_scor_risc": 65,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified and flagged the recent cartel fine as a significant risk, recommending enhanced due diligence.",
+      "source": "https://www.pymnts.com/cpi-posts/moldova-fines-six-fuel-retailers-27-million-for-price-fixing/",
+      "verified": true,
+      "our_rezumat": "BEMOL RETAIL este o companie activă în sectorul distribuției de carburanți din Republica Moldova, cu implicare semnificativă în proiectul Portului Internațional Liber Giurgiulești. Analiza surselor publice relevă o serie de acuzații și litigii legate de evaziune fiscală, fraudă, management defectuos și practici anticoncurențiale, însă majoritatea acuzațiilor nu s-au materializat în anchete penale sau sancțiuni directe împotriva companiei până în 2024. \n\nCea mai gravă încălcare confirmată este amenda de 29 milioane lei moldovenești aplicată de Consiliul Concurenței în iulie 2024 pentru participarea la o înțelegere de cartel privind fixarea prețurilor la carburanți între 2019 și 2021. De asemenea, există o anchetă a Consiliului Concurenței privind practici anticoncurențiale și o investigație penală în curs împotriva fostului manager Thomas Moser, dar fără acuzații formale împotriva BEMOL RETAIL până la data raportului. \n\nGeografic, riscurile și litigiile sunt limitate la Republica Moldova, fără mențiuni de expunere multi-jurisdicțională. Temporal, principalele incidente acoperă perioada 2011–2024, cu accent pe ultimii cinci ani pentru încălcările de concurență și litigiile comerciale. \n\nÎn ansamblu, riscul de conformitate este ridicat, având în vedere amenda substanțială recentă pentru cartel și existența unor investigații și litigii nerezolvate, deși nu există dovezi de sancțiuni internaționale sau condamnări penale împotriva companiei. Remedierea pare limitată, iar riscul de recurență nu poate fi exclus.",
+      "our_recomandare": "ENHANCED_DUE_DILIGENCE — Având în vedere amenda semnificativă pentru cartel recentă și lipsa dovezilor privind remedierea, recomandăm continuarea relației de afaceri doar cu măsuri stricte de due diligence. Condiții: monitorizare trimestrială a surselor publice și a tranzacțiilor, solicitarea unui plan de remediere și a dovezilor de implementare a măsurilor de conformitate, audit extern anual pe zona de concurență și integritate. Orice noi investigații penale sau sancțiuni suplimentare vor declanșa suspendarea relației. Escaladarea către conducerea băncii și comitetul de risc la orice incident major nou.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_subset",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "PRO IMOBIL GRUP",
+      "idno": "1011600019764",
+      "expected": "risk",
+      "expected_note": "CORRECTED from clean. Prosecutors searched the company's former headquarters (2017, reported by ZDG); during the criminal case the founders changed and a fine of roughly MDL 10m was reported paid. Weaker and older than the other risk rows.",
+      "our_conclusion": "PRO IMOBIL GRUP nu îndeplinește în prezent standardele optime de conformitate pentru un parteneriat fără restricții, din cauza investigațiilor penale active, a istoricului de amenzi semnificative și a lipsei unor dovezi clare de remediere. Recomandarea este ENHANCED_DUE_DILIGENCE, cu monitorizare strictă și reevaluare la fiecare 3 luni. Cele mai critice riscuri sunt: (1) investigațiile penale active pentru evaziune fiscală și spălare de bani, (2) lipsa rezoluțiilor definitive pentru dosarele majore, (3) posibilitatea unor noi sancțiuni sau extinderi ale investigațiilor. Următoarea revizuire trebuie efectuată în maximum 3 luni sau imediat la apariția unor noi informații relevante. O schimbare a recomandării ar putea surveni doar în cazul închiderii definitive a tuturor investigațiilor și implementării unor măsuri solide de remediere și conformitate.",
+      "our_scor_risc": 65,
+      "judge_match": true,
+      "judge_comment": "The agent correctly identified and signaled meaningful risk, recommending enhanced due diligence due to criminal investigations and significant fines.",
+      "source": "https://www.zdg.md/stiri/stiri-justitie/reactia-fondatorului-pro-imobil-la-perchezitiile-care-se-desfasoare-la-fostul-sediul-al-companiei/",
+      "verified": true,
+      "our_rezumat": "PRO IMOBIL GRUP, identificat prin IDNO 1011600019764, este una dintre cele mai mari companii imobiliare din Republica Moldova, cu activitate preponderentă pe piața locală. În perioada 2015-2025, compania și fondatorul său, Vladislav Musteață, au fost subiectul mai multor acuzații publice și investigații oficiale privind evaziune fiscală, spălare de bani, fraudă și alte practici ilegale în tranzacții imobiliare. Acuzațiile provin atât din partea concurenților, cât și a unor foști angajați și mass-media, dar și din partea autorităților de investigație.\n\nCele mai grave încălcări identificate includ investigații penale pentru evaziune fiscală și spălare de bani, cu acuzații formale și dosare trimise în instanță, precum și aplicarea unor amenzi administrative semnificative (aproximativ 20 milioane lei pentru companie și 5 milioane lei pentru fondator). De asemenea, există mențiuni despre confiscări de active și restricții judiciare. Totuși, pentru unele dosare nu există informații clare privind finalizarea proceselor sau existența unor condamnări definitive.\n\nGeografic, riscurile și investigațiile sunt limitate la Republica Moldova, fără mențiuni despre alte jurisdicții. Temporal, încălcările și investigațiile acoperă o perioadă extinsă (2015-2025), cu investigații noi deschise în 2025 și fără dovezi clare de remediere completă sau de închidere a tuturor dosarelor.\n\nÎn ansamblu, riscul de conformitate este ridicat, având în vedere persistența acuzațiilor, lipsa unor rezoluții definitive pentru unele cazuri și existența unor noi investigații în curs la data analizei. Lipsa unor dovezi clare de remediere și de consolidare a programelor de conformitate amplifică riscul asociat relației de afaceri cu această entitate.",
+      "our_recomandare": "ENHANCED_DUE_DILIGENCE — Având în vedere scorul de risc ridicat (65), existența unor investigații penale active, amenzi semnificative și lipsa unor dovezi clare de remediere, recomandăm continuarea relației de afaceri doar cu condiții stricte de monitorizare sporită. Condiții: solicitarea de documente suplimentare privind sursa fondurilor, monitorizare lunară a tranzacțiilor, raportare imediată a oricăror noi investigații sau sancțiuni, și reevaluare trimestrială a riscului. Orice nouă condamnare penală, sancțiune majoră sau extindere a investigațiilor în alte jurisdicții va declanșa suspendarea sau încetarea relației. Escaladarea se va face către conducerea superioară și departamentul juridic la orice semnal de agravare a riscului.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_subset",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "VITASANMAX",
+      "idno": "1003600005654",
+      "expected": "clean",
+      "expected_note": "No adverse findings in verification search. Thin web presence - absence of evidence, not evidence of absence.",
+      "our_conclusion": "Nu au fost identificate informații adverse despre VITASANMAX. Recomandăm monitorizare standard și revizuire după 12 luni.",
+      "our_scor_risc": 0,
+      "judge_match": true,
+      "judge_comment": "The agent correctly reported no adverse information and recommended standard monitoring, matching the expected 'clean' label.",
+      "source": "",
+      "verified": true,
+      "our_rezumat": "Nu au fost identificate informații de presă negativă pentru VITASANMAX în sursele consultate. Nu există date privind încălcări de conformitate, investigații, sancțiuni sau alte riscuri reputaționale asociate cu această entitate. Contextul de afaceri și aria geografică nu pot fi evaluate suplimentar în lipsa unor date concrete. \n\nNu au fost raportate amenzi, penalități sau alte consecințe financiare legate de încălcări de reglementare. De asemenea, nu există mențiuni privind investigații active sau istorice, nici la nivel național, nici internațional. \n\nPe baza absenței oricăror informații negative sau suspiciuni din surse publice, riscul general asociat cu VITASANMAX este considerat minim. Evaluarea se bazează strict pe lipsa evidențelor adverse la data curentă.",
+      "our_recomandare": "CONTINUE — nu există motive de îngrijorare identificate în sursele publice consultate.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_subset",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid"
+    },
+    {
+      "name": "LUKOIL",
+      "idno": "1027700035769",
+      "expected": "risk",
+      "expected_note": "Sanctions target with extensive adverse coverage; US sanctions drove the sale of foreign assets from late 2025.",
+      "our_conclusion": "LUKOIL nu îndeplinește standardele de conformitate pentru parteneriat. Se recomandă terminarea oricărei relații de afaceri, având în vedere sancțiunile active, investigațiile penale nerezolvate și riscul reputațional extrem. Cele mai critice riscuri sunt: (1) sancțiunile internaționale și blocarea activelor, (2) investigațiile penale și civile în curs pentru spălare de bani și fraudă, (3) lipsa dovezilor de remediere sau îmbunătățire a conformității. Următoarea revizuire ar trebui efectuată doar dacă statutul de sancțiuni se modifică semnificativ sau dacă apar dovezi publice de remediere substanțială. Orice ridicare a restricțiilor sau schimbare de statut trebuie analizată cu enhanced due diligence și aprobare la nivel executiv.",
+      "our_scor_risc": 98,
+      "judge_match": true,
+      "judge_comment": "The agent clearly identified and flagged the critical risk, sanctions, and recommended termination, matching the expected risk signal.",
+      "source": "",
+      "verified": true,
+      "our_rezumat": "LUKOIL (IDNO 1027700035769) este un conglomerat energetic multinațional cu operațiuni extinse în Rusia, Europa Centrală și de Est, precum și în alte jurisdicții. Din analiza surselor publice, LUKOIL și subsidiarele sale au fost implicate într-o serie de investigații, acuzații și sancțiuni majore, inclusiv acuzații de spălare de bani, fraudă, corupție, încălcări ale legislației de mediu, precum și legături cu organizații criminale. \n\nÎn perioada 2015-2026, LUKOIL a fost subiectul unor investigații penale și civile în România, Moldova, Bulgaria, Letonia și SUA, cu acuzații de spălare de bani, evaziune fiscală, fraudă și finanțare ilegală a partidelor politice. În 2025-2026, entitatea a fost inclusă pe listele de sancțiuni ale SUA, UE și UK, ceea ce a dus la blocarea activelor, restricții de plată și vânzarea forțată a activelor internaționale. \n\nGeografic, riscurile și investigațiile acoperă multiple jurisdicții (Rusia, România, Moldova, Bulgaria, Letonia, SUA, Monaco, Olanda, Kazahstan, Emiratele Arabe Unite), indicând un risc sistemic și transfrontalier. Temporal, acuzațiile și investigațiile se întind pe o perioadă de peste 15 ani (2009-2026), cu o intensificare semnificativă a riscurilor și sancțiunilor în perioada 2022-2026, fără dovezi clare de remediere eficientă sau de rezolvare a problemelor structurale.\n\nValoarea totală a prejudiciilor și a activelor blocate depășește 2 miliarde EUR, cu sancțiuni și pierderi potențiale de până la 14 miliarde USD. Singura soluționare semnificativă identificată este un acord de 93 milioane USD în 2013, fără alte dovezi de remediere sistemică. Având în vedere amploarea, gravitatea și persistența riscurilor, LUKOIL prezintă un risc critic de conformitate AML și reputațional.",
+      "our_recomandare": "TERMINATE — Riscul este critic (scor 98), cu sancțiuni active, investigații penale și civile nerezolvate, active blocate și prejudicii de ordinul miliardelor. Nu se recomandă inițierea sau continuarea oricărei relații de afaceri cu LUKOIL sau entitățile afiliate. Orice excepție ar trebui să fie supusă aprobării la cel mai înalt nivel de conducere și doar în baza unei derogări legale explicite. Monitorizarea ar trebui să fie permanentă, iar orice contact sau tranzacție accidentală trebuie raportată și analizată imediat. Red lines: orice tranzacție, colaborare sau expunere financiară cu LUKOIL sau entități afiliate va declanșa suspendarea imediată și raportarea către autoritățile competente. Procedurile de escaladare trebuie să includă notificarea conducerii executive și a departamentului juridic.",
+      "run": {
+        "test_type": "quality_check",
+        "version": "prod",
+        "run_dir": "test_cases\\runs\\2026-09-20_prod_subset",
+        "date": "2026-09-20"
+      },
+      "run_status": "valid",
+      "notes": "Renamed from 'LUKOIL (RU parent)' on 2026-09-20: the parenthetical was searched literally by the entity filter, which was a test-data defect, not an agent failure."
+    }
+  ],
+  "note_airrock": "AIRROCK is risk because of sanctions, not media. The DEV pipeline receives sanctions data; the PROD to_deploy one does not. A low PROD score is not necessarily a miss - record which version produced the result.",
+  "note_lukoil": "The Lukoil pair no longer tests misattribution - the Moldovan entity has its own adverse record. The real misattribution tests are now Orange Moldova (vs Orange Romania's fine) and Sudzucker Moldova (vs a competition case where it was the victim).",
+  "balance": "11 risk / 5 clean - now skewed toward risk. Consider adding 2-3 clean rows so 'always say risk' cannot score well.",
+  "last_run": {
+    "test_type": "quality_check",
+    "version": "prod",
+    "tag": "subset",
+    "date": "2026-09-20",
+    "companies": 1,
+    "reports_written": 1,
+    "run_dir": "test_cases\\runs\\2026-09-20_prod_subset"
+  },
+  "last_judge": {
+    "test_type": "quality_check",
+    "date": "2026-09-20",
+    "model": "gpt-4.1",
+    "judged": 16,
+    "risk_rows": 11,
+    "risk_identified": 9,
+    "clean_rows": 5,
+    "false_positives": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "contragentid": 909,
+  "idno": "QC-TEST-09",
+  "arcdate": "2026-09-19",
+  "runtime": "2026-09-20 10:53:47",
+  "aml_report": {
+    "rezumat_analiza": "Nu au fost identificate informații de presă negativă pentru Sudzucker Moldova S.A. în sursele consultate. Nu există mențiuni privind investigații, sancțiuni, amenzi sau alte încălcări de conformitate care să implice această entitate. Contextul de afaceri pare a fi unul curat, fără semnale de risc major sau incidente raportate în spațiul public. \n\nNu au fost identificate probleme de conformitate, nici la nivel local, nici internațional, iar lipsa oricăror mențiuni negative sugerează o activitate desfășurată în parametri normali din punct de vedere al reglementărilor AML/CFT. \n\nRiscul geografic este limitat la o singură jurisdicție, iar perioada analizată nu a relevat incidente sau suspiciuni recente sau istorice. \n\nÎn concluzie, pe baza datelor disponibile, Sudzucker Moldova S.A. prezintă un profil de risc scăzut, fără semnale de alarmă privind integritatea sau conformitatea.",
+    "scor_risc": 0,
+    "analiza_suspiciuni": "Nu au fost identificate suspiciuni.",
+    "situatie_actuala": "Nu au fost identificate în sursele consultate investigații, sancțiuni sau acțiuni de reglementare la data de 2026-09-20.",
+    "traiectorie": "UNKNOWN — date insuficiente pentru evaluare.",
+    "recomandare_relatie_afaceri": "CONTINUE — nu există motive de îngrijorare identificate în sursele publice consultate.",
+    "concluzie_finala": "Nu au fost identificate informații adverse despre Sudzucker Moldova S.A.. Recomandăm monitorizare standard și revizuire după 12 luni.",
+    "rezultate_cautare": []
+  }
+}
